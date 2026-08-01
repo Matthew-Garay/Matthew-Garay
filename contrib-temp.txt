@@ -1,0 +1,2 @@
+﻿Commit: docs: add skills table with PHP, Python, JavaScript 
+
