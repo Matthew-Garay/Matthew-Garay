@@ -4,3 +4,5 @@ Commit: chore: update LinkedIn badge URL
 
 Commit: feat: add featured projects section 
 
+Commit: docs: add education table with TESCo and CETIS 
+
