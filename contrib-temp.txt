@@ -6,3 +6,5 @@ Commit: feat: add featured projects section
 
 Commit: docs: add education table with TESCo and CETIS 
 
+Commit: chore: fix README formatting and alignment 
+
