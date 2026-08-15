@@ -8,3 +8,5 @@ Commit: docs: add education table with TESCo and CETIS
 
 Commit: chore: fix README formatting and alignment 
 
+Commit: docs: add certifications section with CCNA and Coursera 
+
