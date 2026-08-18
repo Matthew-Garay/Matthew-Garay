@@ -10,3 +10,5 @@ Commit: chore: fix README formatting and alignment
 
 Commit: docs: add certifications section with CCNA and Coursera 
 
+Commit: feat: add GitHub stats and trophies widgets 
+
