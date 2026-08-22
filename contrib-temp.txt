@@ -12,3 +12,5 @@ Commit: docs: add certifications section with CCNA and Coursera
 
 Commit: feat: add GitHub stats and trophies widgets 
 
+Commit: chore: update contact section with email and LinkedIn 
+
