@@ -18,3 +18,5 @@ Commit: docs: add professional focus summary
 
 Commit: feat: add project descriptions with tech stacks 
 
+Commit: chore: refine About me section wording 
+
