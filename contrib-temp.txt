@@ -20,3 +20,5 @@ Commit: feat: add project descriptions with tech stacks
 
 Commit: chore: refine About me section wording 
 
+Commit: docs: add experience table with REFIVIDRIO roles 
+
