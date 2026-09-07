@@ -22,3 +22,5 @@ Commit: chore: refine About me section wording
 
 Commit: docs: add experience table with REFIVIDRIO roles 
 
+Commit: feat: improve README structure and readability 
+
