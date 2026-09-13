@@ -26,3 +26,5 @@ Commit: feat: improve README structure and readability
 
 Commit: chore: update project links to correct repos 
 
+Commit: docs: add languages and tools badges 
+
