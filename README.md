@@ -1,35 +1,33 @@
-# Hola, soy Matthew Garay 👋
+# Hola, soy Matthew Garay
 
-Estudiante de Sistemas Computacionales en la Universidad Politécnica de San Luis Potosí. Me interesa el desarrollo de software, la seguridad informática y el análisis de datos.
+Estudiante de Sistemas Computacionales en la Universidad Politécnica de San Luis Potosí.
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 | Área | Herramientas |
 |------|-------------|
-| **Lenguajes** | Python, JavaScript, PowerShell, Prolog, R |
-| **Web** | React, Express, Node.js, HTML/CSS |
-| **Escritorio** | Windows Forms, Tkinter |
-| **Datos** | R, modelos de regresión, RandomForest |
-| **Base de datos** | MySQL, SQLite |
+| Lenguajes | Python, JavaScript, PowerShell, Prolog, R |
+| Web | React, Express, Node.js, HTML/CSS |
+| Escritorio | Windows Forms, Tkinter |
+| Datos | R, modelos de regresión, RandomForest |
+| Base de datos | MySQL, SQLite |
 
-## 📂 Proyectos destacados
+## Proyectos
 
-| Proyecto | Descripción |
-|----------|-------------|
-| [**IP-Scanner**](https://github.com/Matthew-Garay/IP-Scanner) | Escáner de puertos e inspector de IPs con interfaz gráfica en Python |
-| [**Precision Truck Parts - Help Desk**](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk) | Sistema de gestión de tickets e inventario (MERN) para flotillas de camiones |
-| [**Microsoft-Office-installer**](https://github.com/Matthew-Garay/Microsoft-Office-installer) | Instalador de Office LTSC con GUI y CLI en PowerShell |
-| [**CifradoAsimetrico**](https://github.com/Matthew-Garay/CifradoAsimetrico) | Demo web interactiva de criptografía asimétrica |
+- [IP-Scanner](https://github.com/Matthew-Garay/IP-Scanner)
+- [Precision Truck Parts - Help Desk](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
+- [Microsoft-Office-installer](https://github.com/Matthew-Garay/Microsoft-Office-installer)
+- [CifradoAsimetrico](https://github.com/Matthew-Garay/CifradoAsimetrico)
 
-## 📊 Trabajos académicos
+## Trabajos académicos
 
-- **Prolog** — resolución de problemas clásicos con búsqueda en grafos (DFS, costo uniforme)
-- **R** — análisis exploratorio, modelos de regresión y bosques aleatorios
-
-## 📈 Datos de actividad
+- [72estados](https://github.com/Matthew-Garay/72estados)
+- [CiudadesGUI](https://github.com/Matthew-Garay/CiudadesGUI)
+- [ParadojadeDios](https://github.com/Matthew-Garay/ParadojadeDios)
+- [Problema-de-las-casas](https://github.com/Matthew-Garay/Problema-de-las-casas)
+- [Analisisexploratorio](https://github.com/Matthew-Garay/Analisisexploratorio)
+- [Figurasderegresion](https://github.com/Matthew-Garay/Figurasderegresion)
+- [ModelosdeRegresion](https://github.com/Matthew-Garay/ModelosdeRegresion)
+- [forestfires](https://github.com/Matthew-Garay/forestfires)
 
 ![Matthew's GitHub stats](https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight)
-
----
-
-💼 Abierto a oportunidades de prácticas profesionales y proyectos colaborativos.
