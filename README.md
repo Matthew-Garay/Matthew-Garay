@@ -1,16 +1,35 @@
-## Hi there 👋
+# Hola, soy Matthew Garay 👋
 
-<!--
-**Matthew-Garay/Matthew-Garay** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Estudiante de Sistemas Computacionales en la Universidad Politécnica de San Luis Potosí. Me interesa el desarrollo de software, la seguridad informática y el análisis de datos.
 
-Here are some ideas to get you started:
+## 🛠️ Tecnologías
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+| Área | Herramientas |
+|------|-------------|
+| **Lenguajes** | Python, JavaScript, PowerShell, Prolog, R |
+| **Web** | React, Express, Node.js, HTML/CSS |
+| **Escritorio** | Windows Forms, Tkinter |
+| **Datos** | R, modelos de regresión, RandomForest |
+| **Base de datos** | MySQL, SQLite |
+
+## 📂 Proyectos destacados
+
+| Proyecto | Descripción |
+|----------|-------------|
+| [**IP-Scanner**](https://github.com/Matthew-Garay/IP-Scanner) | Escáner de puertos e inspector de IPs con interfaz gráfica en Python |
+| [**Precision Truck Parts - Help Desk**](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk) | Sistema de gestión de tickets e inventario (MERN) para flotillas de camiones |
+| [**Microsoft-Office-installer**](https://github.com/Matthew-Garay/Microsoft-Office-installer) | Instalador de Office LTSC con GUI y CLI en PowerShell |
+| [**CifradoAsimetrico**](https://github.com/Matthew-Garay/CifradoAsimetrico) | Demo web interactiva de criptografía asimétrica |
+
+## 📊 Trabajos académicos
+
+- **Prolog** — resolución de problemas clásicos con búsqueda en grafos (DFS, costo uniforme)
+- **R** — análisis exploratorio, modelos de regresión y bosques aleatorios
+
+## 📈 Datos de actividad
+
+![Matthew's GitHub stats](https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight)
+
+---
+
+💼 Abierto a oportunidades de prácticas profesionales y proyectos colaborativos.
