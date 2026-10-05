@@ -20,3 +20,5 @@ Commit: docs: add About me section with career summary
 
 Commit: chore: refine project descriptions and tech tags
 
+Commit: docs: final review of profile structure and links
+
