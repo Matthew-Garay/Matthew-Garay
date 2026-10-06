@@ -1,15 +1,15 @@
 # Hola, soy Matthew Garay
 
-Estudiante de Sistemas Computacionales en la Universidad Politécnica de San Luis Potosí.
+Estudiante de Sistemas Computacionales en la Universidad Politecnica de San Luis Potosi.
 
-## Tecnologías
+## Tecnologias
 
-| Área | Herramientas |
+| Area | Herramientas |
 |------|-------------|
 | Lenguajes | Python, JavaScript, PowerShell, Prolog, R |
 | Web | React, Express, Node.js, HTML/CSS |
 | Escritorio | Windows Forms, Tkinter |
-| Datos | R, modelos de regresión, RandomForest |
+| Datos | R, modelos de regresion, RandomForest |
 | Base de datos | MySQL, SQLite |
 
 ## Proyectos
@@ -19,7 +19,7 @@ Estudiante de Sistemas Computacionales en la Universidad Politécnica de San Lui
 - [Microsoft-Office-installer](https://github.com/Matthew-Garay/Microsoft-Office-installer)
 - [CifradoAsimetrico](https://github.com/Matthew-Garay/CifradoAsimetrico)
 
-## Trabajos académicos
+## Trabajos academicos
 
 - [72estados](https://github.com/Matthew-Garay/72estados)
 - [CiudadesGUI](https://github.com/Matthew-Garay/CiudadesGUI)
