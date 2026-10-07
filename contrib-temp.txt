@@ -16,3 +16,5 @@ Commit: docs: update header with typing animation and role badges
 
 Commit: chore: add GitHub stats and trophies widgets
 
+Commit: docs: add About me section with career summary
+
