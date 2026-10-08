@@ -14,3 +14,5 @@ Commit: feat: add professional focus summary and stack section
 
 Commit: docs: update header with typing animation and role badges
 
+Commit: chore: add GitHub stats and trophies widgets
+
