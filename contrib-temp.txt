@@ -12,3 +12,5 @@ Commit: docs: add experience and education tables
 
 Commit: feat: add professional focus summary and stack section
 
+Commit: docs: update header with typing animation and role badges
+
