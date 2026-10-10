@@ -10,3 +10,5 @@ Commit: chore: fix character encoding and special characters in README
 
 Commit: docs: add experience and education tables
 
+Commit: feat: add professional focus summary and stack section
+
