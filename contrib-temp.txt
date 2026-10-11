@@ -8,3 +8,5 @@ Commit: docs: add certifications table with Cisco and Coursera credentials
 
 Commit: chore: fix character encoding and special characters in README
 
+Commit: docs: add experience and education tables
+
