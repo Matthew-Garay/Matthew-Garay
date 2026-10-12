@@ -6,3 +6,5 @@ Commit: feat: add featured projects grid with 6 repositories
 
 Commit: docs: add certifications table with Cisco and Coursera credentials
 
+Commit: chore: fix character encoding and special characters in README
+
