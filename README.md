@@ -5,13 +5,18 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <img src="https://img.shields.io/badge/CCNA-Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="CCNA"/>
+  <img src="https://img.shields.io/badge/CCNA%20x2-Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" alt="CCNA x2"/>
+  <img src="https://img.shields.io/badge/IT%20Support-Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white" alt="IT Support Fundamentals"/>
   <img src="https://komarev.com/ghpvc/?username=Matthew-Garay&style=for-the-badge&color=blueviolet" alt="Profile views"/>
 </p>
 
 <p align="center">
   <em>Hybrid IT profile: software development, technical support, databases and infrastructure.</em><br>
   <em>Perfil híbrido de TI: desarrollo de software, soporte técnico, bases de datos e infraestructura.</em>
+</p>
+
+<p align="center">
+  <strong>Tecámac, México · Open to opportunities in software development, IT infrastructure and systems administration</strong>
 </p>
 
 ---
@@ -59,10 +64,12 @@ Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible 
 | **IT Intern (Becario de TI)** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | Mar 2026 – Jul 2026 |
 | **Social Service — Administrative IT Support** | Tecnológico de Estudios Superiores de Coacalco (TESCo) | Apr 2025 – Nov 2025 |
 
-**What I do:**
+**What I do / Lo que hago:**
 - First-line IT support: hardware and software maintenance, incident resolution and infrastructure tasks
 - Direct support to students and staff on digital procedures, improving response times and information organization
 - Report optimization with Excel and digitization of administrative processes to improve efficiency
+
+*Soporte TI de primera línea, mantenimiento de hardware y software, optimización de reportes en Excel y digitalización de procesos administrativos.*
 
 ---
 
@@ -202,6 +209,17 @@ Data analytics and **regression models on forest-fire data**: exploratory analys
 </table>
 
 See all repositories: [github.com/Matthew-Garay?tab=repositories](https://github.com/Matthew-Garay?tab=repositories)
+
+---
+
+## Professional Focus
+
+| Area | Details |
+|------|---------|
+| **Currently** | IT Support Specialist at REFIVIDRIO · B.Sc. Computer Systems Engineering, TESCo (final semesters) |
+| **Credentials** | 2x CCNA (Switching/Routing/Wireless + Enterprise Networking/Security/Automation) · IT Support Fundamentals (Coursera) |
+| **Core stack** | React / Node.js / Express / MySQL · Python (desktop tools, networking) · PowerShell / Windows administration |
+| **Interests** | IT infrastructure · Networking and security · Systems administration · Applied software development |
 
 ---
 
