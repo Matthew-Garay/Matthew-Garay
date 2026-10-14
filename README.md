@@ -1,7 +1,3 @@
-<p align="right">
-  <a href="README.en.md"><img src="https://flagcdn.com/w40/us.png" width="20" alt="English"/> English</a> — <img src="https://flagcdn.com/w40/mx.png" width="20" alt="Español"/> <strong>Español</strong>
-</p>
-
 <h1 align="center">Matthew Ilveneff Garay Pérez</h1>
 
 <h3 align="center">Especialista en Soporte TI | Estudiante de Ingeniería en Sistemas Computacionales | Desarrollador Full-Stack</h3>
@@ -39,11 +35,9 @@ Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible 
 |--------|---------|---------|
 | **Auxiliar de soporte de TI** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | ago. 2026 – actualidad |
 | **Becario de TI** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | mar. 2026 – jul. 2026 |
-| **Servicio social — Soporte TI administrativo** | Tecnológico de Estudios Superiores de Coacalco (TESCo) | abr. 2025 – nov. 2025 |
 
 **Lo que hago:**
 - Soporte TI de primera línea: mantenimiento de hardware y software, resolución de incidentes y tareas de infraestructura
-- Atención directa a estudiantes y personal en trámites digitales, mejorando tiempos de respuesta y organización de la información
 - Optimización de reportes con Excel y digitalización de procesos administrativos para mejorar la eficiencia
 
 ---
