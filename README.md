@@ -1,3 +1,7 @@
+<p align="right">
+  <img src="https://flagcdn.com/w40/us.png" width="20" alt="English"/> <strong>English</strong> — <a href="README.es.md"><img src="https://flagcdn.com/w40/mx.png" width="20" alt="Español"/> Español</a>
+</p>
+
 <h1 align="center">Matthew Ilveneff Garay Pérez</h1>
 
 <h3 align="center">IT Support Specialist | Computer Systems Engineering Student | Full-Stack Developer</h3>
@@ -8,8 +12,7 @@
 </p>
 
 <p align="center">
-  <em>Hybrid IT profile: software development, technical support, databases and infrastructure.</em><br>
-  <em>Perfil híbrido de TI: desarrollo de software, soporte técnico, bases de datos e infraestructura.</em>
+  <em>Hybrid IT profile: software development, technical support, databases and infrastructure.</em>
 </p>
 
 <p align="center">
@@ -20,12 +23,6 @@
 
 ## About me
 
-<table>
-<tr>
-<td width="50%">
-
-### English
-
 IT Support Specialist at **REFIVIDRIO** and final-semester **Computer Systems Engineering** student at **Tecnológico de Estudios Superiores de Coacalco (TESCo)**.
 
 I combine **software development** (strong background in web solutions) with **hands-on technical support**: database management for analysis, and full hardware/software maintenance.
@@ -34,39 +31,20 @@ I stand out for a solution-oriented, patient approach to finding the root cause 
 
 Currently working in IT support while completing my degree. Open to opportunities in **software development, IT infrastructure and systems administration**.
 
-</td>
-<td width="50%">
-
-### Español
-
-Auxiliar de soporte de TI en **REFIVIDRIO** y estudiante de **Ingeniería en Sistemas Computacionales** en los últimos semestres en el **Tecnológico de Estudios Superiores de Coacalco (TESCo)**.
-
-Combino el **desarrollo de software** (sólida base en soluciones web) con el **soporte técnico**: gestión de bases de datos para análisis y mantenimiento integral de hardware y software.
-
-Me distingo por mi enfoque resolutivo y paciente para encontrar la raíz de cada problema, apasionado por simplificar la tecnología para que sea una herramienta de valor.
-
-Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible para oportunidades en **desarrollo de software, infraestructura TI y administración de sistemas**.
-
-</td>
-</tr>
-</table>
-
 ---
 
 ## Experience
 
 | Role | Company | Period |
 |------|---------|--------|
-| **IT Support Assistant (Auxiliar de soporte de TI)** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | Aug 2026 – Present |
-| **IT Intern (Becario de TI)** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | Mar 2026 – Jul 2026 |
+| **IT Support Assistant** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | Aug 2026 – Present |
+| **IT Intern** | REFIVIDRIO PARTES DE COLISIÓN & ACCESORIOS PARA TRACTOCAMIÓN | Mar 2026 – Jul 2026 |
 | **Social Service — Administrative IT Support** | Tecnológico de Estudios Superiores de Coacalco (TESCo) | Apr 2025 – Nov 2025 |
 
-**What I do / Lo que hago:**
+**What I do:**
 - First-line IT support: hardware and software maintenance, incident resolution and infrastructure tasks
 - Direct support to students and staff on digital procedures, improving response times and information organization
 - Report optimization with Excel and digitization of administrative processes to improve efficiency
-
-*Soporte TI de primera línea, mantenimiento de hardware y software, optimización de reportes en Excel y digitalización de procesos administrativos.*
 
 ---
 
@@ -99,43 +77,12 @@ Verify credentials: [View all on LinkedIn](https://www.linkedin.com/in/matthewga
 ## Technical Skills
 
 <table>
-<tr><td><b>Languages</b></td><td>
-<img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL"/>
-<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/>
-</td></tr>
-<tr><td><b>Frontend</b></td><td>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
-<img src="https://img.shields.io/badge/CustomTkinter-3776AB?style=flat-square&logo=python&logoColor=white" alt="CustomTkinter"/>
-</td></tr>
-<tr><td><b>Backend & Databases</b></td><td>
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
-<img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.io"/>
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-</td></tr>
-<tr><td><b>IT Support & Networking</b></td><td>
-<img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Cisco"/>
-<img src="https://img.shields.io/badge/CCNA-005BA1?style=flat-square&logo=cisco&logoColor=white" alt="CCNA"/>
-<img src="https://img.shields.io/badge/Windows%20Admin-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows Admin"/>
-<img src="https://img.shields.io/badge/Hardware%20%26%20Software%20Maintenance-6C757D?style=flat-square&logo=windows&logoColor=white" alt="Maintenance"/>
-<img src="https://img.shields.io/badge/Microsoft%20365-EB3C00?style=flat-square&logo=microsoftoffice&logoColor=white" alt="Microsoft 365"/>
-</td></tr>
-<tr><td><b>Tools & Environments</b></td><td>
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
-<img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel"/>
-</td></tr>
-<tr><td><b>Data & AI (Academic)</b></td><td>
-<img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" alt="R"/>
-<img src="https://img.shields.io/badge/Prolog-74283C?style=flat-square&logo=prolog&logoColor=white" alt="Prolog"/>
-</td></tr>
+<tr><td><b>Languages</b></td><td><img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/> <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL"/> <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/></td></tr>
+<tr><td><b>Frontend</b></td><td><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/> <img src="https://img.shields.io/badge/CustomTkinter-3776AB?style=flat-square&logo=python&logoColor=white" alt="CustomTkinter"/></td></tr>
+<tr><td><b>Backend and Databases</b></td><td><img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/> <img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.io"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/></td></tr>
+<tr><td><b>IT Support and Networking</b></td><td><img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Cisco"/> <img src="https://img.shields.io/badge/CCNA-005BA1?style=flat-square&logo=cisco&logoColor=white" alt="CCNA"/> <img src="https://img.shields.io/badge/Windows%20Admin-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows Admin"/> <img src="https://img.shields.io/badge/Hardware%20%26%20Software%20Maintenance-6C757D?style=flat-square&logo=windows&logoColor=white" alt="Maintenance"/> <img src="https://img.shields.io/badge/Microsoft%20365-EB3C00?style=flat-square&logo=microsoftoffice&logoColor=white" alt="Microsoft 365"/></td></tr>
+<tr><td><b>Tools and Environments</b></td><td><img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/> <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/> <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel"/></td></tr>
+<tr><td><b>Data and AI (Academic)</b></td><td><img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" alt="R"/> <img src="https://img.shields.io/badge/Prolog-74283C?style=flat-square&logo=prolog&logoColor=white" alt="Prolog"/></td></tr>
 </table>
 
 ---
@@ -237,4 +184,3 @@ See all repositories: [github.com/Matthew-Garay?tab=repositories](https://github
 </p>
 
 <p align="center">Thanks for stopping by.</p>
-
