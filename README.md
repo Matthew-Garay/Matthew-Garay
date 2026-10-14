@@ -80,8 +80,13 @@ Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible 
 | Certification | Issuer | Issued |
 |---------------|--------|--------|
 | **CCNA: Switching, Routing, and Wireless Essentials** | Cisco Networking Academy | Jul 2024 |
+| **CCNA: Enterprise Networking, Security, and Automation** | Cisco Networking Academy | Jan 2025 |
+| **Technical Support Fundamentals** | Coursera | Sep 2025 |
+| **Python Essentials 1** | Cisco | Oct 2025 |
 | **HTML Essentials** | Cisco | Oct 2025 |
-| *6 licenses and certifications in total* | *[View all on LinkedIn](https://www.linkedin.com/in/matthewgarayperez/)* | |
+| **Introduction to IoT** | Cisco | May 2022 |
+
+Verify credentials: [View all on LinkedIn](https://www.linkedin.com/in/matthewgarayperez/)
 
 **Languages:** English — Basic (Duolingo English Test score 69)
 
