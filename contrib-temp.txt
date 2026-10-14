@@ -2,3 +2,5 @@
 
 Commit: chore: update contact badges and LinkedIn link
 
+Commit: feat: add featured projects grid with 6 repositories
+
