@@ -1,2 +1,4 @@
 ﻿Commit: docs: update profile README with professional skills section
 
+Commit: chore: update contact badges and LinkedIn link
+
