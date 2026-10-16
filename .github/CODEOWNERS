@@ -1,0 +1,13 @@
+# Asignación de revisores automáticos por área de código
+# Cuando se modifiquen estas rutas, se asignará automáticamente al revisor indicado.
+
+# Documentación y perfil
+/docs/ @Matthew-Garay
+
+# Código raíz del perfil
+*.md @Matthew-Garay
+
+# Archivos de configuración y CI/CD
+.github/ @Matthew-Garay
+.editorconfig @Matthew-Garay
+.gitignore @Matthew-Garay
