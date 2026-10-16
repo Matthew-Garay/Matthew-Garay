@@ -4,7 +4,9 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=Matthew-Garay&style=flat-square&color=blueviolet" alt="Vistas de perfil" />
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/matthewgarayperez/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square" alt="LinkedIn" />
+  </a>
   <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square" alt="C#" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square" alt="Python" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square" alt="JavaScript" />
