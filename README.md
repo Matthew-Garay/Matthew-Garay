@@ -1,8 +1,4 @@
-﻿<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Especialista+en+Soporte+TI;Desarrollador+Full-Stack;Redes+%7C+Python+%7C+React+%7C+Node.js;2x+CCNA+%7C+REFIVIDRIO" alt="Typing animation" />
-</p>
-
-<h1 align="center">Matthew Ilveneff Garay Pérez</h1>
+﻿<h1 align="center">Matthew Ilveneff Garay Pérez</h1>
 
 <h3 align="center">Especialista en Soporte TI | Estudiante de Ingeniería en Sistemas Computacionales | Desarrollador Full-Stack</h3>
 
