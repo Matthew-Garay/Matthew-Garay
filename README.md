@@ -8,6 +8,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Matthew-Garay/Matthew-Garay/actions/workflows/ci.yml"><img src="https://github.com/Matthew-Garay/Matthew-Garay/actions/workflows/ci.yml/badge.svg" alt="CI Status"/></a>
+  <a href="https://github.com/Matthew-Garay/Matthew-Garay/security/dependabot"><img src="https://img.shields.io/badge/Dependabot-enabled-blue?style=flat-square&logo=github&labelColor=555555" alt="Dependabot"/></a>
+  <a href="https://github.com/Matthew-Garay/Matthew-Garay/pulse"><img src="https://img.shields.io/github/last-commit/Matthew-Garay/Matthew-Garay?style=flat-square&label=Último%20commit&labelColor=555555" alt="Last Commit"/></a>
+</p>
+
+<p align="center">
   <em>Perfil híbrido de TI: desarrollo de software, soporte técnico, bases de datos e infraestructura.</em>
 </p>
 
@@ -26,6 +32,29 @@ Combino el **desarrollo de software** (sólida base en soluciones web) con el **
 Me distingo por mi enfoque resolutivo y paciente para encontrar la raíz de cada problema, apasionado por simplificar la tecnología para que sea una herramienta de valor.
 
 Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible para oportunidades en **desarrollo de software, infraestructura TI y administración de sistemas**.
+
+---
+
+## Arquitectura técnica
+
+```mermaid
+graph TD
+    A[Usuario] --> B[Frontend: React / HTML / CSS / JS]
+    B --> C[Backend: PHP / Node.js / Express]
+    C --> D[Base de datos: MySQL / MariaDB]
+    C --> E[Email: PHPMailer / SMTP]
+    C --> F[Redes: Python / PowerShell / CCNA]
+    G[GitHub Actions CI/CD] --> C
+    H[Dependabot Security] --> C
+    I[Git Version Control] --> C
+    
+    style A fill:#e1f5fe,stroke:#01579b
+    style B fill:#fff3e0,stroke:#e65100
+    style C fill:#e8f5e9,stroke:#1b5e20
+    style D fill:#f3e5f5,stroke:#4a148c
+    style G fill:#ffe0b2,stroke:#ef6c00
+    style H fill:#ffebee,stroke:#b71c1c
+```
 
 ---
 
@@ -110,6 +139,7 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       <img src="https://img.shields.io/badge/Cisco-000000?style=flat-square&logo=cisco&logoColor=white" alt="Cisco"/>
       <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
+      <img src="https://img.shields.io/badge/TCP%2FIP-000000?style=flat-square&logo=internetarchive&logoColor=white" alt="TCP/IP"/>
     </td>
   </tr>
   <tr>
@@ -134,17 +164,17 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### Directo a Obra
       Plataforma de comercio electrónico para compra y venta de materiales de construcción, con carrito de compras, procesamiento de pagos y envío de correos.
 
-      `PHP` `MySQL` `PHPMailer` `E-commerce`
+      `PHP` `MySQL` `PHPMailer` `E-commerce` `Flagship`
 
-      [Repositorio](https://github.com/Matthew-Garay/Directo-a-Obra)
+      [Repositorio](https://github.com/Matthew-Garay/Directo-a-Obra) · [Ver demo](#)
     </td>
     <td width="50%">
       ### Museo Soumaya
       Sitio web informativo del Museo Soumaya con secciones de galerías, colecciones, exposiciones y contacto.
 
-      `PHP` `HTML` `Bootstrap` `Tailwind CSS`
+      `PHP` `HTML` `Bootstrap` `Tailwind CSS` `Flagship`
 
-      [Repositorio](https://github.com/Matthew-Garay/MuseoSoumaya)
+      [Repositorio](https://github.com/Matthew-Garay/MuseoSoumaya) · [Ver demo](#)
     </td>
   </tr>
   <tr>
@@ -152,7 +182,7 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### Help Desk — Precision Truck Parts
       Sistema de ayuda técnica con chat en tiempo real, gestión de tickets y notificaciones mediante WebSockets.
 
-      `React` `Express` `Socket.io` `Node.js`
+      `React` `Express` `Socket.io` `Node.js` `Especialización`
 
       [Repositorio](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
     </td>
@@ -160,7 +190,7 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### IP-Scanner
       Escáner de red para descubrimiento de hosts y análisis de conectividad.
 
-      `Python` `Networking` `Scanning`
+      `Python` `Networking` `Scanning` `Especialización`
 
       [Repositorio](https://github.com/Matthew-Garay/IP-Scanner)
     </td>
@@ -170,7 +200,7 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### Cifrado Asimétrico
       Implementación de algoritmos de cifrado asimétrico para comunicaciones seguras.
 
-      `Cryptography` `Security` `Algorithms`
+      `Cryptography` `Security` `Algorithms` `Colaboración`
 
       [Repositorio](https://github.com/Matthew-Garay/CifradoAsimetrico)
     </td>
@@ -178,7 +208,7 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### forestfires
       Analítica de datos y modelos de regresión sobre incendios forestales con ingeniería de características y predicción.
 
-      `R` `Data Analysis` `Random Forest` `Regression`
+      `R` `Data Analysis` `Random Forest` `Regression` `Código`
 
       [Repositorio](https://github.com/Matthew-Garay/forestfires)
     </td>
