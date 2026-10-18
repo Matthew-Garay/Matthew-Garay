@@ -1,10 +1,14 @@
-﻿<h1 align="center">Matthew Ilveneff Garay Pérez</h1>
-
-<h3 align="center">Especialista en Soporte TI | Estudiante de Ingeniería en Sistemas Computacionales | Desarrollador Full-Stack</h3>
+<h1 align="center">Matthew Garay</h1>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Matthew-Garay/Matthew-Garay/actions/workflows/ci.yml"><img src="https://github.com/Matthew-Garay/Matthew-Garay/actions/workflows/ci.yml/badge.svg" alt="CI Status"/></a>
+  <a href="https://github.com/Matthew-Garay/Matthew-Garay/security/dependabot"><img src="https://img.shields.io/badge/Dependabot-enabled-blue?style=flat-square&logo=github&labelColor=555555" alt="Dependabot"/></a>
+  <a href="https://github.com/Matthew-Garay/Matthew-Garay/pulse"><img src="https://img.shields.io/github/last-commit/Matthew-Garay/Matthew-Garay?style=flat-square&label=Último%20commit&labelColor=555555" alt="Last Commit"/></a>
 </p>
 
 <p align="center">
@@ -19,13 +23,13 @@
 
 ## Sobre mí
 
-Auxiliar de soporte de TI en **REFIVIDRIO** y estudiante de **Ingeniería en Sistemas Computacionales** en los últimos semestres en el **Tecnológico de Estudios Superiores de Coacalco (TESCo)**.
+Auxiliar de soporte TI en **REFIVIDRIO** y estudiante de **Ingeniería en Sistemas Computacionales** en el **Tecnológico de Estudios Superiores de Coacalco (TESCo)**, donde curso los últimos semestres.
 
-Combino el **desarrollo de software** (sólida base en soluciones web) con el **soporte técnico**: gestión de bases de datos para análisis y mantenimiento integral de hardware y software.
+Combino el **desarrollo de software** -con una base sólida en soluciones web- con el **soporte técnico**: gestión de bases de datos y mantenimiento integral de hardware y software.
 
-Me distingo por mi enfoque resolutivo y paciente para encontrar la raíz de cada problema, apasionado por simplificar la tecnología para que sea una herramienta de valor.
+Me distingo por un enfoque resolutivo y paciente para llegar a la raíz de cada problema, con la meta de simplificar la tecnología y hacerla una herramienta de valor.
 
-Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible para oportunidades en **desarrollo de software, infraestructura TI y administración de sistemas**.
+Actualmente trabajo en soporte de TI mientras termino mi carrera, y estoy disponible para oportunidades en **desarrollo de software, infraestructura TI y administración de sistemas**.
 
 ---
 
@@ -62,8 +66,6 @@ Actualmente trabajando en soporte de TI mientras termino mi carrera. Disponible 
 | **Python Essentials 1** | Cisco | oct. 2025 |
 | **HTML Essentials** | Cisco | oct. 2025 |
 | **Introduction to IoT** | Cisco | may. 2022 |
-
-Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/matthewgarayperez/)
 
 **Idiomas:** Inglés — Básico (Duolingo English Test, puntaje 69)
 
@@ -110,6 +112,7 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       <img src="https://img.shields.io/badge/Cisco-000000?style=flat-square&logo=cisco&logoColor=white" alt="Cisco"/>
       <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
       <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux"/>
+      <img src="https://img.shields.io/badge/TCP%2FIP-000000?style=flat-square&logo=internetarchive&logoColor=white" alt="TCP/IP"/>
     </td>
   </tr>
   <tr>
@@ -134,15 +137,11 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### Directo a Obra
       Plataforma de comercio electrónico para compra y venta de materiales de construcción, con carrito de compras, procesamiento de pagos y envío de correos.
 
-      `PHP` `MySQL` `PHPMailer` `E-commerce`
-
       [Repositorio](https://github.com/Matthew-Garay/Directo-a-Obra)
     </td>
     <td width="50%">
       ### Museo Soumaya
       Sitio web informativo del Museo Soumaya con secciones de galerías, colecciones, exposiciones y contacto.
-
-      `PHP` `HTML` `Bootstrap` `Tailwind CSS`
 
       [Repositorio](https://github.com/Matthew-Garay/MuseoSoumaya)
     </td>
@@ -152,15 +151,11 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### Help Desk — Precision Truck Parts
       Sistema de ayuda técnica con chat en tiempo real, gestión de tickets y notificaciones mediante WebSockets.
 
-      `React` `Express` `Socket.io` `Node.js`
-
       [Repositorio](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
     </td>
     <td width="50%">
       ### IP-Scanner
       Escáner de red para descubrimiento de hosts y análisis de conectividad.
-
-      `Python` `Networking` `Scanning`
 
       [Repositorio](https://github.com/Matthew-Garay/IP-Scanner)
     </td>
@@ -170,15 +165,11 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
       ### Cifrado Asimétrico
       Implementación de algoritmos de cifrado asimétrico para comunicaciones seguras.
 
-      `Cryptography` `Security` `Algorithms`
-
       [Repositorio](https://github.com/Matthew-Garay/CifradoAsimetrico)
     </td>
     <td width="50%">
       ### forestfires
       Analítica de datos y modelos de regresión sobre incendios forestales con ingeniería de características y predicción.
-
-      `R` `Data Analysis` `Random Forest` `Regression`
 
       [Repositorio](https://github.com/Matthew-Garay/forestfires)
     </td>
@@ -186,17 +177,6 @@ Verifica mis credenciales: [Ver todas en LinkedIn](https://www.linkedin.com/in/m
 </table>
 
 Ver todos los repositorios: [github.com/Matthew-Garay?tab=repositories](https://github.com/Matthew-Garay?tab=repositories)
-
----
-
-## Enfoque profesional
-
-| Área | Detalle |
-|------|---------|
-| **Actualmente** | Especialista en soporte TI en REFIVIDRIO · Ing. en Sistemas Computacionales, TESCo (últimos semestres) |
-| **Credenciales** | 2x CCNA (Switching/Routing/Wireless + Redes Empresariales/Seguridad/Automatización) · Fundamentos de Soporte TI (Coursera) |
-| **Stack principal** | React / Node.js / Express / MySQL · Python (herramientas de escritorio, redes) · PowerShell / administración Windows |
-| **Intereses** | Infraestructura TI · Redes y seguridad · Administración de sistemas · Desarrollo de software aplicado |
 
 ---
 
@@ -214,14 +194,3 @@ Ver todos los repositorios: [github.com/Matthew-Garay?tab=repositories](https://
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=Matthew-Garay&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6" alt="Trofeos de GitHub"/>
 </p>
-
----
-
-## Contacto
-
-<p align="center">
-  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-1911.garay.perez%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-</p>
-
-<p align="center">Gracias por tu visita.</p>
