@@ -137,41 +137,35 @@ Actualmente trabajo en soporte de TI mientras termino mi carrera, y estoy dispon
       ### Directo a Obra
       Plataforma de comercio electrónico para compra y venta de materiales de construcción, con carrito de compras, procesamiento de pagos y envío de correos.
 
+      `PHP` `MySQL` `PHPMailer`
+
       [Repositorio](https://github.com/Matthew-Garay/Directo-a-Obra)
     </td>
-    <td width="50%">
-      ### Museo Soumaya
-      Sitio web informativo del Museo Soumaya con secciones de galerías, colecciones, exposiciones y contacto.
-
-      [Repositorio](https://github.com/Matthew-Garay/MuseoSoumaya)
-    </td>
-  </tr>
-  <tr>
     <td width="50%">
       ### Help Desk — Precision Truck Parts
       Sistema de ayuda técnica con chat en tiempo real, gestión de tickets y notificaciones mediante WebSockets.
 
-      [Repositorio](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
-    </td>
-    <td width="50%">
-      ### IP-Scanner
-      Escáner de red para descubrimiento de hosts y análisis de conectividad.
+      `React` `Express` `Socket.io` `Node.js`
 
-      [Repositorio](https://github.com/Matthew-Garay/IP-Scanner)
+      [Repositorio](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
     </td>
   </tr>
   <tr>
     <td width="50%">
-      ### Cifrado Asimétrico
-      Implementación de algoritmos de cifrado asimétrico para comunicaciones seguras.
+      ### IP-Scanner
+      Escáner de red para descubrimiento de hosts y análisis de conectividad.
 
-      [Repositorio](https://github.com/Matthew-Garay/CifradoAsimetrico)
+      `Python` `Networking`
+
+      [Repositorio](https://github.com/Matthew-Garay/IP-Scanner)
     </td>
     <td width="50%">
-      ### forestfires
-      Analítica de datos y modelos de regresión sobre incendios forestales con ingeniería de características y predicción.
+      ### Microsoft Office Installer
+      Instalador de Microsoft Office (LTSC y Professional Plus) en Windows con un solo comando de PowerShell, con interfaz gráfica (GUI) y línea de comandos (CLI).
 
-      [Repositorio](https://github.com/Matthew-Garay/forestfires)
+      `PowerShell` `Windows`
+
+      [Repositorio](https://github.com/Matthew-Garay/Microsoft-Office-installer)
     </td>
   </tr>
 </table>
