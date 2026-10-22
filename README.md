@@ -1,14 +1,14 @@
-<h1 align="center">Matthew Garay</h1>
+﻿<h1 align="center">Matthew Garay</h1>
 
 <p align="center">
-  <strong>Perfil híbrido de TI: Desarrollo de software, Soporte técnico, Bases de datos e Infraestructura.</strong>
+  <strong>Perfil hÃ­brido de TI: Desarrollo de software, Soporte tÃ©cnico, Bases de datos e Infraestructura.</strong>
 </p>
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=1F6FEB&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion" alt="Matthew Garay - Full-Stack, Infraestructura y Soporte" width="650">
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion" alt="Matthew Garay - Full-Stack, Infraestructura y Soporte" width="650">
   </picture>
 </p>
 
@@ -16,13 +16,13 @@
 
 ## Perfil
 
-Ingeniero de Software y TI con foco en **desarrollo Full-Stack, infraestructura y soporte técnico**. Construyo aplicaciones web completas (React + Node.js + MySQL), herramientas de escritorio en Python, scripts de automatización en PowerShell y sistemas de gestión en PHP.
+Ingeniero de Software y TI con foco en **desarrollo Full-Stack, infraestructura y soporte tÃ©cnico**. Construyo aplicaciones web completas (React + Node.js + MySQL), herramientas de escritorio en Python, scripts de automatizaciÃ³n en PowerShell y sistemas de gestiÃ³n en PHP.
 
-Me especializo en **sistemas de tickets y help desk**, **auditoría de redes**, **automatización de procesos** y **cifrado aplicado**. Mi enfoque es práctico y resolutivo: identifico la causa raíz de cada problema y lo resuelvo de forma simple, mantenible y documentada.
+Me especializo en **sistemas de tickets y help desk**, **auditorÃ­a de redes**, **automatizaciÃ³n de procesos** y **cifrado aplicado**. Mi enfoque es prÃ¡ctico y resolutivo: identifico la causa raÃ­z de cada problema y lo resuelvo de forma simple, mantenible y documentada.
 
 ---
 
-## Habilidades Técnicas
+## Habilidades TÃ©cnicas
 
 <table>
 <tr><td width="180"><b>Full-Stack</b></td><td>
@@ -68,7 +68,7 @@ Me especializo en **sistemas de tickets y help desk**, **auditoría de redes**, 
 <td width="50%">
 
 ### 1. Precision HelpDesk
-Sistema web interno de **gestión de tickets de soporte** para una empresa: creación, seguimiento y resolución de solicitudes entre empleados y administradores, con **notificaciones en tiempo real vía WebSockets**, inventario de activos de TI, consulta de manuales PDF y panel de métricas operativas.
+Sistema web interno de **gestiÃ³n de tickets de soporte** para una empresa: creaciÃ³n, seguimiento y resoluciÃ³n de solicitudes entre empleados y administradores, con **notificaciones en tiempo real vÃ­a WebSockets**, inventario de activos de TI, consulta de manuales PDF y panel de mÃ©tricas operativas.
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
 <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express"/>
@@ -80,7 +80,7 @@ Sistema web interno de **gestión de tickets de soporte** para una empresa: crea
 <td width="50%">
 
 ### 2. IP Scanner
-**Escáner de red y puertos** para Windows con interfaz gráfica: descubrimiento de hosts activos en la red local, identificación de puertos abiertos y auditoría de seguridad. Escaneo concurrente y presentación de resultados en tiempo real.
+**EscÃ¡ner de red y puertos** para Windows con interfaz grÃ¡fica: descubrimiento de hosts activos en la red local, identificaciÃ³n de puertos abiertos y auditorÃ­a de seguridad. Escaneo concurrente y presentaciÃ³n de resultados en tiempo real.
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
 <img src="https://img.shields.io/badge/CustomTkinter-3776AB?style=flat-square&logo=python&logoColor=white" alt="CustomTkinter"/>
 <img src="https://img.shields.io/badge/Sockets-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Sockets"/>
@@ -93,7 +93,7 @@ Sistema web interno de **gestión de tickets de soporte** para una empresa: crea
 <td width="50%">
 
 ### 3. QR Studio
-Generador web de **códigos QR personalizables**: logotipo central, patrones de módulos, colores y degradados a medida, con gestión de la biblioteca de códigos generados.
+Generador web de **cÃ³digos QR personalizables**: logotipo central, patrones de mÃ³dulos, colores y degradados a medida, con gestiÃ³n de la biblioteca de cÃ³digos generados.
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
@@ -104,7 +104,7 @@ Generador web de **códigos QR personalizables**: logotipo central, patrones de 
 <td width="50%">
 
 ### 4. Remote Support App
-Aplicación de **soporte remoto peer-to-peer** con interfaz Flutter y kernel en Rust: streaming de escritorio, señalización **WebRTC** con servidores STUN/TURN y pantalla de control compartida.
+AplicaciÃ³n de **soporte remoto peer-to-peer** con interfaz Flutter y kernel en Rust: streaming de escritorio, seÃ±alizaciÃ³n **WebRTC** con servidores STUN/TURN y pantalla de control compartida.
 <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/>
 <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
 <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/>
@@ -117,18 +117,18 @@ Aplicación de **soporte remoto peer-to-peer** con interfaz Flutter y kernel en 
 <td width="50%">
 
 ### 5. Microsoft Office Installer
-**Instalador desatendido** de Microsoft Office (LTSC 2024, 2021, 2019, 2016 y 2013) en Windows con un solo comando de PowerShell. Incluye interfaz gráfica (GUI) y línea de comandos (CLI), sin dependencias externas.
+**Instalador desatendido** de Microsoft Office (LTSC 2024, 2021, 2019, 2016 y 2013) en Windows con un solo comando de PowerShell. Incluye interfaz grÃ¡fica (GUI) y lÃ­nea de comandos (CLI), sin dependencias externas.
 <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/>
 <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
 <img src="https://img.shields.io/badge/CLI-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="CLI"/>
 <img src="https://img.shields.io/badge/GUI-0078D4?style=flat-square&logo=windows&logoColor=white" alt="GUI"/>
-<br>[Repositorio](https://github.com/Matthew-Garay/Microsoft-Office-Installer) · [Demo](https://matthew-garay.github.io/Microsoft-Office-Installer/)
+<br>[Repositorio](https://github.com/Matthew-Garay/Microsoft-Office-Installer) Â· [Demo](https://matthew-garay.github.io/Microsoft-Office-Installer/)
 
 </td>
 <td width="50%">
 
 ### 6. Directo a Obra
-Plataforma de **comercio electrónico** para compra y venta de materiales de construcción: catálogo de productos, carrito de compras, gestión de pedidos y confirmación de compra vía correo electrónico.
+Plataforma de **comercio electrÃ³nico** para compra y venta de materiales de construcciÃ³n: catÃ¡logo de productos, carrito de compras, gestiÃ³n de pedidos y confirmaciÃ³n de compra vÃ­a correo electrÃ³nico.
 <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
 <img src="https://img.shields.io/badge/PHP%20Mailer-444EEA?style=flat-square&logo=php&logoColor=white" alt="PHP Mailer"/>
@@ -141,18 +141,18 @@ Plataforma de **comercio electrónico** para compra y venta de materiales de con
 
 ---
 
-## Estadísticas
+## EstadÃ­sticas
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&rank=1">
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=default&hide_border=true&rank=1">
-  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&rank=1" alt="Estadísticas de GitHub" height="185">
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&rank=1" alt="EstadÃ­sticas de GitHub" height="185">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8">
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=default&hide_border=true&langs_count=8">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes más usados" height="150">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes mÃ¡s usados" height="150">
 </picture>
 
 <picture>
@@ -170,3 +170,4 @@ Plataforma de **comercio electrónico** para compra y venta de materiales de con
   <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
+
