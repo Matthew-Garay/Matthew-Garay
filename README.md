@@ -1,10 +1,14 @@
 <h1 align="center">Matthew Garay</h1>
 
 <p align="center">
+  <strong>Perfil híbrido de TI: Desarrollo de software, Soporte técnico, Bases de datos e Infraestructura.</strong>
+</p>
+
+<p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Ingeniero+de+Software+%26+TI;Full-Stack+%7C+Infraestructura+%7C+Soporte;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell">
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=1F6FEB&center=true&vCenter=true&width=650&lines=Ingeniero+de+Software+%26+TI;Full-Stack+%7C+Infraestructura+%7C+Soporte;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Ingeniero+de+Software+%26+TI;Full-Stack+%7C+Infraestructura+%7C+Soporte;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell" alt="Matthew Garay - Ingeniero de Software y TI" width="650">
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=1F6FEB&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion" alt="Matthew Garay - Full-Stack, Infraestructura y Soporte" width="650">
   </picture>
 </p>
 
@@ -14,7 +18,7 @@
 
 Ingeniero de Software y TI con foco en **desarrollo Full-Stack, infraestructura y soporte técnico**. Construyo aplicaciones web completas (React + Node.js + MySQL), herramientas de escritorio en Python, scripts de automatización en PowerShell y sistemas de gestión en PHP.
 
-Me especializo en **sistemas de tickets yhelp desk**, **auditoría de redes**, **automatización de procesos** y **cifrado aplicado**. Mi enfoque es práctico y resolutivo: identifico la causa raíz de cada problema y lo resuelvo de forma simple, mantenible y documentada.
+Me especializo en **sistemas de tickets y help desk**, **auditoría de redes**, **automatización de procesos** y **cifrado aplicado**. Mi enfoque es práctico y resolutivo: identifico la causa raíz de cada problema y lo resuelvo de forma simple, mantenible y documentada.
 
 ---
 
@@ -165,8 +169,4 @@ Plataforma de **comercio electrónico** para compra y venta de materiales de con
   <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-1911.garay.perez%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-</p>
-
-<p align="center">
-  <sub>Tecámac, México · Disponible para desarrollo de software, infraestructura TI y soporte técnico</sub>
 </p>
