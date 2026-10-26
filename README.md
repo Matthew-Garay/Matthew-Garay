@@ -29,11 +29,13 @@ Especialista en desarrollo Full-Stack, ingeniería de software en C# / .NET, adm
 
 ---
 
-## Estadísticas y Contacto
+## Actividad y Estadísticas
 
-Estadísticas de contribución de GitHub: https://github.com/Matthew-Garay
+Perfil y métricas de contribución: https://github.com/Matthew-Garay
 
-### Contacto
+---
+
+## Contacto
 
 LinkedIn: https://www.linkedin.com/in/matthewgarayperez
 
