@@ -53,3 +53,7 @@ LinkedIn: https://www.linkedin.com/in/matthewgarayperez
 Correo electrónico: 1911.garay.perez@gmail.com
 
 ---
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27b051cbb6fb689e0b545176b9498d54a99174d8
