@@ -1,17 +1,24 @@
-# Matthew Garay - Software & IT Systems Engineer
+<h1 align="center">Matthew Garay</h1>
 
-Desarrollador Full-Stack especializado en arquitecturas de software con .NET, React y Node.js, gestión de bases de datos relacionales MySQL, infraestructura de red con certificación Cisco CCNA y automatización de procesos TI mediante PowerShell. Experiencia en desarrollo de aplicaciones desktop, plataformas web transaccionales y herramientas de escaneo y soporte remoto.
+<p align="center">
+  <small>Perfil híbrido de TI: Desarrollo de software, Soporte técnico, Bases de datos e Infraestructura.</small>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
+    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion" alt="Matthew Garay - Full-Stack, Infraestructura y Soporte" width="650">
+  </picture>
+</p>
 
 ---
 
-## Perfil Profesional
+## Ingeniero de Software y TI
 
-| Ámbito | Especialización |
-|---|---|
-| Desarrollo de Software | Arquitectura Full-Stack, backend en C# / .NET, frontend en React y TypeScript, Node.js y Express |
-| Bases de Datos | Modelado relacional MySQL, consultas optimizadas, administración y mantenimiento |
-| Infraestructura de Red | Cisco CCNA, Linux, Windows Server, TCP/IP, Routing y Switching, seguridad perimetral |
-| Automatización y DevOps | PowerShell, Git, GitHub, Postman, WebSockets, REST APIs, despliegue desatendido |
+Ingeniero de Software y TI con foco en desarrollo Full-Stack, infraestructura y soporte técnico. Construyo aplicaciones web completas (React + Node.js + MySQL), herramientas de escritorio en Python, scripts de automatización en PowerShell y sistemas de gestión en PHP.
+
+Me especializo en sistemas de tickets y help desk, auditoría de redes, automatización de procesos y cifrado aplicado. Mi enfoque es práctico y resolutivo: identifico la causa raíz de cada problema y lo resuelvo de forma simple, mantenible y documentada.
 
 ---
 
@@ -28,42 +35,139 @@ Desarrollador Full-Stack especializado en arquitecturas de software con .NET, Re
 
 ## Proyectos Destacados
 
-| Proyecto | Alcance y Arquitectura Técnica | Stack Tecnológico | Repositorio |
-|---|---|---|---|
-| Precision HelpDesk | Sistema empresarial de gestión de tickets e inventario de activos TI con notificaciones en tiempo real vía WebSockets. Arquitectura cliente-servidor con frontend React y backend Node.js/Express. | React, Node.js, Express, MySQL, WebSockets | https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk |
-| IP Scanner | Escáner de red concurrente con interfaz gráfica para descubrimiento de hosts activos y auditoría de puertos en red local. Arquitectura modular con escaneo concurrente y exportación de reportes. | Python, CustomTkinter, scapy, psutil | https://github.com/Matthew-Garay/IP-Scanner |
-| QR Studio | Aplicación web para generación y personalización de códigos QR con gestión de biblioteca de archivos. Arquitectura frontend con lógica de renderizado en cliente. | HTML, CSS, JavaScript | https://github.com/Matthew-Garay/QR-Studio |
-| Remote Support App | Software de soporte remoto P2P con cliente de escritorio en Flutter/Rust y transmisión vía WebRTC. Arquitectura punto a punto con cifrado de conexión. | Flutter, Rust, WebRTC | https://github.com/Matthew-Garay/Remote-Support-App |
-| Microsoft Office Installer | Herramienta de automatización desatendida en PowerShell con GUI y CLI para despliegue de paquetes de oficina. Arquitectura de scripting con interfaz gráfica y línea de comandos. | PowerShell | https://github.com/Matthew-Garay/Microsoft-Office-installer |
-| Directo a Obra | Plataforma de comercio electrónico para catálogo, compras y gestión transaccional de materiales de construcción. Arquitectura LAMP con PHP y MySQL. | PHP, MySQL, HTML, CSS | https://github.com/Matthew-Garay/Directo-a-Obra |
+<table>
+<tr>
+<td width="50%">
+
+### Precision HelpDesk
+
+Sistema de tickets y gestión de activos de TI con comunicación en tiempo real vía WebSockets, tablero de estados, asignación de técnicos y métricas de atención.
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+<img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.io"/>
+
+<br>[Repositorio](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
+
+</td>
+<td width="50%">
+
+### IP Scanner
+
+Escáner de red para descubrimiento de hosts y auditoría de puertos abiertos, diseñado para identificar dispositivos activos y verificar seguridad en segmentos de red.
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/CustomTkinter-3776AB?style=flat-square&logo=python&logoColor=white" alt="CustomTkinter"/>
+<img src="https://img.shields.io/badge/Sockets-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Sockets"/>
+<img src="https://img.shields.io/badge/Networking-0078D4?style=flat-square&logo=wireshark&logoColor=white" alt="Networking"/>
+
+<br>[Repositorio](https://github.com/Matthew-Garay/IP-Scanner)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### QR Studio
+
+Generador y gestor de códigos QR con soporte para logos, patrones personalizados, colores y degradados, exportación en múltiples formatos y gestión de códigos creados.
+
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+
+<br>[Repositorio](https://github.com/Matthew-Garay/QR-Studio)
+
+</td>
+<td width="50%">
+
+### Remote Support App
+
+Aplicación de soporte remoto P2P construida con Flutter y Rust, usando WebRTC para conexión directa entre dispositivos, STUN/TURN para traversal de NAT y comunicación cifrada.
+
+<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/>
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
+<img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/>
+<img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart"/>
+
+<br>[Repositorio](https://github.com/Matthew-Garay/Remote-Support-App)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### Microsoft Office Installer
+
+Instalador desatendido de Microsoft Office con interfaz GUI y CLI en PowerShell, detección de arquitectura, activación automática, registro de logs y opciones de descarga desde servidores oficiales.
+
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/>
+<img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
+<img src="https://img.shields.io/badge/CLI-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="CLI"/>
+<img src="https://img.shields.io/badge/GUI-0078D4?style=flat-square&logo=windows&logoColor=white" alt="GUI"/>
+
+<br>[Repositorio](https://github.com/Matthew-Garay/Microsoft-Office-installer)
+
+</td>
+<td width="50%">
+
+### Directo a Obra
+
+Plataforma de comercio electrónico para compra y venta de materiales de construcción: catálogo de productos, carrito de compras, gestión de pedidos y confirmación de compra vía correo electrónico.
+
+<img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
+<img src="https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+
+<br>[Repositorio](https://github.com/Matthew-Garay/Directo-a-Obra)
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Métricas de Desarrollo y Distribución de Commits
+<div align="center">
 
-La siguiente tabla resume la distribución de actividad de commits por repositorio, reflejando el volumen de contribuciones técnicas en cada área de especialización.
+## Estadísticas
 
-| Repositorio | Commits | Área de Impacto |
-|---|---|---|
-| Precision HelpDesk | 74 | Desarrollo Web Full-Stack, WebSockets |
-| Perfil (Matthew-Garay) | 48 | Infraestructura del perfil, automatización |
-| Cerberus | 39 | Seguridad y administración de sistemas |
-| IP-Scanner | 32 | Redes, escaneo concurrente, utilidades de sistema |
-| Microsoft Office Installer | 9 | Automatización desatendida, PowerShell |
-| Otros proyectos | 60+ | Diversos: e-commerce, cifrado, analítica, soporte remoto |
+</div>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&rank=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=default&hide_border=true&rank=1">
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&rank=1" alt="Estadísticas de GitHub" height="185">
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=default&hide_border=true&langs_count=8">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Lenguajes más usados" height="150">
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=tokyonight&hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=default&hide_border=true">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=tokyonight&hide_border=true" alt="Racha de contribuciones" height="150">
+</picture>
+
+</div>
 
 ---
 
-### Estadísticas públicas de GitHub
+## Contacto
 
-![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true)
-
-![Lenguajes principales](https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true)
-
-![Racha de contribuciones](https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=tokyonight&hide_border=true)
-
----
-
-Desarrollado por: Matthew Ilveneff Garay Pérez  
-Correo Electrónico: 1911.garay.perez@gmail.com  
-LinkedIn: https://www.linkedin.com/in/matthewgarayperez
+<p align="center">
+  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-1911.garay.perez%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
