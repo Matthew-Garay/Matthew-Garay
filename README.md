@@ -4,16 +4,6 @@
   <small>Perfil híbrido de TI: Desarrollo de software, Soporte técnico, Bases de datos e Infraestructura.</small>
 </p>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
-    <source media="(prefers-color-scheme: light)" srcset="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=524B46&center=true&vCenter=true&width=650&lines=Full-Stack+%7C+Infraestructura+%7C+Soporte+Tecnico;React+%7C+Node.js+%7C+MySQL+%7C+Python+%7C+PHP+%7C+PowerShell;Desarrollo+de+Software+%7C+Redes+%7C+Automatizacion" alt="Matthew Garay - Full-Stack, Infraestructura y Soporte" width="650">
-  </picture>
-</p>
-
----
-
 ## Ingeniero de Software y TI
 
 Ingeniero de Software y TI con foco en desarrollo Full-Stack, infraestructura y soporte técnico. Construyo aplicaciones web completas (React + Node.js + MySQL), herramientas de escritorio en Python, scripts de automatización en PowerShell y sistemas de gestión en PHP.
