@@ -1,12 +1,3 @@
-<h1 align="center">Matthew Garay</h1>
-</p>
-  <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-## Sobre mÃ­
-
-Auxiliar de soporte TI en **REFIVIDRIO** y estudiante de **IngenierÃ­a en Sistemas Computacionales** en el **TecnolÃ³gico de Estudios Superiores de Coacalco (TESCo)**, donde curso los Ãºltimos semestres, con un perfil hÃ­brido en TI que combina el desarrollo de software, con sÃ³lida base en soluciones web, y el soporte tÃ©cnico. Poseo dominio en la gestiÃ³n de bases de datos para anÃ¡lisis, asÃ­ como en el mantenimiento integral de hardware y software. Me distingo por mi enfoque resolutivo y paciente para encontrar la raÃ­z de cada problema, apasionado por simplificar la tecnologÃ­a para que sea una herramienta de valor.
-
----
-
 </p>
 <h1 align="center">Matthew Garay</h1>
 
