@@ -6,14 +6,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Actively_Building-success?style=for-the-badge" alt="Status"/>
-  <img src="https://img.shields.io/badge/Focus-Fullstack_%7C_Systems_%7C_Infrastructure-blueviolet?style=for-the-badge" alt="Focus"/>
-  <img src="https://img.shields.io/badge/Location-Mexico-informational?style=for-the-badge" alt="Location"/>
+  <img src="https://img.shields.io/badge/STATUS-ACTIVELY_BUILDING-2ea44f?style=for-the-badge&logoColor=white" alt="Status"/>
+  <img src="https://img.shields.io/badge/FOCUS-FULLSTACK_%7C_SYSTEMS_%7C_INFRASTRUCTURE-6f42c1?style=for-the-badge&logoColor=white" alt="Focus"/>
+  <img src="https://img.shields.io/badge/LOCATION-MEXICO-0366d6?style=for-the-badge&logoColor=white" alt="Location"/>
 </p>
 
 ---
-
-## Perfil Profesional
 
 Especialista en Sistemas Computacionales con un enfoque híbrido que integra el desarrollo de software robusto con la administración de infraestructura y soporte técnico especializado. Competente en el diseño y despliegue de aplicaciones de escritorio y web, optimización de consultas en bases de datos y resolución analítica de problemas complejos a nivel de sistemas y redes.
 
@@ -21,13 +19,14 @@ Especialista en Sistemas Computacionales con un enfoque híbrido que integra el 
 
 ## Stack Tecnológico
 
-| Categoría | Tecnologías Principales |
-|:---:|:---|
-| **Backend & Lenguajes** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
-| **Frontend & UI** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
-| **Bases de Datos** | ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
-| **Infraestructura & Redes** | ![Cisco CCNA](https://img.shields.io/badge/CCNA-000000?style=flat-square&logo=cisco&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Windows Server](https://img.shields.io/badge/Windows-00A4EF?style=flat-square&logo=windows&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-000000?style=flat-square&logo=internetarchive&logoColor=white) |
-| **Herramientas & DevOps** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![WebSockets](https://img.shields.io/badge/WebSockets-000000?style=flat-square&logo=socket.io&logoColor=white) |
+| Área | Tecnologías y Herramientas |
+| :--- | :--- |
+| **Lenguajes Principales** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) |
+| **Desarrollo Backend & Web** | ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=flat-square&logo=api&logoColor=white) ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socket.io&logoColor=white) |
+| **Desarrollo Frontend & UI** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
+| **Bases de Datos & Gestión** | ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
+| **Sistemas & Infraestructura** | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Windows Server](https://img.shields.io/badge/Windows_Server-00A4EF?style=flat-square&logo=windows&logoColor=white) ![Cisco CCNA](https://img.shields.io/badge/Cisco_CCNA-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-333333?style=flat-square&logo=internetarchive&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
+| **Herramientas & Control** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) |
 
 ---
 
@@ -130,22 +129,17 @@ Plataforma web de comercio electrónico enfocada en la comercialización de mate
 
 ## Estadísticas de Actividad
 
-<div align="center">
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+</p>
 
-<table style="border: none; background: transparent;">
-  <tr>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=true" alt="Stats" height="175"/>
-    </td>
-    <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Top Langs" height="175"/>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
+</p>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=tokyonight&hide_border=true" alt="Streak" height="150"/>
-
-</div>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
 
 ---
 
