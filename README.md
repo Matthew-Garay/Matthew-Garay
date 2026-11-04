@@ -5,12 +5,7 @@
   <small>Perfil híbrido de TI: Desarrollo de software, Soporte técnico, Bases de datos e Infraestructura.</small>
 </p>
 
-## Ingeniero de Software y TI
-
-Ingeniero de Software y TI con foco en desarrollo Full-Stack, infraestructura y soporte técnico. Construyo aplicaciones web completas (React + Node.js + MySQL), herramientas de escritorio en Python, scripts de automatización en PowerShell y sistemas de gestión en PHP.
-
-Me especializo en sistemas de tickets y help desk, auditoría de redes, automatización de procesos y cifrado aplicado. Mi enfoque es práctico y resolutivo: identifico la causa raíz de cada problema y lo resuelvo de forma simple, mantenible y documentada.
-
+con un perfil híbrido en TI que combina el desarrollo de software, con sólida base en soluciones web, y el soporte técnico. Poseo dominio en la gestión de bases de datos para análisis, así como en el mantenimiento integral de hardware y software. Me distingo por mi enfoque resolutivo y paciente para encontrar la raíz de cada problema, apasionado por simplificar la tecnología para que sea una herramienta de valor.
 ---
 
 ## Matriz de Tecnologías y Lenguajes
