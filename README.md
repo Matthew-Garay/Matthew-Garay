@@ -1,200 +1,65 @@
-<h1 align="center">Matthew Garay</h1>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:8957e5&height=150&section=header&text=Matthew%20Garay&fontColor=ffffff&fontSize=44&fontAlignY=38&desc=Full-Stack%20%C2%B7%20Automatizaci%C3%B3n%20%C2%B7%20Infraestructura&descAlignY=62&descSize=16" width="100%" alt="Matthew Garay"/>
 
 <p align="center">
-  <strong>Perfil Híbrido en Tecnologías de la Información</strong><br>
-  <span>Soporte de TI · Desarrollo de Software · Bases de Datos · Redes (Cisco CCNA)</span>
-</p>
-
----
-
-## Sobre mí
-
-Auxiliar de soporte de TI en **REFIVIDRIO** y estudiante de los últimos semestres de **Ingeniería en Sistemas Computacionales** en el **Tecnológico de Estudios Superiores de Coacalco (TESCo)**. Vivo en Tecámac, Estado de México.
-
-Combino el **desarrollo de software** (aplicaciones web y de escritorio) con el **soporte técnico**: mantenimiento de hardware y software, administración de bases de datos y redes. Me enfoco en encontrar la causa raíz de cada problema y en hacer que la tecnología sea una herramienta útil para las personas que la usan.
-
-Abierto a oportunidades en **desarrollo de software, infraestructura de TI y administración de sistemas**.
-
----
-
-## Experiencia
-
-| Puesto | Empresa | Periodo |
-| :--- | :--- | :--- |
-| **Auxiliar de soporte de TI** | REFIVIDRIO Partes de Colisión & Accesorios para Tractocamión | ago. 2026 – actualidad |
-| **Becario de TI** | REFIVIDRIO Partes de Colisión & Accesorios para Tractocamión | mar. 2026 – jul. 2026 |
-
-- Soporte de TI de primera línea: mantenimiento de hardware y software, atención de incidentes e infraestructura.
-- Optimización de reportes en Excel y digitalización de procesos administrativos.
-
----
-
-## Educación
-
-| Formación | Institución | Periodo |
-| :--- | :--- | :--- |
-| **Ingeniería en Sistemas Computacionales** (últimos semestres) | Tecnológico de Estudios Superiores de Coacalco (TESCo) | 2022 – actualidad |
-| **Técnico en Programación** | Centro de Estudios Tecnológicos Industrial y de Servicios No. 4 (CETIS 4) | 2018 – 2021 |
-
----
-
-## Certificaciones
-
-| Certificación | Emisor | Fecha |
-| :--- | :--- | :--- |
-| **CCNA: Enterprise Networking, Security, and Automation** | Cisco Networking Academy | ene. 2025 |
-| **CCNA: Switching, Routing, and Wireless Essentials** | Cisco Networking Academy | jul. 2024 |
-| **Technical Support Fundamentals** | Coursera | sep. 2025 |
-| **Python Essentials 1** | Cisco Networking Academy | oct. 2025 |
-| **HTML Essentials** | Cisco Networking Academy | oct. 2025 |
-| **Introduction to IoT** | Cisco Networking Academy | may. 2022 |
-
-Credenciales verificables en [LinkedIn](https://www.linkedin.com/in/matthewgarayperez/).
-
-**Idiomas:** español (nativo) · inglés (básico, Duolingo English Test: 69)
-
----
-
-## Stack Tecnológico
-
-| Área | Tecnologías y Herramientas |
-| :--- | :--- |
-| **Lenguajes Principales** | ![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) |
-| **Desarrollo Backend & Web** | ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=flat-square&logo=api&logoColor=white) ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socket.io&logoColor=white) |
-| **Desarrollo Frontend & UI** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
-| **Bases de Datos & Gestión** | ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
-| **Sistemas & Infraestructura** | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Windows Server](https://img.shields.io/badge/Windows_Server-00A4EF?style=flat-square&logo=windows&logoColor=white) ![Cisco CCNA](https://img.shields.io/badge/Cisco_CCNA-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-333333?style=flat-square&logo=internetarchive&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
-| **Herramientas & Control** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![TeamViewer](https://img.shields.io/badge/TeamViewer-005EB8?style=flat-square&logo=teamviewer&logoColor=white) |
-
----
-
-## Proyectos Destacados
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Precision HelpDesk
-Sistema de tickets y gestión de activos de TI con arquitectura orientada a eventos mediante WebSockets, tableros de control y métricas de atención.
-
-<p>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.io"/>
-</p>
-
-[Repositorio Oficial](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
-
-</td>
-<td width="50%" valign="top">
-
-### IP Scanner
-Herramienta de diagnóstico de red desarrollada en Python para el descubrimiento eficiente de hosts y verificación de seguridad en segmentos locales.
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/CustomTkinter-3776AB?style=flat-square&logo=python&logoColor=white" alt="CustomTkinter"/>
-  <img src="https://img.shields.io/badge/Networking-0078D4?style=flat-square&logo=wireshark&logoColor=white" alt="Networking"/>
-</p>
-
-[Repositorio Oficial](https://github.com/Matthew-Garay/IP-Scanner) · [Descargar .exe](https://github.com/Matthew-Garay/IP-Scanner/releases/latest)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Remote Support App
-Aplicación de asistencia técnica remota P2P basada en Flutter y Rust, utilizando WebRTC para conexión directa y segura entre terminales.
-
-<p>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/>
-  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
-  <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/>
-</p>
-
-[Repositorio Oficial](https://github.com/Matthew-Garay/remote-support-app)
-
-</td>
-<td width="50%" valign="top">
-
-### QR Studio
-Generador y gestor de códigos QR personalizados con soporte para marcas de agua, esquemas de color avanzados y opciones de exportación múltiple.
-
-<p>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
-</p>
-
-[Repositorio Oficial](https://github.com/Matthew-Garay/qr-studio) · [Demo en línea](https://matthew-garay.github.io/qr-studio/)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Microsoft Office Installer
-Instalador de Microsoft Office (LTSC 2024, 2021, 2019 y 2016) con asistente gráfico y versión de consola, basado en la Office Deployment Tool oficial.
-
-<p>
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/>
-  <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
-</p>
-
-[Repositorio Oficial](https://github.com/Matthew-Garay/Microsoft-Office-Installer) · [Sitio web](https://matthew-garay.github.io/Microsoft-Office-Installer/)
-
-</td>
-<td width="50%" valign="top">
-
-### Directo a Obra
-Plataforma web de comercio electrónico enfocada en la comercialización de materiales de construcción, gestión de inventarios y control de pedidos.
-
-<p>
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP"/>
-  <img src="https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
-</p>
-
-[Repositorio Oficial](https://github.com/Matthew-Garay/Directo-a-Obra)
-
-</td>
-</tr>
-</table>
-
-### Otros proyectos
-
-| Proyecto | Descripción |
-| :--- | :--- |
-| [MG Toolkit](https://github.com/Matthew-Garay/MG-Toolkit) | 64 herramientas de limpieza, optimización, red y reparación para Windows en un solo script ([descargar](https://github.com/Matthew-Garay/MG-Toolkit/releases/latest)) |
-| [Resiliente Chat](https://github.com/Matthew-Garay/resiliente-chat) | Chat web grupal en tiempo real con WebSockets cifrados, Node.js y Docker |
-| [Cifrado Asimétrico RSA](https://github.com/Matthew-Garay/CifradoAsimetrico) | Generación de claves, cifrado y descifrado RSA con la Web Crypto API ([demo](https://matthew-garay.github.io/CifradoAsimetrico/)) |
-| [RedTech](https://github.com/Matthew-Garay/Redtech) | Diseño de red corporativa en Cisco Packet Tracer con VLANs y subneteo VLSM |
-| [Prácticas universitarias](https://github.com/Matthew-Garay/practicas-universidad) | Inteligencia Artificial en Prolog y Analítica de Datos en R |
-
----
-
-## Estadísticas de Actividad
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true" alt="GitHub Stats" />
+  Construyo apps web full-stack y herramientas que automatizan el trabajo de TI.<br>
+  Soporte TI de día, desarrollo de software siempre.
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <img src="https://img.shields.io/badge/TESCo-Ing.%20Sistemas%20Computacionales-1f6feb?style=flat-square" alt="TESCo"/>
+  <img src="https://img.shields.io/badge/Soporte%20TI-REFIVIDRIO-8957e5?style=flat-square" alt="Soporte TI"/>
+  <img src="https://img.shields.io/badge/Cisco-CCNA-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Cisco CCNA"/>
+  <img src="https://img.shields.io/badge/Tec%C3%A1mac-M%C3%A9xico-2ea043?style=flat-square" alt="Ubicación"/>
 </p>
 
 ---
 
-## Contacto
+### Stack
+
+| | |
+| :-- | :-- |
+| **Lenguajes** | <img src="https://skillicons.dev/icons?i=js,ts,python,php,rust,dart,powershell,bash,r&theme=dark#gh-dark-mode-only" alt="Lenguajes" height="40"/><img src="https://skillicons.dev/icons?i=js,ts,python,php,rust,dart,powershell,bash,r&theme=light#gh-light-mode-only" alt="Lenguajes" height="40"/> |
+| **Frontend** | <img src="https://skillicons.dev/icons?i=react,vite,tailwind,bootstrap,flutter,html,css&theme=dark#gh-dark-mode-only" alt="Frontend" height="40"/><img src="https://skillicons.dev/icons?i=react,vite,tailwind,bootstrap,flutter,html,css&theme=light#gh-light-mode-only" alt="Frontend" height="40"/> |
+| **Backend y datos** | <img src="https://skillicons.dev/icons?i=nodejs,express,mysql&theme=dark#gh-dark-mode-only" alt="Backend" height="40"/><img src="https://skillicons.dev/icons?i=nodejs,express,mysql&theme=light#gh-light-mode-only" alt="Backend" height="40"/> <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO"/> <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/> |
+| **Infra y herramientas** | <img src="https://skillicons.dev/icons?i=docker,git,github,windows,linux,vscode&theme=dark#gh-dark-mode-only" alt="Herramientas" height="40"/><img src="https://skillicons.dev/icons?i=docker,git,github,windows,linux,vscode&theme=light#gh-light-mode-only" alt="Herramientas" height="40"/> <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Packet Tracer"/> <img src="https://img.shields.io/badge/Prolog-74283C?style=flat-square" alt="Prolog"/> |
+
+---
+
+### Proyectos
+
+| Proyecto | Qué hace | Stack |
+| :-- | :-- | :-- |
+| [**Precision HelpDesk**](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk) | Mesa de ayuda: tickets, inventario y reportes en tiempo real | React · Node.js · MySQL · Socket.IO |
+| [**IP Inspector**](https://github.com/Matthew-Garay/IP-Scanner) | Escáner de red y puertos con GUI · [descargar](https://github.com/Matthew-Garay/IP-Scanner/releases/latest) | Python · Scapy |
+| [**Remote Support App**](https://github.com/Matthew-Garay/remote-support-app) | Escritorio remoto P2P con video H.264 | Rust · Flutter · WebRTC |
+| [**Office Installer**](https://github.com/Matthew-Garay/Microsoft-Office-Installer) | Instala Office LTSC con GUI o consola · [sitio](https://matthew-garay.github.io/Microsoft-Office-Installer/) | PowerShell |
+| [**MG Toolkit**](https://github.com/Matthew-Garay/MG-Toolkit) | 64 herramientas de limpieza y reparación de Windows · [descargar](https://github.com/Matthew-Garay/MG-Toolkit/releases/latest) | Batch |
+| [**QR Studio**](https://github.com/Matthew-Garay/qr-studio) | Generador de QR personalizable y offline · [demo](https://matthew-garay.github.io/qr-studio/) | JavaScript |
+
+<sub>Más: [Resiliente Chat](https://github.com/Matthew-Garay/resiliente-chat) · [Cifrado RSA](https://matthew-garay.github.io/CifradoAsimetrico/) · [Directo a Obra](https://github.com/Matthew-Garay/Directo-a-Obra) · [RedTech](https://github.com/Matthew-Garay/Redtech) · [Prácticas universitarias](https://github.com/Matthew-Garay/practicas-universidad)</sub>
+
+---
+
+### Actividad
 
 <p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&theme=github_dark&bg_color=00000000&hide_border=false&border_color=30363d#gh-dark-mode-only" height="165" alt="Estadísticas"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&theme=default&bg_color=00000000&hide_border=false&border_color=d0d7de#gh-light-mode-only" height="165" alt="Estadísticas"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&langs_count=8&theme=github_dark&bg_color=00000000&hide_border=false&border_color=30363d#gh-dark-mode-only" height="165" alt="Lenguajes"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&langs_count=8&theme=default&bg_color=00000000&hide_border=false&border_color=d0d7de#gh-light-mode-only" height="165" alt="Lenguajes"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Matthew-Garay&locale=es&theme=github-dark-blue&background=00000000&border=30363d#gh-dark-mode-only" alt="Racha"/>
+  <img src="https://streak-stats.demolab.com?user=Matthew-Garay&locale=es&theme=default&background=00000000&border=d0d7de#gh-light-mode-only" alt="Racha"/>
+</p>
+
+---
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-1911.garay.perez%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-24292f?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8957e5,100:1f6feb&height=90&section=footer" width="100%" alt=""/>
