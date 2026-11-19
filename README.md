@@ -2,12 +2,56 @@
 
 <p align="center">
   <strong>Perfil Híbrido en Tecnologías de la Información</strong><br>
-  <span>Desarrollo de Software | Soporte Técnico Avanzado | Bases de Datos | Infraestructura</span>
+  <span>Soporte de TI · Desarrollo de Software · Bases de Datos · Redes (Cisco CCNA)</span>
 </p>
 
 ---
 
-Especialista en Sistemas Computacionales con un enfoque híbrido que integra el desarrollo de software robusto con la administración de infraestructura y soporte técnico especializado. Competente en el diseño y despliegue de aplicaciones de escritorio y web, optimización de consultas en bases de datos y resolución analítica de problemas complejos a nivel de sistemas y redes.
+## Sobre mí
+
+Auxiliar de soporte de TI en **REFIVIDRIO** y estudiante de los últimos semestres de **Ingeniería en Sistemas Computacionales** en el **Tecnológico de Estudios Superiores de Coacalco (TESCo)**. Vivo en Tecámac, Estado de México.
+
+Combino el **desarrollo de software** (aplicaciones web y de escritorio) con el **soporte técnico**: mantenimiento de hardware y software, administración de bases de datos y redes. Me enfoco en encontrar la causa raíz de cada problema y en hacer que la tecnología sea una herramienta útil para las personas que la usan.
+
+Abierto a oportunidades en **desarrollo de software, infraestructura de TI y administración de sistemas**.
+
+---
+
+## Experiencia
+
+| Puesto | Empresa | Periodo |
+| :--- | :--- | :--- |
+| **Auxiliar de soporte de TI** | REFIVIDRIO Partes de Colisión & Accesorios para Tractocamión | ago. 2026 – actualidad |
+| **Becario de TI** | REFIVIDRIO Partes de Colisión & Accesorios para Tractocamión | mar. 2026 – jul. 2026 |
+
+- Soporte de TI de primera línea: mantenimiento de hardware y software, atención de incidentes e infraestructura.
+- Optimización de reportes en Excel y digitalización de procesos administrativos.
+
+---
+
+## Educación
+
+| Formación | Institución | Periodo |
+| :--- | :--- | :--- |
+| **Ingeniería en Sistemas Computacionales** (últimos semestres) | Tecnológico de Estudios Superiores de Coacalco (TESCo) | 2022 – actualidad |
+| **Técnico en Programación** | Centro de Estudios Tecnológicos Industrial y de Servicios No. 4 (CETIS 4) | 2018 – 2021 |
+
+---
+
+## Certificaciones
+
+| Certificación | Emisor | Fecha |
+| :--- | :--- | :--- |
+| **CCNA: Enterprise Networking, Security, and Automation** | Cisco Networking Academy | ene. 2025 |
+| **CCNA: Switching, Routing, and Wireless Essentials** | Cisco Networking Academy | jul. 2024 |
+| **Technical Support Fundamentals** | Coursera | sep. 2025 |
+| **Python Essentials 1** | Cisco Networking Academy | oct. 2025 |
+| **HTML Essentials** | Cisco Networking Academy | oct. 2025 |
+| **Introduction to IoT** | Cisco Networking Academy | may. 2022 |
+
+Credenciales verificables en [LinkedIn](https://www.linkedin.com/in/matthewgarayperez/).
+
+**Idiomas:** español (nativo) · inglés (básico, Duolingo English Test: 69)
 
 ---
 
