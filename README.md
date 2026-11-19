@@ -15,12 +15,12 @@ Especialista en Sistemas Computacionales con un enfoque híbrido que integra el 
 
 | Área | Tecnologías y Herramientas |
 | :--- | :--- |
-| **Lenguajes Principales** | ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) |
+| **Lenguajes Principales** | ![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) |
 | **Desarrollo Backend & Web** | ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![REST APIs](https://img.shields.io/badge/REST_APIs-005571?style=flat-square&logo=api&logoColor=white) ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socket.io&logoColor=white) |
 | **Desarrollo Frontend & UI** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) |
 | **Bases de Datos & Gestión** | ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
 | **Sistemas & Infraestructura** | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) ![Windows Server](https://img.shields.io/badge/Windows_Server-00A4EF?style=flat-square&logo=windows&logoColor=white) ![Cisco CCNA](https://img.shields.io/badge/Cisco_CCNA-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![TCP/IP](https://img.shields.io/badge/TCP%2FIP-333333?style=flat-square&logo=internetarchive&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
-| **Herramientas & Control** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![TeamViewer](https://img.shields.io/badge/TeamViewer-005EB8?style=flat-square&logo=teamviewer&logoColor=white) |
+| **Herramientas & Control** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) ![TeamViewer](https://img.shields.io/badge/TeamViewer-005EB8?style=flat-square&logo=teamviewer&logoColor=white) |
 
 ---
 
@@ -70,7 +70,7 @@ Aplicación de asistencia técnica remota P2P basada en Flutter y Rust, utilizan
   <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/>
 </p>
 
-[Repositorio Oficial](https://github.com/Matthew-Garay/Remote-Support-App)
+[Repositorio Oficial](https://github.com/Matthew-Garay/remote-support-app)
 
 </td>
 <td width="50%" valign="top">
@@ -80,11 +80,11 @@ Generador y gestor de códigos QR personalizados con soporte para marcas de agua
 
 <p>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3"/>
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5"/>
 </p>
 
-[Repositorio Oficial](https://github.com/Matthew-Garay/QR-Studio)
+[Repositorio Oficial](https://github.com/Matthew-Garay/qr-studio) · [Demo en línea](https://matthew-garay.github.io/qr-studio/)
 
 </td>
 </tr>
@@ -92,14 +92,14 @@ Generador y gestor de códigos QR personalizados con soporte para marcas de agua
 <td width="50%" valign="top">
 
 ### Microsoft Office Installer
-Script y asistente de despliegue automatizado para instalaciones desatendidas de paquetes ofimáticos con registro detallado de eventos.
+Instalador de Microsoft Office (LTSC 2024, 2021, 2019 y 2016) con asistente gráfico y versión de consola, basado en la Office Deployment Tool oficial.
 
 <p>
   <img src="https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell"/>
   <img src="https://img.shields.io/badge/Windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows"/>
 </p>
 
-[Repositorio Oficial](https://github.com/Matthew-Garay/Microsoft-Office-installer)
+[Repositorio Oficial](https://github.com/Matthew-Garay/Microsoft-Office-Installer) · [Sitio web](https://matthew-garay.github.io/Microsoft-Office-Installer/)
 
 </td>
 <td width="50%" valign="top">
@@ -118,6 +118,16 @@ Plataforma web de comercio electrónico enfocada en la comercialización de mate
 </td>
 </tr>
 </table>
+
+### Otros proyectos
+
+| Proyecto | Descripción |
+| :--- | :--- |
+| [MG Toolkit](https://github.com/Matthew-Garay/MG-Toolkit) | 64 herramientas de limpieza, optimización, red y reparación para Windows en un solo script ([descargar](https://github.com/Matthew-Garay/MG-Toolkit/releases/latest)) |
+| [Resiliente Chat](https://github.com/Matthew-Garay/resiliente-chat) | Chat web grupal en tiempo real con WebSockets cifrados, Node.js y Docker |
+| [Cifrado Asimétrico RSA](https://github.com/Matthew-Garay/CifradoAsimetrico) | Generación de claves, cifrado y descifrado RSA con la Web Crypto API ([demo](https://matthew-garay.github.io/CifradoAsimetrico/)) |
+| [RedTech](https://github.com/Matthew-Garay/Redtech) | Diseño de red corporativa en Cisco Packet Tracer con VLANs y subneteo VLSM |
+| [Prácticas universitarias](https://github.com/Matthew-Garay/practicas-universidad) | Inteligencia Artificial en Prolog y Analítica de Datos en R |
 
 ---
 
