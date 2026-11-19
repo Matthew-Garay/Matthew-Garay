@@ -54,7 +54,7 @@ Herramienta de diagnóstico de red desarrollada en Python para el descubrimiento
   <img src="https://img.shields.io/badge/Networking-0078D4?style=flat-square&logo=wireshark&logoColor=white" alt="Networking"/>
 </p>
 
-[Repositorio Oficial](https://github.com/Matthew-Garay/IP-Scanner)
+[Repositorio Oficial](https://github.com/Matthew-Garay/IP-Scanner) · [Descargar .exe](https://github.com/Matthew-Garay/IP-Scanner/releases/latest)
 
 </td>
 </tr>
