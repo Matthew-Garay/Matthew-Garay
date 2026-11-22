@@ -1,106 +1,191 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:8957e5&height=170&section=header&text=Matthew%20Garay&fontColor=ffffff&fontSize=44&fontAlignY=32&desc=Soporte%20de%20TI%20%C2%B7%20Desarrollo%20web%20%C2%B7%20Redes&descAlignY=52&descSize=16" width="100%" alt="Matthew Garay"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:8957e5&height=180&section=header&text=Matthew%20Garay&fontColor=ffffff&fontSize=46&fontAlignY=34&desc=Soporte%20T%C3%A9cnico%20%C2%B7%20Programaci%C3%B3n&descAlignY=55&descSize=17" width="100%" alt="Matthew Garay"/>
 
 <p align="center">
-  Trabajo en soporte técnico de TI y desarrollo herramientas para los problemas que veo todos los días:<br>
-  tickets, inventario de equipos, instalación de software y diagnóstico de red.
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=8B949E&center=true&vCenter=true&width=560&lines=Soporte+t%C3%A9cnico+y+redes;Desarrollo+web+full-stack;Automatizaci%C3%B3n+de+tareas+de+TI;Herramientas+para+Windows" alt="Soporte técnico · Desarrollo web · Automatización"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/TESCo-Ing.%20Sistemas%20Computacionales-1f6feb?style=flat-square" alt="TESCo"/>
-  <img src="https://img.shields.io/badge/Soporte%20TI-RFV%20Truck%20Parts%20(Refividrio)-8957e5?style=flat-square" alt="Soporte TI"/>
-  <img src="https://img.shields.io/badge/Cisco%20NetAcad-CCNA-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Cisco CCNA"/>
-  <img src="https://img.shields.io/badge/Ingl%C3%A9s-B1-6e7781?style=flat-square" alt="Inglés B1"/>
-  <img src="https://img.shields.io/badge/Tec%C3%A1mac-Edo.%20M%C3%A9x.-2ea043?style=flat-square" alt="Ubicación"/>
+  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
 ---
 
-### Sobre mí
+## Lo que hago
 
-- Pasante de **Ingeniería en Sistemas Computacionales** (TESCo, especialidad en **Auditoría Informática y Seguridad de Sistemas**), en proceso de titulación.
-- Desde 2021 reparo y doy mantenimiento a equipos de cómputo. Hice mi residencia en **RFV Truck Parts and Accessories** y al terminarla me integré a su área de TI.
-- Me interesa el punto donde se cruzan el soporte y el desarrollo: automatizar tareas de TI y construir sistemas internos útiles.
-- Busco crecer como **programador web Jr.** o en **soporte / sistemas**.
+<table>
+<tr>
+<td width="50%" valign="top">
 
----
+### Soporte técnico
+- Mantenimiento preventivo y correctivo de hardware
+- Diagnóstico y reparación de PC y laptops
+- Instalación y configuración de Windows y software
+- Impresoras láser y térmicas
+- Redes LAN: cableado, VLAN, subneteo VLSM
+- Mesa de ayuda y atención a usuarios
 
-### Experiencia
+</td>
+<td width="50%" valign="top">
 
-**Soporte Técnico de TI** · RFV Truck Parts and Accessories (Refividrio / Precision Truck Parts) · sep. 2026 – actualidad
-- Soporte de primer nivel a ventas, logística y administración: estaciones de trabajo, impresoras láser y térmicas, red local.
-- Mantenimiento preventivo y correctivo de hardware y software.
+### Programación
+- Aplicaciones web con React y Node.js
+- APIs REST, autenticación JWT y roles
+- Bases de datos MySQL
+- Tiempo real con Socket.IO y WebSockets
+- Scripts de automatización en PowerShell y Batch
+- Apps de escritorio en Python
 
-**Residente profesional de TI** · RFV Truck Parts and Accessories · mar. – jul. 2026 (500 h)
-- Diseñé y desarrollé en solitario la plataforma interna de mesa de ayuda e inventario de TI ([Precision HelpDesk](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)), validada en piloto, incluida una prueba remota en sucursal.
-- El proyecto es mi trabajo de titulación.
-
-**Reparación de equipo de cómputo** · Independiente · 2021 – actualidad
-- Diagnóstico, reparación, formateo y configuración de equipos para clientes particulares.
-
----
-
-### Proyecto principal: Precision HelpDesk
-
-Sistema web de **mesa de ayuda (tickets) y gestión de activos de TI** hecho para una empresa real, siguiendo prácticas de ITIL v4 y Scrum.
-
-| | |
-| :-- | :-- |
-| **Stack** | React 18 · Vite · Tailwind CSS · Node.js · Express · MySQL · Socket.IO · Nodemailer |
-| **Seguridad** | JWT, contraseñas con bcrypt, control de acceso por roles, rate limiting, pruebas contra inyección SQL |
-| **Datos** | Base de datos en 3FN con InnoDB; bloqueos `FOR UPDATE` para evitar descuentos duplicados de inventario |
-| **Resultados medidos** | Imágenes de evidencia comprimidas **más de 90 %** · Dashboard con caché de **85 ms a 3 ms** · Reportes PDF de 1000 tickets en **menos de 2 s** · Límite estable de **~50 peticiones/s** con rechazo controlado |
-| **Estado** | Probado en piloto; el despliegue en producción depende de que la empresa adquiera un servidor |
+</td>
+</tr>
+</table>
 
 ---
 
-### Otros proyectos
+## Proyectos
 
-| Proyecto | Qué hace | Stack | Estado |
-| :-- | :-- | :-- | :-- |
-| [**IP Inspector**](https://github.com/Matthew-Garay/IP-Scanner) | Escáner de red y puertos con GUI para Windows | Python · CustomTkinter | [Release](https://github.com/Matthew-Garay/IP-Scanner/releases/latest) |
-| [**Office Installer**](https://github.com/Matthew-Garay/Microsoft-Office-Installer) | Instala Office LTSC con un comando, con GUI o consola | PowerShell | [Sitio](https://matthew-garay.github.io/Microsoft-Office-Installer/) |
-| [**MG Toolkit**](https://github.com/Matthew-Garay/MG-Toolkit) | Limpieza, optimización y reparación de Windows 10/11 | Batch | [Release](https://github.com/Matthew-Garay/MG-Toolkit/releases/latest) |
-| [**AGS Alert Off**](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert) | Desactiva de forma reversible las alertas de Adobe Genuine Service | PowerShell | [Release](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert/releases/latest) |
-| [**Resiliente Chat**](https://github.com/Matthew-Garay/resiliente-chat) | Chat grupal en tiempo real con WebSockets cifrados | Node.js · Express · Docker | Funcional |
-| [**QR Studio**](https://github.com/Matthew-Garay/qr-studio) | Generador de QR con logo, colores y degradados | JavaScript | [Demo](https://matthew-garay.github.io/qr-studio/) |
-| [**Directo a Obra**](https://github.com/Matthew-Garay/Directo-a-Obra) | Tienda en línea de materiales de construcción | PHP · MySQL | Académico |
-| [**RedTech**](https://github.com/Matthew-Garay/Redtech) | Diseño de red corporativa: VLANs, subneteo VLSM y documentación | Cisco Packet Tracer | Académico |
-| [**Remote Support App**](https://github.com/Matthew-Garay/remote-support-app) | Escritorio remoto P2P para soporte técnico | Rust · Flutter · WebRTC | En desarrollo |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<sub>También: [Cifrado RSA y Diffie-Hellman](https://matthew-garay.github.io/CifradoAsimetrico/) · [Museo Soumaya (PHP)](https://github.com/Matthew-Garay/MuseoSoumaya) · [Prácticas de IA en Prolog y analítica de datos en R](https://github.com/Matthew-Garay/practicas-universidad)</sub>
+### [Precision HelpDesk](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
+Mesa de ayuda e inventario de TI para una empresa real: tickets, insumos, reportes PDF y métricas en tiempo real.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+### [IP Inspector](https://github.com/Matthew-Garay/IP-Scanner)
+Escáner de red y puertos con interfaz gráfica: descubre dispositivos y revisa su seguridad.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-1f6feb?style=flat-square) [![Descargar](https://img.shields.io/badge/Descargar-2ea043?style=flat-square&logo=github&logoColor=white)](https://github.com/Matthew-Garay/IP-Scanner/releases/latest)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Office Installer](https://github.com/Matthew-Garay/Microsoft-Office-Installer)
+Instala Office LTSC 2016 a 2024 con un solo comando, con GUI o consola.
+
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) [![Sitio](https://img.shields.io/badge/Sitio%20web-2ea043?style=flat-square&logo=githubpages&logoColor=white)](https://matthew-garay.github.io/Microsoft-Office-Installer/)
+
+</td>
+<td width="50%" valign="top">
+
+### [MG Toolkit](https://github.com/Matthew-Garay/MG-Toolkit)
+Limpieza, optimización y reparación de Windows 10/11 en un solo archivo.
+
+![Batch](https://img.shields.io/badge/Batch-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white) [![Descargar](https://img.shields.io/badge/Descargar-2ea043?style=flat-square&logo=github&logoColor=white)](https://github.com/Matthew-Garay/MG-Toolkit/releases/latest)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Resiliente Chat](https://github.com/Matthew-Garay/resiliente-chat)
+Chat grupal en tiempo real con WebSockets cifrados e historial.
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+### [AGS Alert Off](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert)
+Quita las alertas de Adobe Genuine Service en Acrobat. Totalmente reversible.
+
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) [![Descargar](https://img.shields.io/badge/Descargar-2ea043?style=flat-square&logo=github&logoColor=white)](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert/releases/latest)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [QR Studio](https://github.com/Matthew-Garay/qr-studio)
+Generador de QR con logo, patrones, colores y degradados.
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) [![Demo](https://img.shields.io/badge/Demo-2ea043?style=flat-square&logo=githubpages&logoColor=white)](https://matthew-garay.github.io/qr-studio/)
+
+</td>
+<td width="50%" valign="top">
+
+### [RedTech](https://github.com/Matthew-Garay/Redtech)
+Diseño de red corporativa: topología, VLANs, subneteo VLSM y documentación.
+
+![Cisco](https://img.shields.io/badge/Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white) ![VLAN](https://img.shields.io/badge/VLAN%20%C2%B7%20VLSM-1BA0D7?style=flat-square)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [Directo a Obra](https://github.com/Matthew-Garay/Directo-a-Obra)
+Tienda en línea de materiales de construcción.
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+
+</td>
+<td width="50%" valign="top">
+
+### [Remote Support App](https://github.com/Matthew-Garay/remote-support-app)
+Escritorio remoto P2P para soporte técnico. *En desarrollo.*
+
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) ![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white)
+
+</td>
+</tr>
+</table>
+
+<p align="center"><sub>Más: <a href="https://matthew-garay.github.io/CifradoAsimetrico/">Cifrado RSA</a> · <a href="https://github.com/Matthew-Garay/MuseoSoumaya">Museo Soumaya</a> · <a href="https://github.com/Matthew-Garay/practicas-universidad">IA en Prolog y datos en R</a></sub></p>
 
 ---
 
-### Tecnologías
-
-**Lo que más uso**
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=js%2Creact%2Cvite%2Ctailwind%2Cnodejs%2Cexpress%2Cmysql%2Cpython%2Cpowershell%2Cgit%2Cgithub%2Cwindows&theme=dark"><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=js%2Creact%2Cvite%2Ctailwind%2Cnodejs%2Cexpress%2Cmysql%2Cpython%2Cpowershell%2Cgit%2Cgithub%2Cwindows&theme=light"><img src="https://skillicons.dev/icons?i=js%2Creact%2Cvite%2Ctailwind%2Cnodejs%2Cexpress%2Cmysql%2Cpython%2Cpowershell%2Cgit%2Cgithub%2Cwindows&theme=light" alt="JavaScript, React, Vite, Tailwind, Node.js, Express, MySQL, Python, PowerShell, Git, GitHub, Windows" height="40"/></picture>
-
-**He trabajado con ellos en proyectos**
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=php%2Cts%2Cbootstrap%2Chtml%2Ccss%2Crust%2Cflutter%2Cdart%2Cr%2Cdocker%2Clinux%2Cbash%2Cvscode&theme=dark"><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=php%2Cts%2Cbootstrap%2Chtml%2Ccss%2Crust%2Cflutter%2Cdart%2Cr%2Cdocker%2Clinux%2Cbash%2Cvscode&theme=light"><img src="https://skillicons.dev/icons?i=php%2Cts%2Cbootstrap%2Chtml%2Ccss%2Crust%2Cflutter%2Cdart%2Cr%2Cdocker%2Clinux%2Cbash%2Cvscode&theme=light" alt="PHP, TypeScript, Bootstrap, HTML, CSS, Rust, Flutter, Dart, R, Docker, Linux, Bash, VS Code" height="40"/></picture>
-
-<img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO"/> <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/> <img src="https://img.shields.io/badge/VB.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="VB.NET"/> <img src="https://img.shields.io/badge/Prolog-74283C?style=flat-square" alt="Prolog"/> <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
-
-**Infraestructura y soporte**
-
-<img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Packet Tracer"/> <img src="https://img.shields.io/badge/VLAN%20%C2%B7%20VLSM-1BA0D7?style=flat-square" alt="VLAN VLSM"/> <img src="https://img.shields.io/badge/Windows%20Server-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows Server"/> <img src="https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white" alt="VMware"/> <img src="https://img.shields.io/badge/VirtualBox-183A61?style=flat-square&logo=virtualbox&logoColor=white" alt="VirtualBox"/> <img src="https://img.shields.io/badge/Mantenimiento%20de%20hardware-6e7781?style=flat-square" alt="Hardware"/> <img src="https://img.shields.io/badge/ITIL%20v4%20(bases)-6e7781?style=flat-square" alt="ITIL"/>
-
----
-
-### Certificaciones y cursos
-
-- **Cisco Networking Academy:** CCNA (Introducción a Redes · Switching, Routing y Wireless) · Introducción a la Ciberseguridad · Soporte y Seguridad de Red · Fundamentos de Análisis de Datos
-- **Google (Coursera):** Fundamentos del Soporte Técnico
-- **AWS:** Cloud Foundations
-- **Santander Open Academy:** Fundamentos de Power BI · Excel básico a intermedio
-
----
+## Lenguajes
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Email-1911.garay.perez%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=js,ts,python,php,powershell,bash,rust,dart,r,html,css&theme=dark"><img src="https://skillicons.dev/icons?i=js,ts,python,php,powershell,bash,rust,dart,r,html,css&theme=light" alt="JavaScript, TypeScript, Python, PHP, PowerShell, Bash, Rust, Dart, R, HTML, CSS"/></picture>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/VB.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="VB.NET"/>
+  <img src="https://img.shields.io/badge/Batch-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white" alt="Batch"/>
+  <img src="https://img.shields.io/badge/Prolog-74283C?style=flat-square" alt="Prolog"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="SQL"/>
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8957e5,100:1f6feb&height=90&section=footer" width="100%" alt=""/>
+## Frameworks y bases de datos
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,vite,tailwind,bootstrap,nodejs,express,flutter,dotnet,mysql&theme=dark"><img src="https://skillicons.dev/icons?i=react,vite,tailwind,bootstrap,nodejs,express,flutter,dotnet,mysql&theme=light" alt="React, Vite, Tailwind, Bootstrap, Node.js, Express, Flutter, .NET, MySQL"/></picture>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO"/>
+  <img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white" alt="SQL Server"/>
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT"/>
+  <img src="https://img.shields.io/badge/WebRTC-333333?style=flat-square&logo=webrtc&logoColor=white" alt="WebRTC"/>
+</p>
+
+## Sistemas, infraestructura y herramientas
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=windows,linux,ubuntu,kali,arch,docker,aws,git,github,vscode,visualstudio,postman&theme=dark"><img src="https://skillicons.dev/icons?i=windows,linux,ubuntu,kali,arch,docker,aws,git,github,vscode,visualstudio,postman&theme=light" alt="Windows, Linux, Ubuntu, Kali, Arch, Docker, AWS, Git, GitHub, VS Code, Visual Studio, Postman"/></picture>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Windows%20Server-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows Server"/>
+  <img src="https://img.shields.io/badge/Cisco%20Packet%20Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white" alt="Cisco Packet Tracer"/>
+  <img src="https://img.shields.io/badge/VMware-607078?style=flat-square&logo=vmware&logoColor=white" alt="VMware"/>
+  <img src="https://img.shields.io/badge/VirtualBox-183A61?style=flat-square&logo=virtualbox&logoColor=white" alt="VirtualBox"/>
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI"/>
+  <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel"/>
+  <img src="https://img.shields.io/badge/Microsoft%20Office-D83B01?style=flat-square&logo=microsoftoffice&logoColor=white" alt="Microsoft Office"/>
+</p>
+
+## Metodologías
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Scrum-6DB33F?style=flat-square" alt="Scrum"/>
+  <img src="https://img.shields.io/badge/Kanban-0079BF?style=flat-square&logo=trello&logoColor=white" alt="Kanban"/>
+  <img src="https://img.shields.io/badge/ITIL%20v4-8957e5?style=flat-square" alt="ITIL v4"/>
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8957e5,100:1f6feb&height=100&section=footer" width="100%" alt=""/>
