@@ -17,8 +17,8 @@
 
 ### Sobre mí
 
-- Estudio **Ingeniería en Sistemas Computacionales** en el TESCo, especialidad en **Auditoría Informática y Seguridad de Sistemas**.
-- Desde 2021 reparo y doy mantenimiento a equipos de cómputo; hoy trabajo en el área de TI de **RFV Truck Parts and Accessories**.
+- Pasante de **Ingeniería en Sistemas Computacionales** (TESCo, especialidad en **Auditoría Informática y Seguridad de Sistemas**), en proceso de titulación.
+- Desde 2021 reparo y doy mantenimiento a equipos de cómputo. Hice mi residencia en **RFV Truck Parts and Accessories** y al terminarla me integré a su área de TI.
 - Me interesa el punto donde se cruzan el soporte y el desarrollo: automatizar tareas de TI y construir sistemas internos útiles.
 - Busco crecer como **programador web Jr.** o en **soporte / sistemas**.
 
@@ -26,10 +26,13 @@
 
 ### Experiencia
 
-**Soporte Técnico de TI** · RFV Truck Parts and Accessories (Refividrio / Precision Truck Parts) · 2026 – actualidad
+**Soporte Técnico de TI** · RFV Truck Parts and Accessories (Refividrio / Precision Truck Parts) · sep. 2026 – actualidad
 - Soporte de primer nivel a ventas, logística y administración: estaciones de trabajo, impresoras láser y térmicas, red local.
 - Mantenimiento preventivo y correctivo de hardware y software.
-- **Residencia profesional (500 h):** diseñé y desarrollé en solitario la plataforma interna de mesa de ayuda e inventario de TI ([Precision HelpDesk](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)), validada en piloto, incluida una prueba remota en sucursal.
+
+**Residente profesional de TI** · RFV Truck Parts and Accessories · mar. – jul. 2026 (500 h)
+- Diseñé y desarrollé en solitario la plataforma interna de mesa de ayuda e inventario de TI ([Precision HelpDesk](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)), validada en piloto, incluida una prueba remota en sucursal.
+- El proyecto es mi trabajo de titulación.
 
 **Reparación de equipo de cómputo** · Independiente · 2021 – actualidad
 - Diagnóstico, reparación, formateo y configuración de equipos para clientes particulares.
