@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="424" viewBox="0 0 880 424" role="img" aria-label="Administrador: Windows PowerShell">
+<style></style>
+<defs><clipPath id="v"><rect width="880" height="424" rx="10"/></clipPath></defs>
+<g clip-path="url(#v)">
+<rect width="880" height="424" fill="#012456"/>
+<rect width="880" height="36" fill="#E8E8E8"/>
+<g transform="translate(14 10)"><rect width="16" height="16" rx="2" fill="#012456"/><path d="M4 4l5 4-5 4" stroke="#EEEDF0" stroke-width="1.8" fill="none"/><path d="M9 12h4" stroke="#EEEDF0" stroke-width="1.8"/></g>
+<text x="40" y="23" fill="#1B1B1B" font-size="13" font-weight="400" xml:space="preserve" font-family="Segoe UI,system-ui,sans-serif">Administrador: Windows PowerShell</text>
+<g stroke="#333" stroke-width="1.2" fill="none">
+<path d="M760 18h10"/>
+<rect x="800" y="13" width="10" height="10"/>
+<path d="M842 13l10 10M852 13l-10 10"/>
+</g>
+<text x="26" y="70" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#EEEDF0">PS C:\WINDOWS\system32&gt; </tspan><tspan fill="#F9F1A5">Get-Service</tspan><tspan fill="#9DA5B4"> -Name </tspan><tspan fill="#61D6D6">Matthew*</tspan></text>
+<text x="26" y="106.0" fill="#EEEDF0" font-size="14.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >Status    Name         DisplayName</text>
+<text x="26" y="130.0" fill="#EEEDF0" font-size="14.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >------    ----         -----------</text>
+<text x="26" y="154.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Soporte      </tspan><tspan fill="#61D6D6">Mantenimiento preventivo y correctivo de hardware</tspan></text>
+<text x="26" y="178.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Soporte      </tspan><tspan fill="#61D6D6">Diagnóstico y reparación de PC y laptops</tspan></text>
+<text x="26" y="202.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Soporte      </tspan><tspan fill="#61D6D6">Instalación y configuración de Windows y software</tspan></text>
+<text x="26" y="226.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Soporte      </tspan><tspan fill="#61D6D6">Impresoras láser y térmicas</tspan></text>
+<text x="26" y="250.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Redes        </tspan><tspan fill="#61D6D6">Cableado, VLAN y subneteo VLSM</tspan></text>
+<text x="26" y="274.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">MesaAyuda    </tspan><tspan fill="#61D6D6">Atención a usuarios y seguimiento de tickets</tspan></text>
+<text x="26" y="298.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Web          </tspan><tspan fill="#61D6D6">Aplicaciones web con React y Node.js</tspan></text>
+<text x="26" y="322.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">API          </tspan><tspan fill="#61D6D6">APIs REST con JWT y permisos por rol</tspan></text>
+<text x="26" y="346.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Datos        </tspan><tspan fill="#61D6D6">Diseño de bases de datos MySQL</tspan></text>
+<text x="26" y="370.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Automatiza   </tspan><tspan fill="#61D6D6">Scripts de automatización en PowerShell y Batch</tspan></text>
+<text x="26" y="394.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#16C60C">Running   </tspan><tspan fill="#EEEDF0">Escritorio   </tspan><tspan fill="#61D6D6">Aplicaciones de escritorio en Python</tspan></text>
+</g>
+<rect x=".5" y=".5" width="879" height="423" rx="10" fill="none" stroke="#2B4F86"/>
+</svg>

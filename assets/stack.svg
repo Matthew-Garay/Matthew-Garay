@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="476" viewBox="0 0 880 476" role="img" aria-label="Windows PowerShell">
+<style></style>
+<defs><clipPath id="v"><rect width="880" height="476" rx="10"/></clipPath></defs>
+<g clip-path="url(#v)">
+<rect width="880" height="476" fill="#012456"/>
+<rect width="880" height="36" fill="#E8E8E8"/>
+<g transform="translate(14 10)"><rect width="16" height="16" rx="2" fill="#012456"/><path d="M4 4l5 4-5 4" stroke="#EEEDF0" stroke-width="1.8" fill="none"/><path d="M9 12h4" stroke="#EEEDF0" stroke-width="1.8"/></g>
+<text x="40" y="23" fill="#1B1B1B" font-size="13" font-weight="400" xml:space="preserve" font-family="Segoe UI,system-ui,sans-serif">Windows PowerShell</text>
+<g stroke="#333" stroke-width="1.2" fill="none">
+<path d="M760 18h10"/>
+<rect x="800" y="13" width="10" height="10"/>
+<path d="M842 13l10 10M852 13l-10 10"/>
+</g>
+<text x="26" y="70" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#EEEDF0">PS C:\Users\matthew&gt; </tspan><tspan fill="#F9F1A5">Get-Stack</tspan><tspan fill="#EEEDF0"> | </tspan><tspan fill="#F9F1A5">Format-List</tspan></text>
+<text x="26" y="106.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Lenguajes     : </tspan><tspan fill="#61D6D6">JavaScript, TypeScript, Python, PHP, PowerShell, Batch, Bash, SQL, Rust,</tspan></text>
+<text x="26" y="130.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">                </tspan><tspan fill="#61D6D6">Dart, R, VB.NET</tspan></text>
+<text x="26" y="154.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Frameworks    : </tspan><tspan fill="#61D6D6">React, Vite, Tailwind CSS, Bootstrap, Node.js, Express, Socket.IO, Flutter</tspan></text>
+<text x="26" y="178.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">BasesDatos    : </tspan><tspan fill="#61D6D6">MySQL, SQL Server</tspan></text>
+<text x="26" y="202.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Sistemas      : </tspan><tspan fill="#61D6D6">Windows 10/11, Windows Server, Ubuntu, Kali Linux, Arch Linux</tspan></text>
+<text x="26" y="226.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Infra         : </tspan><tspan fill="#61D6D6">Redes Cisco, Packet Tracer, VMware, VirtualBox, Docker, AWS</tspan></text>
+<text x="26" y="250.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Herramientas  : </tspan><tspan fill="#61D6D6">Git, GitHub, VS Code, Visual Studio, Postman, Power BI, Excel</tspan></text>
+<text x="26" y="274.0" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Metodologias  : </tspan><tspan fill="#61D6D6">Scrum, Kanban, ITIL v4</tspan></text>
+<text x="26" y="314.8" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#EEEDF0">PS C:\Users\matthew&gt; </tspan><tspan fill="#F9F1A5">Get-Estadisticas</tspan><tspan fill="#9DA5B4"> -Fuente </tspan><tspan fill="#61D6D6">github.com</tspan></text>
+<text x="26" y="350.8" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Repositorios  : </tspan><tspan fill="#EEEDF0">13 públicos</tspan></text>
+<text x="26" y="374.8" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Commits       : </tspan><tspan fill="#EEEDF0">605 en el último año</tspan></text>
+<text x="26" y="398.8" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Actualizado   : </tspan><tspan fill="#EEEDF0">22 nov 2026</tspan></text>
+<text x="26" y="422.8" font-size="14.5" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#9DA5B4">Lenguajes     : </tspan></text>
+<clipPath id="b"><rect x="167.5" y="411.8" width="686.5" height="12" rx="6"/></clipPath><g clip-path="url(#b)"><rect x="167.5" y="411.8" width="348.1" height="12" fill="#F1E05A"/><rect x="515.2" y="411.8" width="169.2" height="12" fill="#7A86B8"/><rect x="683.9" y="411.8" width="72.1" height="12" fill="#3572A5"/><rect x="755.5" y="411.8" width="49.6" height="12" fill="#C1F12E"/><rect x="804.6" y="411.8" width="25.8" height="12" fill="#3178C6"/><rect x="829.9" y="411.8" width="24.6" height="12" fill="#DEA584"/></g>
+<circle cx="172.5" cy="442.8" r="4.5" fill="#F1E05A"/>
+<text x="181.5" y="446.8" fill="#9DA5B4" font-size="12.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >JavaScript 51%</text>
+<circle cx="313.3" cy="442.8" r="4.5" fill="#7A86B8"/>
+<text x="322.3" y="446.8" fill="#9DA5B4" font-size="12.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >PHP 25%</text>
+<circle cx="400.6" cy="442.8" r="4.5" fill="#3572A5"/>
+<text x="409.6" y="446.8" fill="#9DA5B4" font-size="12.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >Python 10%</text>
+<circle cx="510.9" cy="442.8" r="4.5" fill="#C1F12E"/>
+<text x="519.9" y="446.8" fill="#9DA5B4" font-size="12.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >Batch 7%</text>
+<circle cx="605.9" cy="442.8" r="4.5" fill="#3178C6"/>
+<text x="614.9" y="446.8" fill="#9DA5B4" font-size="12.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >TypeScript 4%</text>
+<circle cx="739.0" cy="442.8" r="4.5" fill="#DEA584"/>
+<text x="748.0" y="446.8" fill="#9DA5B4" font-size="12.5" font-weight="400" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" >Rust 4%</text>
+</g>
+<rect x=".5" y=".5" width="879" height="475" rx="10" fill="none" stroke="#2B4F86"/>
+</svg>

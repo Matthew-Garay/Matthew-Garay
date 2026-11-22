@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="325" viewBox="0 0 880 325" role="img" aria-label="Windows PowerShell">
+<style>
+.tapa{transform:translateX(103.6px);animation:teclear 1s steps(10) .35s both}
+@keyframes teclear{from{transform:translateX(0)}to{transform:translateX(103.6px)}}
+.sal{animation:ver .01s linear both}
+@keyframes ver{from{opacity:0}to{opacity:1}}
+.cursor{animation:ver .01s linear 2.15s both,parpadeo 1.1s steps(1) 2.15s infinite}
+@keyframes parpadeo{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.tapa,.sal,.cursor{animation:none}.tapa{display:none}}</style>
+<defs><clipPath id="v"><rect width="880" height="325" rx="10"/></clipPath></defs>
+<g clip-path="url(#v)">
+<rect width="880" height="325" fill="#012456"/>
+<rect width="880" height="36" fill="#E8E8E8"/>
+<g transform="translate(14 10)"><rect width="16" height="16" rx="2" fill="#012456"/><path d="M4 4l5 4-5 4" stroke="#EEEDF0" stroke-width="1.8" fill="none"/><path d="M9 12h4" stroke="#EEEDF0" stroke-width="1.8"/></g>
+<text x="40" y="23" fill="#1B1B1B" font-size="13" font-weight="400" xml:space="preserve" font-family="Segoe UI,system-ui,sans-serif">Windows PowerShell</text>
+<g stroke="#333" stroke-width="1.2" fill="none">
+<path d="M760 18h10"/>
+<rect x="800" y="13" width="10" height="10"/>
+<path d="M842 13l10 10M852 13l-10 10"/>
+</g>
+<text x="26" y="74" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" ><tspan fill="#EEEDF0">PS C:\Users\matthew&gt; </tspan><tspan fill="#F9F1A5">Get-Perfil</tspan></text>
+<rect class="tapa" x="229.96" y="58" width="101.6" height="23" fill="#012456"/>
+<text x="26" y="117.2" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:1.45s"><tspan fill="#9DA5B4">Nombre     </tspan><tspan fill="#9DA5B4">: </tspan><tspan fill="#EEEDF0">Matthew Garay</tspan></text>
+<text x="26" y="144.2" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:1.54s"><tspan fill="#9DA5B4">Rol        </tspan><tspan fill="#9DA5B4">: </tspan><tspan fill="#61D6D6">Soporte técnico y programación</tspan></text>
+<text x="26" y="171.2" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:1.63s"><tspan fill="#9DA5B4">Hago       </tspan><tspan fill="#9DA5B4">: </tspan><tspan fill="#61D6D6">Mesa de ayuda, redes y mantenimiento de equipos</tspan></text>
+<text x="26" y="198.2" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:1.72s"><tspan fill="#9DA5B4">Construyo  </tspan><tspan fill="#9DA5B4">: </tspan><tspan fill="#61D6D6">Aplicaciones web con React, Node.js y MySQL</tspan></text>
+<text x="26" y="225.2" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:1.81s"><tspan fill="#9DA5B4">Automatizo </tspan><tspan fill="#9DA5B4">: </tspan><tspan fill="#61D6D6">Tareas de TI con PowerShell, Batch y Python</tspan></text>
+<text x="26" y="252.2" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:1.90s"><tspan fill="#9DA5B4">Contacto   </tspan><tspan fill="#9DA5B4">: </tspan><tspan fill="#61D6D6">linkedin.com/in/matthewgarayperez</tspan></text>
+<text x="26" y="295.4" font-size="16" font-family="'Cascadia Mono','Cascadia Code',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace" xml:space="preserve" class="sal" style="animation-delay:2.15s"><tspan fill="#EEEDF0">PS C:\Users\matthew&gt; </tspan></text>
+<rect class="cursor" x="232.96" y="281.4" width="9.76" height="19" fill="#EEEDF0"/>
+</g>
+<rect x=".5" y=".5" width="879" height="324" rx="10" fill="none" stroke="#2B4F86"/>
+</svg>
