@@ -11,7 +11,9 @@ Secciones (estilo app de música):
   discografia.svg    título de la sección de áreas
   album-*.svg        un álbum por área de trabajo
   creditos.svg       stack técnico
-  resumen.svg        "Tu año en código": contribuciones, racha y lenguajes
+  trayectoria.svg    experiencia, como fechas de gira
+  certificaciones.svg cursos y certificaciones
+  resumen.svg        "Un año en GitHub": contribuciones, racha y lenguajes
   barra.svg          barra de reproducción
 """
 import json
@@ -266,7 +268,7 @@ def svg_resumen(d):
     W, H = 880, 520
     p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
          f'<rect width="{W}" height="{H}" rx="12" fill="url(#rs)"/>']
-    p.append(txt(32, 58, "Tu año en código", R_FG, 36, 800, extra='letter-spacing="-1"'))
+    p.append(txt(32, 58, "Un año en GitHub", R_FG, 36, 800, extra='letter-spacing="-1"'))
     p.append(txt(32, 84, "Contribuciones en GitHub durante los últimos 12 meses", R_SUB, 14.5))
 
     # forma de onda semanal
@@ -309,7 +311,7 @@ def svg_resumen(d):
     # lenguajes
     y = 392
     p.append(f'<line x1="32" x2="{W - 32}" y1="{y - 22}" y2="{y - 22}" stroke="{R_LINEA}"/>')
-    p.append(txt(32, y + 6, "Tus lenguajes más usados", R_FG, 16, 700))
+    p.append(txt(32, y + 6, "Lenguajes más usados", R_FG, 16, 700))
     total = sum(b for _, b in d["lenguajes"]) or 1
     top = d["lenguajes"][:5]
     col_w = (W - 64) / 5
@@ -326,7 +328,7 @@ def svg_resumen(d):
                  "#7A7A7A", 11.5, extra='text-anchor="end"'))
     defs = ('<radialGradient id="rs" cx="0.85" cy="0" r="0.9"><stop offset="0" stop-color="#1ED760" stop-opacity=".22"/>'
             '<stop offset="1" stop-color="#1ED760" stop-opacity="0"/></radialGradient>')
-    return svg(W, H, "".join(p), f"Tu año en código: {d['commits_anio']} commits, racha de {mayor} días", defs=defs)
+    return svg(W, H, "".join(p), f"Un año en GitHub: {d['commits_anio']} commits, racha de {mayor} días", defs=defs)
 
 
 # ================================================================ página de artista
@@ -400,9 +402,7 @@ def svg_artista(d):
         p.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#mono)"/>')
         p.append(txt(cx, cy + 22, "MG", R_FG, 64, 800, extra='text-anchor="middle" letter-spacing="-2"'))
     x = 262
-    p.append(f'<circle cx="{x + 9}" cy="82" r="9" fill="#3D91F4"/><path d="M{x + 5} 82l3 3 6-6" stroke="#fff" '
-             f'stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
-    p.append(txt(x + 26, 87, "Perfil profesional de TI", R_FG, 14, 600))
+    p.append(txt(x, 87, "Técnico de soporte y desarrollador", R_FG, 14, 600))
     p.append(txt(x - 4, 168, "Matthew Garay", R_FG, 70, 800, extra='letter-spacing="-2.5"'))
     p.append(txt(x, 204, f"{d['commits_anio']} commits en el último año  •  {len(d['repos'])} repositorios públicos",
                  R_FG, 15.5, 500))
@@ -434,14 +434,13 @@ def svg_artista(d):
 
 
 BIO = [
-    "Trabajo entre el hardware y el código. Desde 2021 diagnostico, reparo y doy mantenimiento a "
-    "equipos de cómputo, y hoy formo parte del área de TI de una empresa, donde atiendo la mesa de "
-    "ayuda, las impresoras y la red.",
-    "Cuando una tarea se repite, la automatizo; cuando falta una herramienta, la construyo: "
-    "aplicaciones web con React y Node.js, bases de datos MySQL bien diseñadas y scripts en "
-    "PowerShell, Batch y Python que le ahorran tiempo al equipo de soporte.",
-    "Me importa que la tecnología funcione para quien la usa: equipos estables, tickets con "
-    "seguimiento y datos en orden.",
+    "Matthew Garay trabaja en el área de TI de RFV Truck Parts and Accessories desde septiembre de 2026. "
+    "Atiende los reportes de los usuarios, da mantenimiento a las computadoras e impresoras y revisa la red local.",
+    "Repara equipos de cómputo desde 2021, cuando empezó a hacerlo por su cuenta. Con el tiempo pasó a escribir "
+    "sus propias herramientas para el trabajo de soporte: MG Toolkit para el mantenimiento de Windows, "
+    "Office Installer para instalar Office con un comando e IP Inspector para revisar los equipos de una red.",
+    "En su residencia profesional en la misma empresa desarrolló Precision HelpDesk, el sistema de tickets "
+    "e inventario de TI que hoy está en prueba piloto. Lo hizo con React, Node.js y MySQL.",
 ]
 
 
@@ -569,6 +568,73 @@ def svg_barra(n_proyectos, total_commits):
     return svg(W, H, "".join(p), "Reproduciendo: Proyectos de Matthew Garay")
 
 
+TRAYECTORIA = [
+    ("sep", "2026", "Soporte técnico de TI", "RFV Truck Parts and Accessories", "actual"),
+    ("mar", "2026", "Residencia profesional, 500 horas",
+     "RFV Truck Parts and Accessories. Ahí desarrolló Precision HelpDesk", None),
+    ("abr", "2025", "Servicio social", "Tecnológico de Estudios Superiores de Coacalco", None),
+    ("ene", "2021", "Reparación de equipo de cómputo", "Por su cuenta, con clientes particulares", "actual"),
+]
+
+CERTIFICACIONES = [
+    ("CCNA: Introducción a Redes", "Cisco Networking Academy", "C", "#049FD9"),
+    ("CCNA: Switching, Routing y Wireless Essentials", "Cisco Networking Academy", "C", "#049FD9"),
+    ("Introducción a la Ciberseguridad", "Cisco Networking Academy", "C", "#049FD9"),
+    ("Soporte y Seguridad de Red", "Cisco Networking Academy", "C", "#049FD9"),
+    ("Fundamentos de Análisis de Datos", "Cisco Networking Academy", "C", "#049FD9"),
+    ("Fundamentos del Soporte Técnico", "Google, en Coursera", "G", "#4285F4"),
+    ("Cloud Foundations", "AWS Academy", "A", "#FF9900"),
+    ("Fundamentos de Power BI", "Santander Open Academy", "S", "#EC0000"),
+    ("Excel básico a intermedio", "Santander Open Academy", "S", "#EC0000"),
+]
+
+
+def svg_trayectoria():
+    W = 880
+    fila = 72
+    H = 84 + len(TRAYECTORIA) * fila + 12
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
+         txt(32, 50, "Trayectoria", R_FG, 24, 800, extra='letter-spacing="-.5"')]
+    y = 76
+    for mes, anio, titulo, lugar, etiqueta in TRAYECTORIA:
+        p.append(f'<rect x="32" y="{y + 8}" width="56" height="56" rx="6" fill="{R_PANEL}"/>')
+        p.append(txt(60, y + 30, mes, R_SUB, 12.5, 600, extra='text-anchor="middle"'))
+        p.append(txt(60, y + 52, anio, R_FG, 17, 800, extra='text-anchor="middle"'))
+        p.append(txt(108, y + 32, titulo, R_FG, 16, 600))
+        p.append(txt(108, y + 53, lugar, R_SUB, 13.5))
+        if etiqueta:
+            ancho = len(etiqueta) * 12.5 * 0.6 + 26
+            p.append(f'<rect x="{W - 32 - ancho:.0f}" y="{y + 22}" width="{ancho:.0f}" height="28" rx="14" '
+                     f'fill="none" stroke="{R_VERDE}"/>')
+            p.append(txt(W - 32 - ancho / 2, y + 40.5, etiqueta, R_VERDE, 12.5, 600, extra='text-anchor="middle"'))
+        y += fila
+    etiqueta = "Trayectoria: " + "; ".join(f"{m} {a}, {t}, {l}" for m, a, t, l, _ in TRAYECTORIA)
+    return svg(W, H, "".join(p), etiqueta)
+
+
+def svg_certificaciones():
+    W = 880
+    cols, gap = 3, 16
+    cw = (W - 64 - gap * (cols - 1)) / cols
+    chh = 92
+    filas = (len(CERTIFICACIONES) + cols - 1) // cols
+    H = int(76 + filas * (chh + gap) + 16)
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
+         txt(32, 50, "Certificaciones", R_FG, 24, 800, extra='letter-spacing="-.5"')]
+    for i, (nombre, emisor, letra, color) in enumerate(CERTIFICACIONES):
+        x = 32 + (i % cols) * (cw + gap)
+        y = 76 + (i // cols) * (chh + gap)
+        p.append(f'<rect x="{x:.1f}" y="{y}" width="{cw:.1f}" height="{chh}" rx="8" fill="{R_PANEL}"/>')
+        p.append(f'<rect x="{x + 14:.1f}" y="{y + 14}" width="40" height="40" rx="6" fill="{color}"/>')
+        p.append(txt(x + 34, y + 41, letra, "#fff", 19, 800, extra='text-anchor="middle"'))
+        lineas = envolver(nombre, 25)[:2]
+        for j, l in enumerate(lineas):
+            p.append(txt(x + 66, y + 30 + j * 18, l, R_FG, 13.5, 600))
+        p.append(txt(x + 66, y + 30 + len(lineas) * 18 + 4, emisor, R_SUB, 12))
+    etiqueta = "Certificaciones: " + "; ".join(f"{n} ({e})" for n, e, _, _ in CERTIFICACIONES)
+    return svg(W, H, "".join(p), etiqueta)
+
+
 # ================================================================ main
 def main():
     SALIDA.mkdir(exist_ok=True)
@@ -582,6 +648,8 @@ def main():
     for i, (titulo, icono, colores, pistas) in enumerate(ALBUMES, 1):
         (SALIDA / f"album-{i}.svg").write_text(svg_album(titulo, icono, colores, pistas, i), encoding="utf-8")
     (SALIDA / "creditos.svg").write_text(svg_creditos(), encoding="utf-8")
+    (SALIDA / "trayectoria.svg").write_text(svg_trayectoria(), encoding="utf-8")
+    (SALIDA / "certificaciones.svg").write_text(svg_certificaciones(), encoding="utf-8")
     total = sum(repos.get(pista[0], {}).get("_commits", 0) for pista in PISTAS)
     (SALIDA / "barra.svg").write_text(svg_barra(len(PISTAS), total), encoding="utf-8")
     (SALIDA / "playlist.svg").write_text(svg_playlist(total), encoding="utf-8")
