@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/perfil.svg" width="100%" alt="Matthew Garay. Soporte técnico, mantenimiento y desarrollo de software: diagnóstico y reparación de equipos; mesa de ayuda, Windows, impresoras y redes; aplicaciones web con React, Node.js y APIs REST; bases de datos MySQL y SQL Server; automatización con PowerShell, Batch y Python."/>
+  <img src="assets/artista.svg" width="100%" alt="Matthew Garay. Perfil profesional de TI: mantenimiento, soporte técnico, programación y bases de datos."/>
 </p>
 
 <p align="center">
-  <img src="assets/servicios.svg" width="100%" alt="Áreas de trabajo. Mantenimiento: diagnóstico de fallas, mantenimiento preventivo, cambio de componentes. Soporte: mesa de ayuda, instalación de Windows y Office, impresoras y redes. Programación: aplicaciones web, APIs REST, automatización. Bases de datos: modelado y normalización, MySQL y SQL Server, reportes con Power BI."/>
+  <img src="assets/acerca.svg" width="100%" alt="Acerca de. Soporte técnico, mantenimiento y desarrollo de software: diagnóstico y reparación de equipos; mesa de ayuda, Windows, impresoras y redes LAN; aplicaciones web con React, Node.js y APIs REST; diseño y administración de MySQL y SQL Server; scripts de TI en PowerShell, Batch y Python."/>
 </p>
 
 <p align="center">
@@ -176,12 +176,32 @@
 <br/>
 
 <p align="center">
+  <img src="assets/discografia.svg" width="100%" alt="Discografía: cuatro álbumes, uno por área de trabajo"/>
+</p>
+
+<p align="center">
+  <img src="assets/album-1.svg" width="49%" alt="Álbum Mantenimiento y reparación: diagnóstico de fallas de hardware y software, limpieza interna y mantenimiento preventivo, cambio de componentes (RAM, SSD y discos), formateo, respaldo y recuperación de datos, optimización y reparación de Windows."/>
+  <img src="assets/album-2.svg" width="49%" alt="Álbum Soporte técnico: mesa de ayuda y atención a usuarios, instalación de Windows, Office y controladores, impresoras láser y térmicas, redes LAN (cableado, VLAN y subneteo VLSM), despliegue automatizado con PowerShell."/>
+  <img src="assets/album-3.svg" width="49%" alt="Álbum Programación: aplicaciones web con React, Vite y Tailwind, APIs REST con Node.js y Express, autenticación JWT y permisos por rol, tiempo real con Socket.IO y WebSockets, aplicaciones de escritorio en Python."/>
+  <img src="assets/album-4.svg" width="49%" alt="Álbum Bases de datos: modelado entidad-relación, normalización hasta tercera forma normal, MySQL y SQL Server, transacciones y control de concurrencia, reportes y análisis con Power BI."/>
+</p>
+
+<p align="center">
+  <img src="assets/creditos.svg" width="100%" alt="Créditos. Lenguajes: JavaScript, TypeScript, Python, PHP, SQL, PowerShell, Batch, Bash, VB.NET, Rust, Dart, R. Frameworks: React, Vite, Tailwind CSS, Bootstrap, Node.js, Express, Socket.IO, Flutter. Bases de datos: MySQL, SQL Server. Sistemas: Windows, Windows Server, Ubuntu, Kali, Arch. Infraestructura: Cisco, Packet Tracer, VMware, VirtualBox, Docker, AWS. Herramientas: Git, VS Code, Visual Studio, Postman, Power BI, Excel."/>
+</p>
+
+<p align="center">
   <img src="assets/resumen.svg" width="100%" alt="Tu año en código: commits, contribuciones, racha más larga, día más productivo y lenguajes más usados en GitHub."/>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-121212?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Correo-121212?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
+  <a href="https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk"><img src="assets/barra.svg" width="100%" alt="Reproduciendo: Precision HelpDesk"/></a>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/Conectar_en_LinkedIn-1ED760?style=for-the-badge&logo=linkedin&logoColor=black" alt="Conectar en LinkedIn"/></a>
+  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Enviar_correo-121212?style=for-the-badge&logo=gmail&logoColor=white" alt="Enviar correo"/></a>
+  <a href="https://github.com/Matthew-Garay?tab=repositories"><img src="https://img.shields.io/badge/Ver_repositorios-121212?style=for-the-badge&logo=github&logoColor=white" alt="Ver repositorios"/></a>
 </p>
 
 <p align="center"><sub>Haz clic en un proyecto de la playlist para ver su ficha técnica. Los gráficos se generan con datos reales de GitHub mediante <a href="scripts/generar.py">scripts/generar.py</a>.</sub></p>

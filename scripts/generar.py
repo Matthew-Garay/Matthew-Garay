@@ -320,7 +320,7 @@ def svg_reproductor(repo):
     p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
          f'<rect width="{W}" height="300" rx="12" fill="url(#cab)"/>']
     p.append(portada(32, 36, 200, pista[6], pista[7], "rep", 6))
-    p.append(txt(262, 72, "Proyecto destacado", R_FG, 13, 600))
+    p.append(txt(262, 72, "Sonando ahora: proyecto destacado", R_FG, 13, 600))
     p.append(txt(258, 128, "Precision HelpDesk", R_FG, 50, 800, extra='letter-spacing="-1"'))
     p.append(txt(262, 164, "Mesa de ayuda y gestión de activos de TI para RFV Truck Parts", R_SUB, 15.5))
     meta = f"Matthew Garay  •  2026  •  {repo['_commits']} commits  •  proyecto de titulación"
@@ -524,6 +524,213 @@ def svg_resumen(d):
     return svg(W, H, "".join(p), f"Tu año en código: {d['commits_anio']} commits, racha de {mayor} días", defs=defs)
 
 
+# ================================================================ página de artista
+# Cambia a True cuando subas una foto real a tu perfil de GitHub.
+USAR_FOTO = False
+
+ICONOS.update({
+    "codigo": '<path d="M38 32L20 50l18 18M62 32l18 18-18 18M55 26L45 74"/>',
+    "base": ('<ellipse cx="50" cy="28" rx="24" ry="8"/><path d="M26 28v44c0 4 11 8 24 8s24-4 24-8V28"/>'
+             '<path d="M26 50c0 4 11 8 24 8s24-4 24-8"/>'),
+    "soporte": ('<path d="M26 56v-8a24 24 0 0 1 48 0v8"/><rect x="20" y="54" width="12" height="18" rx="4"/>'
+                '<rect x="68" y="54" width="12" height="18" rx="4"/><path d="M74 72c0 6-8 8-18 8"/>'),
+})
+
+ALBUMES = [
+    ("Mantenimiento y reparación", "llave", ("#EA580C", "#431407"), [
+        "Diagnóstico de fallas de hardware y software",
+        "Limpieza interna y mantenimiento preventivo",
+        "Cambio de componentes: RAM, SSD y discos",
+        "Formateo, respaldo y recuperación de datos",
+        "Optimización y reparación de Windows",
+    ]),
+    ("Soporte técnico", "soporte", ("#2563EB", "#0B1E4A"), [
+        "Mesa de ayuda y atención a usuarios",
+        "Instalación de Windows, Office y controladores",
+        "Impresoras láser y térmicas",
+        "Redes LAN: cableado, VLAN y subneteo VLSM",
+        "Despliegue automatizado con PowerShell",
+    ]),
+    ("Programación", "codigo", ("#16A34A", "#052E16"), [
+        "Aplicaciones web con React, Vite y Tailwind",
+        "APIs REST con Node.js y Express",
+        "Autenticación JWT y permisos por rol",
+        "Tiempo real con Socket.IO y WebSockets",
+        "Aplicaciones de escritorio en Python",
+    ]),
+    ("Bases de datos", "base", ("#7C3AED", "#2E1065"), [
+        "Modelado entidad-relación",
+        "Normalización hasta tercera forma normal",
+        "MySQL y SQL Server",
+        "Transacciones y control de concurrencia",
+        "Reportes y análisis con Power BI",
+    ]),
+]
+
+
+def foto_base64():
+    if not USAR_FOTO:
+        return None
+    try:
+        req = urllib.request.Request(f"https://github.com/{USUARIO}.png?size=360",
+                                     headers={"User-Agent": "perfil-generador"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            import base64
+            return base64.b64encode(r.read()).decode()
+    except Exception:
+        return None
+
+
+def svg_artista(d):
+    W, H = 880, 372
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="url(#art)"/>',
+         f'<rect width="{W}" height="{H}" rx="12" fill="url(#luz)"/>']
+    cx, cy, r = 130, 160, 92
+    foto = foto_base64()
+    p.append(f'<circle cx="{cx}" cy="{cy + 6}" r="{r}" fill="#000" opacity=".35"/>')
+    if foto:
+        p.append(f'<image href="data:image/png;base64,{foto}" x="{cx - r}" y="{cy - r}" width="{2 * r}" '
+                 f'height="{2 * r}" clip-path="url(#av)" preserveAspectRatio="xMidYMid slice"/>')
+    else:
+        p.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#mono)"/>')
+        p.append(txt(cx, cy + 22, "MG", R_FG, 64, 800, extra='text-anchor="middle" letter-spacing="-2"'))
+    x = 262
+    p.append(f'<circle cx="{x + 9}" cy="82" r="9" fill="#3D91F4"/><path d="M{x + 5} 82l3 3 6-6" stroke="#fff" '
+             f'stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
+    p.append(txt(x + 26, 87, "Perfil profesional de TI", R_FG, 14, 600))
+    p.append(txt(x - 4, 168, "Matthew Garay", R_FG, 70, 800, extra='letter-spacing="-2.5"'))
+    p.append(txt(x, 204, f"{d['commits_anio']} commits en el último año  •  {len(d['repos'])} repositorios públicos",
+                 R_FG, 15.5, 500))
+    # áreas
+    ax = x
+    for nombre, color in [("Mantenimiento", "#F59B23"), ("Soporte técnico", "#4CB3FF"),
+                          ("Programación", "#1ED760"), ("Bases de datos", "#B49BFF")]:
+        ancho = len(nombre) * 13 * 0.56 + 34
+        p.append(f'<rect x="{ax}" y="226" width="{ancho:.0f}" height="30" rx="15" fill="#000" fill-opacity=".35" '
+                 f'stroke="#fff" stroke-opacity=".18"/>')
+        p.append(f'<circle cx="{ax + 15}" cy="241" r="4.5" fill="{color}"/>')
+        p.append(txt(ax + 26, 245.5, nombre, R_FG, 13, 600))
+        ax += ancho + 8
+    # controles
+    y = 316
+    p.append(f'<circle cx="68" cy="{y}" r="28" fill="{R_VERDE}"/><path d="M60 {y - 13}v26l21-13z" fill="#000"/>')
+    p.append(f'<rect x="116" y="{y - 16}" width="84" height="32" rx="16" fill="none" stroke="#fff" stroke-opacity=".6"/>')
+    p.append(txt(158, y + 5, "Seguir", R_FG, 13.5, 700, extra='text-anchor="middle"'))
+    p.append(f'<g fill="{R_SUB}"><circle cx="226" cy="{y}" r="2.5"/><circle cx="236" cy="{y}" r="2.5"/>'
+             f'<circle cx="246" cy="{y}" r="2.5"/></g>')
+    p.append(txt(W - 32, y + 5, "Tecámac, Estado de México", R_SUB, 13.5, extra='text-anchor="end"'))
+    defs = (f'<linearGradient id="art" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F5132"/>'
+            f'<stop offset=".75" stop-color="{R_BG}"/></linearGradient>'
+            f'<radialGradient id="luz" cx=".15" cy=".1" r=".7"><stop offset="0" stop-color="#1ED760" stop-opacity=".28"/>'
+            f'<stop offset="1" stop-color="#1ED760" stop-opacity="0"/></radialGradient>'
+            f'<linearGradient id="mono" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1ED760"/>'
+            f'<stop offset="1" stop-color="#0B4F2B"/></linearGradient>'
+            f'<clipPath id="av"><circle cx="{cx}" cy="{cy}" r="{r}"/></clipPath>')
+    return svg(W, H, "".join(p), "Matthew Garay: soporte técnico, mantenimiento, programación y bases de datos", defs=defs)
+
+
+def svg_acerca():
+    W = 880
+    consola = svg_perfil()
+    import re
+    m = re.search(r'height="(\d+)" viewBox="0 0 880 (\d+)"', consola)
+    alto_c = int(m.group(2))
+    ancho_i = W - 64
+    alto_i = alto_c * ancho_i / 880
+    interior = consola.replace('<svg xmlns="http://www.w3.org/2000/svg" width="880"',
+                               f'<svg x="32" y="76" width="{ancho_i}"', 1)
+    interior = interior.replace(f'height="{alto_c}" viewBox', f'height="{alto_i:.0f}" viewBox', 1)
+    H = int(76 + alto_i + 32)
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
+         txt(32, 50, "Acerca de", R_FG, 24, 800, extra='letter-spacing="-.5"'), interior]
+    return svg(W, H, "".join(p), "Acerca de Matthew Garay")
+
+
+def svg_album(titulo, icono, colores, pistas, uid):
+    W, H = 430, 334
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_PANEL}"/>',
+         f'<rect width="{W}" height="140" rx="12" fill="url(#ab{uid})" opacity=".55"/>']
+    p.append(portada(22, 22, 100, icono, colores, f"al{uid}", 6))
+    p.append(txt(140, 48, "Álbum", R_FG, 12.5, 600))
+    lineas = envolver(titulo, 20)
+    for i, linea in enumerate(lineas):
+        p.append(txt(138, 80 + i * 26, linea, R_FG, 24, 800, extra='letter-spacing="-.6"'))
+    p.append(txt(140, 80 + len(lineas) * 26 + 4, f"Matthew Garay  •  {len(pistas)} canciones", R_SUB, 12.5))
+    y = 166
+    for i, pista in enumerate(pistas, 1):
+        p.append(txt(36, y, i, R_SUB, 13.5, extra='text-anchor="end"'))
+        p.append(txt(54, y, pista, R_FG, 13.5))
+        y += 34
+    defs = (f'<linearGradient id="ab{uid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{colores[0]}"/>'
+            f'<stop offset="1" stop-color="{R_PANEL}"/></linearGradient>')
+    return svg(W, H, "".join(p), f"{titulo}: " + ", ".join(pistas), defs=defs)
+
+
+def svg_seccion(titulo, subtitulo=""):
+    W, H = 880, 70
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
+         txt(32, 44, titulo, R_FG, 24, 800, extra='letter-spacing="-.5"')]
+    if subtitulo:
+        p.append(txt(W - 32, 44, subtitulo, R_SUB, 13.5, extra='text-anchor="end"'))
+    return svg(W, H, "".join(p), titulo)
+
+
+def svg_creditos():
+    W = 880
+    grupos = [
+        ("Lenguajes", "JavaScript, TypeScript, Python, PHP, SQL, PowerShell, Batch, Bash, VB.NET, Rust, Dart, R"),
+        ("Frameworks y librerías", "React, Vite, Tailwind CSS, Bootstrap, Node.js, Express, Socket.IO, Flutter, CustomTkinter"),
+        ("Bases de datos", "MySQL, SQL Server"),
+        ("Sistemas operativos", "Windows 10/11, Windows Server, Ubuntu, Kali Linux, Arch Linux"),
+        ("Infraestructura y redes", "Cisco (VLAN, VLSM, enrutamiento), Packet Tracer, VMware, VirtualBox, Docker, AWS"),
+        ("Herramientas", "Git, GitHub, VS Code, Visual Studio, Postman, Power BI, Excel, Microsoft Office"),
+        ("Metodologías", "Scrum, Kanban, ITIL v4"),
+        ("Hardware", "Diagnóstico, reemplazo de componentes, impresoras láser y térmicas, cableado estructurado"),
+    ]
+    col_w = (W - 64 - 32) / 2
+    p = [txt(32, 50, "Créditos", R_FG, 24, 800, extra='letter-spacing="-.5"')]
+    alturas = [0, 0]
+    for i, (rol, valor) in enumerate(grupos):
+        c = i % 2
+        x = 32 + c * (col_w + 32)
+        y = 92 + alturas[c]  # primera fila justo debajo del título
+        p.append(txt(x, y, rol, R_FG, 15, 700))
+        lineas = envolver(valor, 54)
+        for j, l in enumerate(lineas):
+            p.append(txt(x, y + 22 + j * 19, l, R_SUB, 13.5))
+        alturas[c] += 22 + len(lineas) * 19 + 22
+    H = int(92 + max(alturas) + 6)
+    return svg(W, H, f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>' + "".join(p), "Créditos: stack técnico")
+
+
+def svg_barra(repo):
+    W, H = 880, 88
+    pista = PISTAS[0]
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="#000"/>',
+         f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="12" fill="none" stroke="#282828"/>']
+    p.append(portada(18, 16, 56, pista[6], pista[7], "bar", 4))
+    p.append(txt(88, 40, pista[1], R_FG, 14, 600))
+    p.append(txt(88, 60, "Matthew Garay", R_SUB, 12.5))
+    p.append(f'<path d="M252 33a6 6 0 0 1 9 0 6 6 0 0 1 9 0c0 6-9 12-9 12s-9-6-9-12z" fill="{R_VERDE}"/>')
+    cx = W / 2
+    g = (f'<g stroke="{R_SUB}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">'
+         f'<path d="M{cx - 100} 26h5l12 12h7M{cx - 100} 38h5l12-12h7M{cx - 80} 22l4 4-4 4M{cx - 80} 34l4 4-4 4"/>'
+         f'<path d="M{cx - 44} 25v14M{cx - 30} 25l-11 7 11 7z" fill="{R_SUB}"/>'
+         f'<path d="M{cx + 44} 25v14M{cx + 30} 25l11 7-11 7z" fill="{R_SUB}"/>'
+         f'<path d="M{cx + 74} 30v-2a4 4 0 0 1 4-4h14l-3-3M{cx + 96} 34v2a4 4 0 0 1-4 4H{cx + 78}l3 3"/></g>')
+    p.append(g)
+    p.append(f'<circle cx="{cx}" cy="32" r="16" fill="#fff"/><path d="M{cx - 5} 25v14M{cx + 5} 25v14" '
+             f'stroke="#000" stroke-width="3.2" stroke-linecap="round"/>')
+    bx, bw = cx - 200, 400
+    avance = 0.8
+    p.append(txt(bx - 12, 68, "Piloto", R_SUB, 11, extra='text-anchor="end"'))
+    p.append(f'<rect x="{bx}" y="62" width="{bw}" height="4" rx="2" fill="#4D4D4D"/>')
+    p.append(f'<rect x="{bx}" y="62" width="{bw * avance}" height="4" rx="2" fill="#fff"/>')
+    p.append(txt(bx + bw + 12, 68, "Producción", R_SUB, 11))
+    p.append(txt(W - 24, 50, f"{repo.get('_commits', 0)} commits", R_SUB, 12, extra='text-anchor="end"'))
+    return svg(W, H, "".join(p), "Reproduciendo: Precision HelpDesk")
+
+
 # ================================================================ main
 def main():
     SALIDA.mkdir(exist_ok=True)
@@ -531,8 +738,13 @@ def main():
         viejo.unlink()
     d = cargar_datos()
     repos = d["repos"]
-    (SALIDA / "perfil.svg").write_text(svg_perfil(), encoding="utf-8")
-    (SALIDA / "servicios.svg").write_text(svg_servicios(), encoding="utf-8")
+    (SALIDA / "artista.svg").write_text(svg_artista(d), encoding="utf-8")
+    (SALIDA / "acerca.svg").write_text(svg_acerca(), encoding="utf-8")
+    (SALIDA / "discografia.svg").write_text(svg_seccion("Discografía", "4 álbumes, uno por área de trabajo"), encoding="utf-8")
+    for i, (titulo, icono, colores, pistas) in enumerate(ALBUMES, 1):
+        (SALIDA / f"album-{i}.svg").write_text(svg_album(titulo, icono, colores, pistas, i), encoding="utf-8")
+    (SALIDA / "creditos.svg").write_text(svg_creditos(), encoding="utf-8")
+    (SALIDA / "barra.svg").write_text(svg_barra(repos[PISTAS[0][0]]), encoding="utf-8")
     (SALIDA / "reproductor.svg").write_text(svg_reproductor(repos[PISTAS[0][0]]), encoding="utf-8")
     total = sum(repos.get(pista[0], {}).get("_commits", 0) for pista in PISTAS)
     (SALIDA / "playlist.svg").write_text(svg_playlist(total), encoding="utf-8")
