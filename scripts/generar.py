@@ -11,8 +11,6 @@ Secciones (estilo app de música):
   discografia.svg    título de la sección de áreas
   album-*.svg        un álbum por área de trabajo
   creditos.svg       stack técnico
-  trayectoria.svg    experiencia, como fechas de gira
-  certificaciones.svg cursos y certificaciones
   resumen.svg        "Un año en GitHub": contribuciones, racha y lenguajes
   barra.svg          barra de reproducción
 """
@@ -45,7 +43,7 @@ AREAS = {
 
 # repo, título, descripción corta, área, tecnologías, estado, icono, colores de portada
 PISTAS = [
-    ("Precision-Truck-Parts---Help-Desk", "Precision HelpDesk", "Mesa de ayuda e inventario de TI en empresa",
+    ("Precision-Truck-Parts---Help-Desk", "Precision HelpDesk", "Mesa de ayuda e inventario de TI",
      "Bases de datos", "React, Node.js, MySQL", "piloto", "ticket", ("#1D4ED8", "#0B1E4A")),
     ("IP-Scanner", "IP Inspector", "Escáner de red y puertos con interfaz gráfica",
      "Redes", "Python, CustomTkinter", "release", "radar", ("#0F766E", "#062925")),
@@ -53,20 +51,8 @@ PISTAS = [
      "Mantenimiento", "Batch, DISM, SFC", "release", "llave", ("#C2410C", "#3B1405")),
     ("Microsoft-Office-Installer", "Office Installer", "Instala Office LTSC con un solo comando",
      "Soporte técnico", "PowerShell, HTML", "release", "descarga", ("#B91C1C", "#3A0A0A")),
-    ("Adobe-Genuine-Service-AGS-Alert", "AGS Alert Off", "Desactiva alertas de Adobe de forma reversible",
-     "Soporte técnico", "PowerShell", "release", "campana", ("#7C3AED", "#24104A")),
-    ("Directo-a-Obra", "Directo a Obra", "Tienda en línea de materiales de construcción",
-     "Bases de datos", "PHP, MySQL, PHPMailer", "académico", "carrito", ("#A16207", "#33200A")),
-    ("resiliente-chat", "Resiliente Chat", "Chat grupal en tiempo real con cifrado TLS",
-     "Programación", "Node.js, WSS, Docker", "funcional", "chat", ("#0369A1", "#06223A")),
     ("qr-studio", "QR Studio", "Generador de códigos QR personalizables",
      "Programación", "JavaScript, Canvas", "demo", "qr", ("#15803D", "#062A14")),
-    ("Redtech", "RedTech", "Diseño de red corporativa con VLANs y VLSM",
-     "Redes", "Cisco Packet Tracer", "académico", "red", ("#0E7490", "#06242C")),
-    ("CifradoAsimetrico", "Cifrado RSA", "Cifrado asimétrico en el navegador",
-     "Seguridad", "Web Crypto API, Tailwind", "demo", "llave-cifrado", ("#BE185D", "#3A0A1E")),
-    ("remote-support-app", "Remote Support App", "Escritorio remoto P2P para soporte",
-     "Soporte técnico", "Rust, Flutter, WebRTC", "en desarrollo", "monitor", ("#4338CA", "#15123F")),
 ]
 
 COLORES_LENGUAJE = {
@@ -234,9 +220,15 @@ def svg_pista(i, pista, repo):
     W, H = 880, 64
     nombre_repo, titulo, desc, area, tec, estado, icono, colores = pista
     p = [f'<rect width="{W}" height="{H}" fill="{R_BG}"/>']
-    p.append(txt(COLS["num"], 38, i, R_SUB, 15, extra='text-anchor="end"'))
+    sonando = i == 1
+    if sonando:
+        for k, (x, retraso) in enumerate([(28, 0), (33.5, .35), (39, .7)]):
+            p.append(f'<rect class="eq" style="animation-delay:{retraso}s" x="{x}" y="26" width="3.5" '
+                     f'height="16" rx="1" fill="{R_VERDE}"/>')
+    else:
+        p.append(txt(COLS["num"], 38, i, R_SUB, 15, extra='text-anchor="end"'))
     p.append(portada(COLS["img"], 8, 48, icono, colores, f"p{i}"))
-    p.append(txt(COLS["titulo"], 29, titulo, R_FG, 16, 600))
+    p.append(txt(COLS["titulo"], 29, titulo, R_VERDE if sonando else R_FG, 16, 600))
     p.append(txt(COLS["titulo"], 49, recortar(desc, 46), R_SUB, 13))
     p.append(f'<circle cx="{COLS["area"] + 4}" cy="{34}" r="4" fill="{AREAS[area]}"/>')
     p.append(txt(COLS["area"] + 14, 38.5, area, R_SUB, 13.5))
@@ -246,7 +238,11 @@ def svg_pista(i, pista, repo):
     color = {"en desarrollo": "#F59B23", "académico": R_SUB}.get(estado, R_VERDE)
     p.append(txt(COLS["fin"], 31, estado, color, 13, 600, extra='text-anchor="end"'))
     p.append(txt(COLS["fin"], 50, f"{repo.get('_commits', 0)} commits", R_SUB, 12, extra='text-anchor="end"'))
-    return svg(W, H, "".join(p), f"{i}. {titulo}: {desc}")
+    estilo = ("" if not sonando else
+              ".eq{transform-box:fill-box;transform-origin:center bottom;animation:eq 1.1s ease-in-out infinite}"
+              "@keyframes eq{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}"
+              "@media (prefers-reduced-motion:reduce){.eq{animation:none}}")
+    return svg(W, H, "".join(p), f"{i}. {titulo}: {desc}", estilo)
 
 
 # ================================================================ resumen anual
@@ -434,13 +430,12 @@ def svg_artista(d):
 
 
 BIO = [
-    "Matthew Garay trabaja en el área de TI de RFV Truck Parts and Accessories desde septiembre de 2026. "
-    "Atiende los reportes de los usuarios, da mantenimiento a las computadoras e impresoras y revisa la red local.",
-    "Repara equipos de cómputo desde 2021, cuando empezó a hacerlo por su cuenta. Con el tiempo pasó a escribir "
-    "sus propias herramientas para el trabajo de soporte: MG Toolkit para el mantenimiento de Windows, "
+    "Matthew Garay se dedica al soporte técnico y al desarrollo de software. Desde 2021 diagnostica, "
+    "repara y da mantenimiento a computadoras, atiende a usuarios, configura impresoras y revisa redes locales.",
+    "Escribe las herramientas que usa en ese trabajo: MG Toolkit para el mantenimiento de Windows, "
     "Office Installer para instalar Office con un comando e IP Inspector para revisar los equipos de una red.",
-    "En su residencia profesional en la misma empresa desarrolló Precision HelpDesk, el sistema de tickets "
-    "e inventario de TI que hoy está en prueba piloto. Lo hizo con React, Node.js y MySQL.",
+    "También desarrolla aplicaciones web con React, Node.js y MySQL. La más completa es Precision HelpDesk, "
+    "un sistema de tickets e inventario de TI que está en prueba piloto.",
 ]
 
 
@@ -448,7 +443,7 @@ def svg_acerca(d, n_proyectos):
     W = 880
     cx0, cy0, cw = 32, 74, W - 64
     cifras = [(str(d["commits_anio"]), "commits en el último año"),
-              (str(n_proyectos), "proyectos publicados"),
+              (str(n_proyectos), "repositorios públicos"),
               ("4", "áreas de trabajo")]
     lineas = [envolver(par, 92) for par in BIO]
     alto_bio = sum(len(l) * 24 for l in lineas) + (len(lineas) - 1) * 12
@@ -558,81 +553,18 @@ def svg_barra(n_proyectos, total_commits):
     bx, bw = cx - 170, 340
     p.append(txt(bx - 12, 68, f"{n_proyectos} proyectos", R_SUB, 11, extra='text-anchor="end"'))
     p.append(f'<rect x="{bx}" y="62" width="{bw}" height="4" rx="2" fill="#4D4D4D"/>')
-    p.append(f'<rect x="{bx}" y="62" width="{bw * .62}" height="4" rx="2" fill="#fff"/>')
+    p.append(f'<rect class="avance" x="{bx}" y="62" width="{bw}" height="4" rx="2" fill="#fff"/>')
     p.append(txt(bx + bw + 12, 68, f"{total_commits} commits", R_SUB, 11))
     vx = W - 150
     p.append(f'<g fill="none" stroke="{R_SUB}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
              f'<path d="M{vx} 40h5l7 6V26l-7 6h-5z" fill="{R_SUB}"/><path d="M{vx + 17} 31a5 5 0 0 1 0 6"/></g>')
     p.append(f'<rect x="{vx + 30}" y="34" width="96" height="4" rx="2" fill="#4D4D4D"/>')
     p.append(f'<rect x="{vx + 30}" y="34" width="70" height="4" rx="2" fill="#fff"/>')
-    return svg(W, H, "".join(p), "Reproduciendo: Proyectos de Matthew Garay")
-
-
-TRAYECTORIA = [
-    ("sep", "2026", "Soporte técnico de TI", "RFV Truck Parts and Accessories", "actual"),
-    ("mar", "2026", "Residencia profesional, 500 horas",
-     "RFV Truck Parts and Accessories. Ahí desarrolló Precision HelpDesk", None),
-    ("abr", "2025", "Servicio social", "Tecnológico de Estudios Superiores de Coacalco", None),
-    ("ene", "2021", "Reparación de equipo de cómputo", "Por su cuenta, con clientes particulares", "actual"),
-]
-
-CERTIFICACIONES = [
-    ("CCNA: Introducción a Redes", "Cisco Networking Academy", "C", "#049FD9"),
-    ("CCNA: Switching, Routing y Wireless Essentials", "Cisco Networking Academy", "C", "#049FD9"),
-    ("Introducción a la Ciberseguridad", "Cisco Networking Academy", "C", "#049FD9"),
-    ("Soporte y Seguridad de Red", "Cisco Networking Academy", "C", "#049FD9"),
-    ("Fundamentos de Análisis de Datos", "Cisco Networking Academy", "C", "#049FD9"),
-    ("Fundamentos del Soporte Técnico", "Google, en Coursera", "G", "#4285F4"),
-    ("Cloud Foundations", "AWS Academy", "A", "#FF9900"),
-    ("Fundamentos de Power BI", "Santander Open Academy", "S", "#EC0000"),
-    ("Excel básico a intermedio", "Santander Open Academy", "S", "#EC0000"),
-]
-
-
-def svg_trayectoria():
-    W = 880
-    fila = 72
-    H = 84 + len(TRAYECTORIA) * fila + 12
-    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
-         txt(32, 50, "Trayectoria", R_FG, 24, 800, extra='letter-spacing="-.5"')]
-    y = 76
-    for mes, anio, titulo, lugar, etiqueta in TRAYECTORIA:
-        p.append(f'<rect x="32" y="{y + 8}" width="56" height="56" rx="6" fill="{R_PANEL}"/>')
-        p.append(txt(60, y + 30, mes, R_SUB, 12.5, 600, extra='text-anchor="middle"'))
-        p.append(txt(60, y + 52, anio, R_FG, 17, 800, extra='text-anchor="middle"'))
-        p.append(txt(108, y + 32, titulo, R_FG, 16, 600))
-        p.append(txt(108, y + 53, lugar, R_SUB, 13.5))
-        if etiqueta:
-            ancho = len(etiqueta) * 12.5 * 0.6 + 26
-            p.append(f'<rect x="{W - 32 - ancho:.0f}" y="{y + 22}" width="{ancho:.0f}" height="28" rx="14" '
-                     f'fill="none" stroke="{R_VERDE}"/>')
-            p.append(txt(W - 32 - ancho / 2, y + 40.5, etiqueta, R_VERDE, 12.5, 600, extra='text-anchor="middle"'))
-        y += fila
-    etiqueta = "Trayectoria: " + "; ".join(f"{m} {a}, {t}, {l}" for m, a, t, l, _ in TRAYECTORIA)
-    return svg(W, H, "".join(p), etiqueta)
-
-
-def svg_certificaciones():
-    W = 880
-    cols, gap = 3, 16
-    cw = (W - 64 - gap * (cols - 1)) / cols
-    chh = 92
-    filas = (len(CERTIFICACIONES) + cols - 1) // cols
-    H = int(76 + filas * (chh + gap) + 16)
-    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>',
-         txt(32, 50, "Certificaciones", R_FG, 24, 800, extra='letter-spacing="-.5"')]
-    for i, (nombre, emisor, letra, color) in enumerate(CERTIFICACIONES):
-        x = 32 + (i % cols) * (cw + gap)
-        y = 76 + (i // cols) * (chh + gap)
-        p.append(f'<rect x="{x:.1f}" y="{y}" width="{cw:.1f}" height="{chh}" rx="8" fill="{R_PANEL}"/>')
-        p.append(f'<rect x="{x + 14:.1f}" y="{y + 14}" width="40" height="40" rx="6" fill="{color}"/>')
-        p.append(txt(x + 34, y + 41, letra, "#fff", 19, 800, extra='text-anchor="middle"'))
-        lineas = envolver(nombre, 25)[:2]
-        for j, l in enumerate(lineas):
-            p.append(txt(x + 66, y + 30 + j * 18, l, R_FG, 13.5, 600))
-        p.append(txt(x + 66, y + 30 + len(lineas) * 18 + 4, emisor, R_SUB, 12))
-    etiqueta = "Certificaciones: " + "; ".join(f"{n} ({e})" for n, e, _, _ in CERTIFICACIONES)
-    return svg(W, H, "".join(p), etiqueta)
+    estilo = (".avance{transform-box:fill-box;transform-origin:left center;transform:scaleX(.62);"
+              "animation:avanzar 45s linear infinite}"
+              "@keyframes avanzar{from{transform:scaleX(.02)}to{transform:scaleX(1)}}"
+              "@media (prefers-reduced-motion:reduce){.avance{animation:none}}")
+    return svg(W, H, "".join(p), "Reproduciendo: Proyectos de Matthew Garay", estilo)
 
 
 # ================================================================ main
@@ -643,13 +575,11 @@ def main():
     d = cargar_datos()
     repos = d["repos"]
     (SALIDA / "artista.svg").write_text(svg_artista(d), encoding="utf-8")
-    (SALIDA / "acerca.svg").write_text(svg_acerca(d, len(PISTAS)), encoding="utf-8")
+    (SALIDA / "acerca.svg").write_text(svg_acerca(d, len(repos)), encoding="utf-8")
     (SALIDA / "discografia.svg").write_text(svg_seccion("Discografía", "4 álbumes, uno por área de trabajo"), encoding="utf-8")
     for i, (titulo, icono, colores, pistas) in enumerate(ALBUMES, 1):
         (SALIDA / f"album-{i}.svg").write_text(svg_album(titulo, icono, colores, pistas, i), encoding="utf-8")
     (SALIDA / "creditos.svg").write_text(svg_creditos(), encoding="utf-8")
-    (SALIDA / "trayectoria.svg").write_text(svg_trayectoria(), encoding="utf-8")
-    (SALIDA / "certificaciones.svg").write_text(svg_certificaciones(), encoding="utf-8")
     total = sum(repos.get(pista[0], {}).get("_commits", 0) for pista in PISTAS)
     (SALIDA / "barra.svg").write_text(svg_barra(len(PISTAS), total), encoding="utf-8")
     (SALIDA / "playlist.svg").write_text(svg_playlist(total), encoding="utf-8")
