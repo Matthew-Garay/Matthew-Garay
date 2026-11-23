@@ -1,38 +1,187 @@
 <p align="center">
-  <img src="assets/perfil.svg" width="100%" alt="Matthew Garay. Soporte técnico y programación: mesa de ayuda, redes y mantenimiento de equipos; aplicaciones web con React, Node.js y MySQL; automatización de TI con PowerShell, Batch y Python."/>
+  <img src="assets/perfil.svg" width="100%" alt="Matthew Garay. Soporte técnico, mantenimiento y desarrollo de software: diagnóstico y reparación de equipos; mesa de ayuda, Windows, impresoras y redes; aplicaciones web con React, Node.js y APIs REST; bases de datos MySQL y SQL Server; automatización con PowerShell, Batch y Python."/>
 </p>
 
 <p align="center">
-  <img src="assets/servicios.svg" width="100%" alt="Lo que hago. Soporte: mantenimiento de hardware, reparación de PC y laptops, instalación de Windows y software, impresoras láser y térmicas, redes (cableado, VLAN, VLSM), mesa de ayuda. Programación: aplicaciones web con React y Node.js, APIs REST con JWT, bases de datos MySQL, automatización con PowerShell y Batch, apps de escritorio en Python."/>
+  <img src="assets/servicios.svg" width="100%" alt="Áreas de trabajo. Mantenimiento: diagnóstico de fallas, mantenimiento preventivo, cambio de componentes. Soporte: mesa de ayuda, instalación de Windows y Office, impresoras y redes. Programación: aplicaciones web, APIs REST, automatización. Bases de datos: modelado y normalización, MySQL y SQL Server, reportes con Power BI."/>
 </p>
 
 <p align="center">
-  <img src="assets/proyectos.svg" width="100%" alt="Proyectos destacados"/>
+  <a href="https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk"><img src="assets/reproductor.svg" width="100%" alt="Proyecto destacado: Precision HelpDesk. Mesa de ayuda y gestión de activos de TI. Arquitectura React + API REST en Node.js + MySQL. Resultados: imágenes 90 % más ligeras, dashboard de 85 a 3 ms con caché, PDF de 1000 tickets en menos de 2 s, 50 peticiones por segundo estables."/></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk"><img src="assets/proyecto-precision-truck-parts---help-desk.svg" width="49%" alt="Precision HelpDesk: mesa de ayuda e inventario de TI"/></a>
-  <a href="https://github.com/Matthew-Garay/IP-Scanner"><img src="assets/proyecto-ip-scanner.svg" width="49%" alt="IP Inspector: escáner de red y puertos"/></a>
-  <a href="https://github.com/Matthew-Garay/Microsoft-Office-Installer"><img src="assets/proyecto-microsoft-office-installer.svg" width="49%" alt="Office Installer: instala Office LTSC con un comando"/></a>
-  <a href="https://github.com/Matthew-Garay/MG-Toolkit"><img src="assets/proyecto-mg-toolkit.svg" width="49%" alt="MG Toolkit: limpieza y reparación de Windows"/></a>
-  <a href="https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert"><img src="assets/proyecto-adobe-genuine-service-ags-alert.svg" width="49%" alt="AGS Alert Off: quita las alertas de Adobe Genuine Service"/></a>
-  <a href="https://github.com/Matthew-Garay/resiliente-chat"><img src="assets/proyecto-resiliente-chat.svg" width="49%" alt="Resiliente Chat: chat en tiempo real con WebSockets"/></a>
-  <a href="https://github.com/Matthew-Garay/qr-studio"><img src="assets/proyecto-qr-studio.svg" width="49%" alt="QR Studio: generador de códigos QR"/></a>
-  <a href="https://github.com/Matthew-Garay/Redtech"><img src="assets/proyecto-redtech.svg" width="49%" alt="RedTech: red corporativa en Packet Tracer"/></a>
+  <img src="assets/playlist.svg" width="100%" alt="Playlist de proyectos"/>
+</p>
+
+<details>
+<summary><img src="assets/pista-01.svg" width="96%" alt="1. Precision HelpDesk"/></summary>
+
+> **Qué resuelve:** el área de TI recibía fallas por mensajes y hojas de cálculo, sin seguimiento ni inventario confiable de equipos.
+>
+> **Funciones:** tickets con evidencia fotográfica · seguimiento por estado y SLA · inventario de hardware y software · solicitudes de insumos con alertas de stock bajo · manuales PDF · métricas de técnicos (MTTR) · reportes PDF · recuperación de contraseña por correo.
+>
+> **Tecnologías:** React 18, Vite, Tailwind CSS, Node.js, Express, MySQL (InnoDB, 3FN), Socket.IO, Nodemailer, Sharp, JWT, bcrypt.
+>
+> **Destacado técnico:** bloqueos `SELECT … FOR UPDATE` para evitar descuentos dobles de inventario con usuarios simultáneos; caché en memoria que baja el dashboard de 85 ms a 3 ms; rate limiting que mantiene el servidor estable a 50 peticiones/s.
+>
+> **Contexto:** residencia profesional de 500 h en RFV Truck Parts, metodología Scrum y prácticas de ITIL v4. Probado en piloto, incluida una sucursal remota.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-02.svg" width="96%" alt="2. IP Inspector"/></summary>
+
+> **Qué resuelve:** ver qué dispositivos hay en una red local y qué puertos tienen abiertos, sin instalar herramientas complejas.
+>
+> **Funciones:** descubrimiento por ARP, ICMP y TCP · escaneo de puertos con perfiles (rápido, estándar, completo, IoT/cámaras, personalizado) · identificación de modelo y fabricante por SSDP/UPnP, mDNS y NetBIOS · 18 categorías de dispositivo · mapa de direcciones · detección automática del rango de red · diagnósticos de ping, traceroute, DNS, WHOIS y TLS.
+>
+> **Tecnologías:** Python 3.10+, CustomTkinter, sockets, multihilo.
+>
+> **Destacado técnico:** combina varias fuentes de información (puertos, huella del sistema operativo, anuncios de red y fabricante de la MAC) para clasificar cada equipo.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/IP-Scanner) · [Descargar](https://github.com/Matthew-Garay/IP-Scanner/releases/latest)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-03.svg" width="96%" alt="3. MG Toolkit"/></summary>
+
+> **Qué resuelve:** reúne en un solo archivo el mantenimiento que hace un técnico: limpiar, acelerar, reparar, buscar virus, respaldar y revisar el equipo.
+>
+> **Funciones:** 64 herramientas en menú · modo automático o con preguntas · limpieza de temporales y caché · reparación con DISM, SFC y CHKDSK · análisis con Microsoft Defender · puntos de restauración · respaldo de archivos y controladores · instalación de programas con winget · **informe final con puntuación de 0 a 100** y qué falta corregir.
+>
+> **Tecnologías:** Batch, herramientas nativas de Windows (DISM, SFC, CHKDSK, robocopy, pnputil, winget).
+>
+> **Destacado técnico:** no instala nada externo ni modifica archivos internos de Windows; funciona de Windows 7 a 11.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/MG-Toolkit) · [Descargar](https://github.com/Matthew-Garay/MG-Toolkit/releases/latest)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-04.svg" width="96%" alt="4. Office Installer"/></summary>
+
+> **Qué resuelve:** instalar Microsoft Office sin pasos manuales, algo que en soporte se repite en cada equipo.
+>
+> **Funciones:** Office LTSC 2024, 2021, 2019 y 2016 · interfaz gráfica o de consola · se ejecuta con un solo comando de PowerShell.
+>
+> **Tecnologías:** PowerShell, HTML (sitio del proyecto).
+>
+> **Destacado técnico:** sin dependencias externas; todo el despliegue sale de un script.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/Microsoft-Office-Installer) · [Sitio web](https://matthew-garay.github.io/Microsoft-Office-Installer/)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-05.svg" width="96%" alt="5. AGS Alert Off"/></summary>
+
+> **Qué resuelve:** las ventanas emergentes recurrentes de Adobe Genuine Service que interrumpen el trabajo en Acrobat.
+>
+> **Funciones:** detiene y deshabilita el servicio `AGSService` · cierra sus procesos · deshabilita sus tareas programadas · tarea diaria y al inicio con cuenta SYSTEM · registro de acciones con rotación.
+>
+> **Tecnologías:** PowerShell, Programador de tareas de Windows.
+>
+> **Destacado técnico:** totalmente reversible: guarda la configuración original del servicio y la restaura con `-Uninstall`.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert) · [Descargar](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert/releases/latest)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-06.svg" width="96%" alt="6. Directo a Obra"/></summary>
+
+> **Qué resuelve:** venta en línea de materiales de construcción con catálogo, carrito y facturación.
+>
+> **Funciones:** catálogo con filtros por categoría y precio · carrito con sesiones · facturas en HTML enviadas por correo · base de datos de productos, categorías y transacciones.
+>
+> **Tecnologías:** PHP, MySQL, PHPMailer (SMTP), Bootstrap 5, Tailwind CSS, JavaScript.
+>
+> **Destacado técnico:** validación de operaciones del carrito con tokens HMAC.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/Directo-a-Obra)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-07.svg" width="96%" alt="7. Resiliente Chat"/></summary>
+
+> **Qué resuelve:** comunicación grupal en tiempo real cifrada de extremo a servidor.
+>
+> **Funciones:** WebSockets sobre TLS (WSS) por el puerto 443 · historial de los últimos 50 mensajes · varios usuarios a la vez · interfaz responsiva.
+>
+> **Tecnologías:** Node.js, Express, WebSockets, Docker.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/resiliente-chat)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-08.svg" width="96%" alt="8. QR Studio"/></summary>
+
+> **Qué resuelve:** generar códigos QR con diseño propio sin mandar datos a ningún servidor.
+>
+> **Funciones:** texto, URL, WiFi, vCard, SMS, llamada, correo y WhatsApp · logo, colores, degradados y forma de los módulos · exportación a PNG, JPG, WebP, SVG y PDF en cuatro calidades.
+>
+> **Tecnologías:** JavaScript, HTML, CSS, Canvas.
+>
+> **Destacado técnico:** funciona 100 % sin conexión, en el navegador.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/qr-studio) · [Probar demo](https://matthew-garay.github.io/qr-studio/)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-09.svg" width="96%" alt="9. RedTech"/></summary>
+
+> **Qué resuelve:** diseño de la red de una empresa ficticia con varias áreas.
+>
+> **Contenido:** topología completa · segmentación por VLANs · subneteo VLSM · documentación técnica.
+>
+> **Herramientas:** Cisco Packet Tracer.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/Redtech)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-10.svg" width="96%" alt="10. Cifrado RSA"/></summary>
+
+> **Qué resuelve:** muestra cómo dos personas se comunican de forma confidencial con claves públicas.
+>
+> **Funciones:** generación de claves RSA-OAEP · cifrado y descifrado en el navegador · exportación e importación de claves en formato JWK · explicación de Diffie-Hellman.
+>
+> **Tecnologías:** Web Crypto API, HTML, Tailwind CSS.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/CifradoAsimetrico) · [Probar demo](https://matthew-garay.github.io/CifradoAsimetrico/)
+
+</details>
+
+<details>
+<summary><img src="assets/pista-11.svg" width="96%" alt="11. Remote Support App"/></summary>
+
+> **Qué resuelve:** dar soporte remoto a un equipo, como TeamViewer o AnyDesk. **Está en desarrollo.**
+>
+> **Diseño:** interfaz en Flutter · núcleo en Rust para captura de pantalla y video H.264 · conexión P2P con WebRTC · servidor de señalización con STUN y TURN · autenticación JWT.
+>
+> **Tecnologías:** Rust, Flutter, Dart, Actix-web, WebRTC, Docker.
+>
+> [Ver repositorio](https://github.com/Matthew-Garay/remote-support-app)
+
+</details>
+
+<br/>
+
+<p align="center">
+  <img src="assets/resumen.svg" width="100%" alt="Tu año en código: commits, contribuciones, racha más larga, día más productivo y lenguajes más usados en GitHub."/>
 </p>
 
 <p align="center">
-  <a href="https://matthew-garay.github.io/Microsoft-Office-Installer/">Sitio de Office Installer</a> ·
-  <a href="https://matthew-garay.github.io/qr-studio/">Demo de QR Studio</a> ·
-  <a href="https://matthew-garay.github.io/CifradoAsimetrico/">Cifrado RSA</a> ·
-  <a href="https://github.com/Matthew-Garay/remote-support-app">Remote Support App (en desarrollo)</a>
+  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-121212?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Correo-121212?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
 </p>
 
-<p align="center">
-  <img src="assets/stack.svg" width="100%" alt="Stack. Lenguajes: JavaScript, TypeScript, Python, PHP, PowerShell, Batch, Bash, SQL, Rust, Dart, R, VB.NET. Frameworks: React, Vite, Tailwind CSS, Bootstrap, Node.js, Express, Socket.IO, Flutter. Bases de datos: MySQL, SQL Server. Sistemas: Windows, Windows Server, Ubuntu, Kali, Arch. Infraestructura: redes Cisco, Packet Tracer, VMware, VirtualBox, Docker, AWS."/>
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/matthewgarayperez/"><img src="https://img.shields.io/badge/LinkedIn-012456?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Correo-012456?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
-</p>
+<p align="center"><sub>Haz clic en un proyecto de la playlist para ver su ficha técnica. Los gráficos se generan con datos reales de GitHub mediante <a href="scripts/generar.py">scripts/generar.py</a>.</sub></p>
