@@ -3,11 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/acerca.svg" width="100%" alt="Acerca de. Soporte técnico, mantenimiento y desarrollo de software: diagnóstico y reparación de equipos; mesa de ayuda, Windows, impresoras y redes LAN; aplicaciones web con React, Node.js y APIs REST; diseño y administración de MySQL y SQL Server; scripts de TI en PowerShell, Batch y Python."/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk"><img src="assets/reproductor.svg" width="100%" alt="Proyecto destacado: Precision HelpDesk. Mesa de ayuda y gestión de activos de TI. Arquitectura React + API REST en Node.js + MySQL. Resultados: imágenes 90 % más ligeras, dashboard de 85 a 3 ms con caché, PDF de 1000 tickets en menos de 2 s, 50 peticiones por segundo estables."/></a>
+  <img src="assets/acerca.svg" width="100%" alt="Acerca de. Trabajo entre el hardware y el código. Desde 2021 diagnostico, reparo y doy mantenimiento a equipos de cómputo, y hoy formo parte del área de TI de una empresa, donde atiendo la mesa de ayuda, las impresoras y la red. Cuando una tarea se repite, la automatizo; cuando falta una herramienta, la construyo: aplicaciones web con React y Node.js, bases de datos MySQL bien diseñadas y scripts en PowerShell, Batch y Python. Me importa que la tecnología funcione para quien la usa."/>
 </p>
 
 <p align="center">
@@ -195,7 +191,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk"><img src="assets/barra.svg" width="100%" alt="Reproduciendo: Precision HelpDesk"/></a>
+  <a href="https://github.com/Matthew-Garay?tab=repositories"><img src="assets/barra.svg" width="100%" alt="Reproduciendo: Proyectos de Matthew Garay"/></a>
 </p>
 
 <p align="center">
