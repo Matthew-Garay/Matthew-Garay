@@ -1,12 +1,6 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Perfil_verificado-1DB954?style=for-the-badge&labelColor=1DB954&color=1DB954&logoColor=white" alt="Perfil verificado"/>
+  <img src="assets/spotify/hero.svg" width="100%" alt="Matthew Garay, perfil verificado. Software Developer and IT Systems Specialist. Desde 2021 en producción. Tecámac, Estado de México."/>
 </p>
-
-<h1 align="center">Matthew Garay</h1>
-
-<h3 align="center">Software Developer &amp; IT Systems Specialist</h3>
-
-<p align="center">Desde 2021 en producción • Sistemas &amp; Desarrollo Web</p>
 
 <p align="center">
   <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/%E2%96%B6_Seguir-1DB954?style=for-the-badge&labelColor=1DB954&color=1DB954&logoColor=white" alt="Seguir"/></a>
@@ -20,19 +14,21 @@
   <img src="https://img.shields.io/badge/Disponibilidad-Abierto_a_proyectos-1DB954?style=flat-square" alt="Disponibilidad"/>
 </p>
 
----
-
-## Acerca de
+<p align="center">
+  <img src="assets/spotify/acerca.svg" width="100%" alt="Acerca de"/>
+</p>
 
 Perfil híbrido en TI que combina el desarrollo de software, con una sólida base en soluciones web, y el soporte técnico. Tengo dominio en la gestión de bases de datos para análisis, así como en el mantenimiento integral de hardware y software. Me distingo por un enfoque resolutivo y paciente para encontrar la raíz de cada problema, y me apasiona simplificar la tecnología para que sea una herramienta de valor.
 
 **Especialidad principal:** Desarrollo web y soporte técnico de TI
+
 **Enfoque:** Encontrar la causa raíz y dejar la solución documentada
+
 **Sede:** Tecámac, Estado de México, México
 
----
-
-## Playlist pública: proyectos destacados
+<p align="center">
+  <img src="assets/spotify/playlist.svg" width="100%" alt="Playlist pública: proyectos destacados"/>
+</p>
 
 **01** &nbsp; [**PrecisionTrucks HelpDesk**](https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk)
 &nbsp;&nbsp;&nbsp;&nbsp;Colaborador: React · Node.js · MySQL · Socket.IO
@@ -59,11 +55,9 @@ Perfil híbrido en TI que combina el desarrollo de software, con una sólida bas
 &nbsp;&nbsp;&nbsp;&nbsp;Desactiva AGS de forma reversible y elimina las alertas emergentes de Acrobat.
 &nbsp;&nbsp;&nbsp;&nbsp;Activo • Actualizado nov 2026
 
----
-
-## Discografía
-
-*Lanzamientos populares • Álbumes • Sencillos y EP*
+<p align="center">
+  <img src="assets/spotify/discografia.svg" width="100%" alt="Discografía: lanzamientos populares, álbumes, sencillos y EP"/>
+</p>
 
 **Mantenimiento y reparación**
 &nbsp;&nbsp;&nbsp;&nbsp;[MG Toolkit](https://github.com/Matthew-Garay/MG-Toolkit) • 2026 • CLI Utility (Batch)
@@ -85,23 +79,27 @@ Perfil híbrido en TI que combina el desarrollo de software, con una sólida bas
 &nbsp;&nbsp;&nbsp;&nbsp;[Adobe Genuine Service AGS Alert](https://github.com/Matthew-Garay/Adobe-Genuine-Service-AGS-Alert) • 2026 • PowerShell Script
 &nbsp;&nbsp;&nbsp;&nbsp;[IP Inspector](https://github.com/Matthew-Garay/IP-Scanner) • 2026 • Desktop App (Python)
 
----
-
-## Créditos
+<p align="center">
+  <img src="assets/spotify/creditos.svg" width="100%" alt="Créditos: producción y stack técnico"/>
+</p>
 
 **Producido por:** Matthew Garay
+
 **Backend y bases de datos:** Node.js · Express · PHP · MySQL · SQL Server · VB.NET
+
 **Frontend y UI:** React · Vite · TypeScript · Tailwind CSS · HTML/CSS
+
 **Infraestructura, redes y soporte TI:** Windows · Windows Server · Linux · PowerShell · Docker · Cisco Packet Tracer
+
 **Análisis y lógica:** Python · R · Prolog
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,react,vite,tailwind,nodejs,express,php,mysql,python,powershell,windows,linux,docker,git,vscode,postman,rust,flutter,dart" alt="Tecnologías: JavaScript, TypeScript, React, Vite, Tailwind, Node.js, Express, PHP, MySQL, Python, PowerShell, Windows, Linux, Docker, Git, VS Code, Postman, Rust, Flutter, Dart"/>
 </p>
 
----
-
-## Un año en GitHub
+<p align="center">
+  <img src="assets/spotify/github.svg" width="100%" alt="Un año en GitHub: actividad del artista"/>
+</p>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=transparent&hide_border=true" alt="Estadísticas de GitHub"/>
@@ -119,14 +117,16 @@ Perfil híbrido en TI que combina el desarrollo de software, con una sólida bas
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Matthew-Garay&theme=github-compact&bg_color=00000000&hide_border=true" alt="Gráfica de actividad"/>
 </p>
 
----
-
-## Contacto
-
-*En gira • Redes del artista*
+<p align="center">
+  <img src="assets/spotify/contacto.svg" width="100%" alt="En gira: redes del artista"/>
+</p>
 
 <p align="center">
   <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Correo-1911.garay.perez%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
   <a href="https://linkedin.com/in/matthewgarayperez"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+</p>
+
+<p align="center">
+  <img src="assets/spotify/reproductor.svg" width="780" alt="Reproduciendo: Proyectos de Matthew Garay"/>
 </p>
