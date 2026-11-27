@@ -179,6 +179,7 @@ def cargar_datos():
         "matriz": matriz,
         "semanas": [sum(v for _, v in sem) for sem in matriz],
         "dias": [x for sem in matriz for x in sem],
+        "seguidores": api(f"/users/{USUARIO}")["followers"],
     }
 
 
@@ -304,6 +305,11 @@ def svg_pista(i, pista, repo):
     return svg(W, H, "".join(p), f"{i}. {titulo}: {desc}", estilo)
 
 
+def rango_anios(matriz):
+    y0, y1 = matriz[0][0][0].year, matriz[-1][-1][0].year
+    return str(y0) if y0 == y1 else f"{y0}–{y1}"
+
+
 # ================================================================ actividad (mapa de calor)
 def svg_actividad(d):
     W = 880
@@ -315,7 +321,7 @@ def svg_actividad(d):
     H = int(ly + 36)
     maxv = max((v for sem in matriz for _, v in sem), default=0) or 1
     p = [f'<rect width="{W}" height="{H}" rx="12" fill="{C["bg"]}"/>',
-         txt(32, 50, "Actividad", C["fg"], 24, 800, extra='letter-spacing="-.5"'),
+         txt(32, 50, f"Actividad  •  {rango_anios(matriz)}", C["fg"], 24, 800, extra='letter-spacing="-.5"'),
          txt(32, 76, f"{d['contribuciones']} contribuciones en los últimos 12 meses", C["sub"], 14)]
     vistos = set()
     for col, sem in enumerate(matriz):
@@ -354,8 +360,8 @@ def svg_resumen(d):
     W, H = 880, 520
     p = [f'<rect width="{W}" height="{H}" rx="12" fill="{C["bg"]}"/>',
          f'<rect width="{W}" height="{H}" rx="12" fill="url(#rs)"/>']
-    p.append(txt(32, 58, "Un año en GitHub", C["fg"], 36, 800, extra='letter-spacing="-1"'))
-    p.append(txt(32, 84, "Contribuciones en GitHub durante los últimos 12 meses", C["sub"], 14.5))
+    p.append(txt(32, 58, "Este año en GitHub", C["fg"], 36, 800, extra='letter-spacing="-1"'))
+    p.append(txt(32, 84, f"Contribuciones en GitHub  •  {rango_anios(d['matriz'])}", C["sub"], 14.5))
 
     # forma de onda semanal
     semanas = d["semanas"]
@@ -411,7 +417,7 @@ def svg_resumen(d):
                  C["gris"], 11.5, extra='text-anchor="end"'))
     defs = (f'<radialGradient id="rs" cx="0.85" cy="0" r="0.9"><stop offset="0" stop-color="{C["verde"]}" stop-opacity=".22"/>'
             f'<stop offset="1" stop-color="{C["verde"]}" stop-opacity="0"/></radialGradient>')
-    return svg(W, H, "".join(p), f"Un año en GitHub: {d['commits_anio']} commits, racha de {mayor} días", defs=defs)
+    return svg(W, H, "".join(p), f"Este año en GitHub: {d['commits_anio']} commits, racha de {mayor} días", defs=defs)
 
 
 # ================================================================ página de artista
@@ -495,10 +501,14 @@ def svg_artista(d):
         p.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#mono)"/>')
         p.append(txt(cx, cy + 22, "MG", "#FFFFFF", 64, 800, extra='text-anchor="middle" letter-spacing="-2"'))
     x = 262
-    p.append(txt(x, 92, "Software Developer & IT Systems Specialist", C["sub"], 14, 600))
+    p.append(txt(x, 92, "Desarrollador de software y especialista en sistemas TI", C["sub"], 14, 600))
     p.append(txt(x - 4, 176, "Matthew Garay", C["fg"], 70, 800, extra='letter-spacing="-2.5"'))
-    p.append(f'<circle cx="{x + 5}" cy="212" r="5" fill="{C["verde"]}"/>')
-    p.append(txt(x + 18, 217, "Abierto a proyectos", C["fg"], 16, 600))
+    bx = x - 4 + 13 * 70 * 0.52 + 40  # insignia de verificado junto al nombre
+    p.append(f'<circle cx="{bx:.0f}" cy="150" r="13" fill="{C["verde"]}"/>'
+             f'<path d="M{bx - 6:.0f} 150l4 4 8-8" fill="none" stroke="#000000" stroke-width="3" '
+             f'stroke-linecap="round" stroke-linejoin="round"/>')
+    p.append(txt(x, 212, f"{d['seguidores']} seguidores  •  {len(PISTAS)} proyectos  •  {d['commits_anio']} commits",
+                 C["fg"], 15, 600))
     ax = x
     for nombre, color in AREAS_ARTISTA:
         ancho = len(nombre) * 13 * 0.56 + 34
@@ -612,8 +622,11 @@ def icono_datauri(nombre):
     return _ICONOS_CACHE[nombre]
 
 
+MARCA_FONDO = {"mysql": "#00758F", "github": "#242938", "mssql": "#CC2927"}
+
+
 def cuadros_tecnologias(items, y0, cols=9, tam=80, sep=14):
-    """Mosaicos blancos del mismo tamaño: logo arriba y nombre abajo (siempre legibles en ambos temas)."""
+    """Logos sin recuadro, con el nombre debajo. Los logos oscuros llevan el color de su marca de fondo."""
     W = 880
     ancho = cols * tam + (cols - 1) * sep
     x0 = (W - ancho) / 2
@@ -621,21 +634,18 @@ def cuadros_tecnologias(items, y0, cols=9, tam=80, sep=14):
     for idx, (clave, etiqueta) in enumerate(items):
         x = x0 + (idx % cols) * (tam + sep)
         y = y0 + (idx // cols) * (tam + sep)
-        p.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{tam}" height="{tam}" rx="14" fill="{MOSAICO}" '
-                 f'stroke="{MOSAICO_BORDE}"/>')
-        uri = icono_datauri(clave) if clave and clave != "mssql" else None
-        if clave == "mssql":
-            # skillicons no tiene SQL Server: icono propio (base de datos, color de SQL Server)
-            ix, iy = x + (tam - 40) / 2, y + 8
-            p.append(f'<rect x="{ix:.1f}" y="{iy:.1f}" width="40" height="40" rx="8" fill="#CC2927"/>'
-                     f'<g transform="translate({ix:.1f} {iy:.1f}) scale(.4)" fill="none" stroke="#fff" '
+        cx = x + tam / 2
+        if clave == "mssql":  # skillicons no tiene SQL Server: icono propio
+            p.append(f'<rect x="{cx - 22:.1f}" y="{y + 4:.1f}" width="44" height="44" rx="10" fill="{MARCA_FONDO[clave]}"/>'
+                     f'<g transform="translate({cx - 12:.1f} {y + 14:.1f}) scale(.4)" fill="none" stroke="#fff" '
                      f'stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{ICONOS["base"]}</g>')
-            p.append(txt(x + tam / 2, y + 68, etiqueta, "#111827", 10.5, 600, extra='text-anchor="middle"'))
-        elif uri:
-            p.append(f'<image href="{uri}" x="{x + (tam - 40) / 2:.1f}" y="{y + 8:.1f}" width="40" height="40"/>')
-            p.append(txt(x + tam / 2, y + 68, etiqueta, "#111827", 10.5, 600, extra='text-anchor="middle"'))
         else:
-            p.append(txt(x + tam / 2, y + 46, etiqueta, "#111827", 13, 700, extra='text-anchor="middle"'))
+            uri = icono_datauri(clave) if clave else None
+            if clave in MARCA_FONDO:
+                p.append(f'<rect x="{cx - 22:.1f}" y="{y + 4:.1f}" width="44" height="44" rx="10" fill="{MARCA_FONDO[clave]}"/>')
+            if uri:
+                p.append(f'<image href="{uri}" x="{cx - 20:.1f}" y="{y + 6:.1f}" width="40" height="40"/>')
+        p.append(txt(cx, y + 68, etiqueta, C["sub"], 10.5, 600, extra='text-anchor="middle"'))
     filas = (len(items) + cols - 1) // cols
     return "".join(p), filas * tam + (filas - 1) * sep
 
@@ -672,14 +682,14 @@ def svg_creditos():
 
 
 def svg_contacto(clave, etiqueta):
-    """Mosaico blanco de 72 px con solo el icono (sin texto)."""
-    tam = 72
+    """Icono grande (96 px) sin recuadro; GitHub lleva el fondo de su marca para que se vea."""
+    tam = 96
     uri = icono_datauri(clave)
-    p = [f'<rect x=".5" y=".5" width="{tam - 1}" height="{tam - 1}" rx="16" fill="{MOSAICO}" stroke="{MOSAICO_BORDE}"/>']
+    p = []
+    if clave in MARCA_FONDO:
+        p.append(f'<rect width="{tam}" height="{tam}" rx="22" fill="{MARCA_FONDO[clave]}"/>')
     if uri:
-        p.append(f'<image href="{uri}" x="16" y="16" width="40" height="40"/>')
-    else:
-        p.append(txt(tam / 2, tam / 2 + 6, etiqueta[0], "#111827", 22, 800, extra='text-anchor="middle"'))
+        p.append(f'<image href="{uri}" x="14" y="14" width="{tam - 28}" height="{tam - 28}"/>')
     return svg(tam, tam, "".join(p), etiqueta)
 
 
@@ -775,19 +785,18 @@ def main():
         ([svg_acerca(d, len(repos), len(ALBUMES))], 12),
         ([svg_playlist(total, len(PISTAS))], 0),
     ]
-    filas += [([s], 0) for s in pistas[:-1]] + [([pistas[-1]], 12)]
+    filas += [([x], 0) for x in pistas]
+    filas += [([svg_barra(len(PISTAS), total)], 16)]
     filas += [([svg_seccion("Discografía", "Lanzamientos populares • Álbumes • Sencillos y EP")], 0)]
     filas += [(albumes[k:k + 2], 12) for k in range(0, len(albumes), 2)]
-    filas += [([svg_creditos()], 12), ([svg_actividad(d)], 12), ([svg_resumen(d)], 12),
-              ([svg_barra(len(PISTAS), total)], 16)]
+    filas += [([svg_creditos()], 12), ([svg_actividad(d)], 12), ([svg_resumen(d)], 12)]
     (SALIDA / "perfil.svg").write_text(svg_perfil(filas), encoding="utf-8")
+    (SALIDA / "contacto-titulo.svg").write_text(svg_seccion("Contacto", "Escríbeme o sígueme"), encoding="utf-8")
 
     for i, pista in enumerate(PISTAS, 1):
         (SALIDA / f"proyecto-{i:02d}.svg").write_text(svg_icono_proyecto(pista[6], pista[7], pista[1]), encoding="utf-8")
     for clave, nombre in [("gmail", "correo"), ("linkedin", "linkedin"), ("github", "github")]:
         (SALIDA / f"contacto-{nombre}.svg").write_text(svg_contacto(clave, nombre.capitalize()), encoding="utf-8")
-    (SALIDA / "boton-seguir.svg").write_text(svg_boton("Seguir", "#1ED760", "#000000", "#1ED760"), encoding="utf-8")
-    (SALIDA / "boton-compartir.svg").write_text(svg_boton("Compartir", "#FFFFFF", "#111827", "#D1D5DB"), encoding="utf-8")
     print("listo:", d["commits_anio"], "commits,", d["contribuciones"], "contribuciones,", len(repos), "repos")
 
 
