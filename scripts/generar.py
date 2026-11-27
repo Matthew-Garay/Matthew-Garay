@@ -25,6 +25,7 @@ import base64
 import json
 import math
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -724,40 +725,68 @@ def svg_barra(n_proyectos, total_commits):
     return svg(W, H, "".join(p), "Reproduciendo: Proyectos de Matthew Garay", estilo)
 
 
+# ================================================================ perfil completo (un solo lienzo oscuro)
+def altura(s):
+    return int(re.search(r'<svg [^>]*?height="(\d+)"', s).group(1))
+
+
+def anidar(s, x, y):
+    """Convierte un SVG de sección en un <svg> anidado, colocado en (x, y)."""
+    m = re.match(r'<svg [^>]*?width="(\d+)" height="(\d+)"', s)
+    w, h = m.group(1), m.group(2)
+    cuerpo = s[s.index(">") + 1: s.rindex("</svg>")]
+    return f'<svg x="{x}" y="{y}" width="{w}" height="{h}" viewBox="0 0 {w} {h}">{cuerpo}</svg>'
+
+
+def svg_perfil(filas):
+    """filas: lista de (secciones, separación_después). Dos secciones de 430 px van lado a lado."""
+    W = 880
+    y, partes = 0, []
+    for items, gap in filas:
+        alto = max(altura(s) for s in items)
+        xs = [0] if len(items) == 1 else [0, 450]
+        for s, x in zip(items, xs):
+            partes.append(anidar(s, x, y))
+        y += alto + gap
+    H = y
+    fondo = f'<rect width="{W}" height="{H}" rx="14" fill="{C["bg"]}"/>'
+    return svg(W, H, fondo + "".join(partes), "Perfil de Matthew Garay: artista, proyectos, discografía, tecnologías y actividad")
+
+
+def svg_icono_proyecto(icono, colores, etiqueta):
+    """Icono de 72 px de un proyecto (solo icono, para enlazarlo en el README)."""
+    return svg(72, 72, portada(0, 0, 72, icono, colores, "x", 14), etiqueta)
+
+
 # ================================================================ main
 def main():
     SALIDA.mkdir(exist_ok=True)
     for viejo in SALIDA.glob("*.svg"):
         viejo.unlink()
+    aplicar_tema("oscuro")
     d = cargar_datos()
     repos = d["repos"]
     total = sum(repos.get(pista[0], {}).get("_commits", 0) for pista in PISTAS)
 
-    def escribir(nombre, generar):
-        """Escribe la versión oscura (nombre.svg) y la clara (nombre-claro.svg)."""
-        for tema, sufijo in (("oscuro", ""), ("claro", "-claro")):
-            aplicar_tema(tema)
-            (SALIDA / f"{nombre}{sufijo}.svg").write_text(generar(), encoding="utf-8")
+    pistas = [svg_pista(i, pista, repos.get(pista[0], {})) for i, pista in enumerate(PISTAS, 1)]
+    albumes = [svg_album(t, ic, co, pi, i) for i, (t, ic, co, pi) in enumerate(ALBUMES, 1)]
+    filas = [
+        ([svg_artista(d)], 12),
+        ([svg_acerca(d, len(repos), len(ALBUMES))], 12),
+        ([svg_playlist(total, len(PISTAS))], 0),
+    ]
+    filas += [([s], 0) for s in pistas[:-1]] + [([pistas[-1]], 12)]
+    filas += [([svg_seccion("Discografía", "Lanzamientos populares • Álbumes • Sencillos y EP")], 0)]
+    filas += [(albumes[k:k + 2], 12) for k in range(0, len(albumes), 2)]
+    filas += [([svg_creditos()], 12), ([svg_actividad(d)], 12), ([svg_resumen(d)], 12),
+              ([svg_barra(len(PISTAS), total)], 16)]
+    (SALIDA / "perfil.svg").write_text(svg_perfil(filas), encoding="utf-8")
 
-    escribir("artista", lambda: svg_artista(d))
-    escribir("acerca", lambda: svg_acerca(d, len(repos), len(ALBUMES)))
-    escribir("playlist", lambda: svg_playlist(total, len(PISTAS)))
     for i, pista in enumerate(PISTAS, 1):
-        escribir(f"pista-{i:02d}", lambda i=i, pista=pista: svg_pista(i, pista, repos.get(pista[0], {})))
-    escribir("discografia", lambda: svg_seccion("Discografía", "Lanzamientos populares • Álbumes • Sencillos y EP"))
-    for i, (titulo, icono, colores, pistas) in enumerate(ALBUMES, 1):
-        escribir(f"album-{i}", lambda t=titulo, ic=icono, co=colores, pi=pistas, i=i: svg_album(t, ic, co, pi, i))
-    escribir("creditos", svg_creditos)
-    escribir("actividad", lambda: svg_actividad(d))
-    escribir("resumen", lambda: svg_resumen(d))
-    escribir("contacto", lambda: svg_seccion("Contacto", "Escríbeme o sígueme"))
-    escribir("barra", lambda: svg_barra(len(PISTAS), total))
-
-    # iconos de contacto y botones: mosaicos blancos, iguales en ambos temas
-    aplicar_tema("oscuro")
+        (SALIDA / f"proyecto-{i:02d}.svg").write_text(svg_icono_proyecto(pista[6], pista[7], pista[1]), encoding="utf-8")
     for clave, nombre in [("gmail", "correo"), ("linkedin", "linkedin"), ("github", "github")]:
         (SALIDA / f"contacto-{nombre}.svg").write_text(svg_contacto(clave, nombre.capitalize()), encoding="utf-8")
-    (SALIDA / "boton-seguir.svg").write_text(svg_boton("Seguir", C["verde"], "#000000", C["verde"]), encoding="utf-8")
+    (SALIDA / "boton-seguir.svg").write_text(svg_boton("Seguir", "#1ED760", "#000000", "#1ED760"), encoding="utf-8")
     (SALIDA / "boton-compartir.svg").write_text(svg_boton("Compartir", "#FFFFFF", "#111827", "#D1D5DB"), encoding="utf-8")
     print("listo:", d["commits_anio"], "commits,", d["contribuciones"], "contribuciones,", len(repos), "repos")
 
