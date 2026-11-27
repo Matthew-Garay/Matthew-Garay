@@ -47,12 +47,12 @@ PISTAS = [
      "Bases de datos", "React, Node.js, MySQL", "piloto", "ticket", ("#1D4ED8", "#0B1E4A")),
     ("IP-Scanner", "IP Inspector", "Escáner de red y puertos con interfaz gráfica",
      "Redes", "Python, CustomTkinter", "release", "radar", ("#0F766E", "#062925")),
-    ("MG-Toolkit", "MG Toolkit", "Limpieza, reparación y diagnóstico de Windows",
-     "Mantenimiento", "Batch, DISM, SFC", "release", "llave", ("#C2410C", "#3B1405")),
+    ("Cerberus", "Cerberus", "HR & Biometric System: nómina y asistencia",
+     "Bases de datos", "VB.NET, MySQL, SQL Server", "activo", "monitor", ("#7C3AED", "#24104A")),
     ("Microsoft-Office-Installer", "Office Installer", "Instala Office LTSC con un solo comando",
      "Soporte técnico", "PowerShell, HTML", "release", "descarga", ("#B91C1C", "#3A0A0A")),
-    ("qr-studio", "QR Studio", "Generador de códigos QR personalizables",
-     "Programación", "JavaScript, Canvas", "demo", "qr", ("#15803D", "#062A14")),
+    ("Adobe-Genuine-Service-AGS-Alert", "Adobe AGS Alert", "Desactiva Adobe Genuine Service de forma reversible",
+     "Mantenimiento", "PowerShell", "activo", "llave-cifrado", ("#B45309", "#3B1D05")),
 ]
 
 COLORES_LENGUAJE = {
@@ -398,10 +398,10 @@ def svg_artista(d):
         p.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#mono)"/>')
         p.append(txt(cx, cy + 22, "MG", R_FG, 64, 800, extra='text-anchor="middle" letter-spacing="-2"'))
     x = 262
-    p.append(txt(x, 87, "Técnico de soporte y desarrollador", R_FG, 14, 600))
+    p.append(txt(x, 87, "Software Developer & IT Systems Specialist", R_FG, 14, 600))
     p.append(txt(x - 4, 168, "Matthew Garay", R_FG, 70, 800, extra='letter-spacing="-2.5"'))
-    p.append(txt(x, 204, f"{d['commits_anio']} commits en el último año  •  {len(d['repos'])} repositorios públicos",
-                 R_FG, 15.5, 500))
+    p.append(txt(x, 204, "Desde 2021 en producción  •  Sistemas & Desarrollo Web", R_FG, 15.5, 500))
+    p.append(txt(x, 282, "Tecámac, Estado de México  •  Abierto a proyectos", R_SUB, 14))
     # áreas
     ax = x
     for nombre, color in [("Mantenimiento", "#F59B23"), ("Soporte técnico", "#4CB3FF"),
@@ -417,8 +417,10 @@ def svg_artista(d):
     p.append(f'<circle cx="68" cy="{y}" r="28" fill="{R_VERDE}"/><path d="M60 {y - 13}v26l21-13z" fill="#000"/>')
     p.append(f'<rect x="116" y="{y - 16}" width="84" height="32" rx="16" fill="none" stroke="#fff" stroke-opacity=".6"/>')
     p.append(txt(158, y + 5, "Seguir", R_FG, 13.5, 700, extra='text-anchor="middle"'))
-    p.append(f'<g fill="{R_SUB}"><circle cx="226" cy="{y}" r="2.5"/><circle cx="236" cy="{y}" r="2.5"/>'
-             f'<circle cx="246" cy="{y}" r="2.5"/></g>')
+    p.append(f'<rect x="212" y="{y - 16}" width="110" height="32" rx="16" fill="none" stroke="#fff" stroke-opacity=".6"/>')
+    p.append(txt(267, y + 5, "Compartir", R_FG, 13.5, 700, extra='text-anchor="middle"'))
+    p.append(f'<g fill="{R_SUB}"><circle cx="340" cy="{y}" r="2.5"/><circle cx="350" cy="{y}" r="2.5"/>'
+             f'<circle cx="360" cy="{y}" r="2.5"/></g>')
     defs = (f'<linearGradient id="art" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F5132"/>'
             f'<stop offset=".75" stop-color="{R_BG}"/></linearGradient>'
             f'<radialGradient id="luz" cx=".15" cy=".1" r=".7"><stop offset="0" stop-color="#1ED760" stop-opacity=".28"/>'
@@ -430,12 +432,14 @@ def svg_artista(d):
 
 
 BIO = [
-    "Matthew Garay se dedica al soporte técnico y al desarrollo de software. Desde 2021 diagnostica, "
-    "repara y da mantenimiento a computadoras, atiende a usuarios, configura impresoras y revisa redes locales.",
-    "Escribe las herramientas que usa en ese trabajo: MG Toolkit para el mantenimiento de Windows, "
-    "Office Installer para instalar Office con un comando e IP Inspector para revisar los equipos de una red.",
-    "También desarrolla aplicaciones web con React, Node.js y MySQL. La más completa es Precision HelpDesk, "
-    "un sistema de tickets e inventario de TI que está en prueba piloto.",
+    "Perfil híbrido en TI que combina el desarrollo de software, con una sólida base en soluciones web, "
+    "y el soporte técnico. Tengo dominio en la gestión de bases de datos para análisis, así como en el "
+    "mantenimiento integral de hardware y software.",
+    "Me distingo por un enfoque resolutivo y paciente para encontrar la raíz de cada problema, y me apasiona "
+    "simplificar la tecnología para que sea una herramienta de valor.",
+    "Especialidad principal: Desarrollo web y soporte técnico de TI.",
+    "Enfoque: encontrar la causa raíz y dejar la solución documentada.",
+    "Sede: Tecámac, Estado de México, México.",
 ]
 
 
@@ -508,14 +512,12 @@ def svg_seccion(titulo, subtitulo=""):
 def svg_creditos():
     W = 880
     grupos = [
-        ("Lenguajes", "JavaScript, TypeScript, Python, PHP, SQL, PowerShell, Batch, Bash, VB.NET, Rust, Dart, R"),
-        ("Frameworks y librerías", "React, Vite, Tailwind CSS, Bootstrap, Node.js, Express, Socket.IO, Flutter, CustomTkinter"),
-        ("Bases de datos", "MySQL, SQL Server"),
-        ("Sistemas operativos", "Windows 10/11, Windows Server, Ubuntu, Kali Linux, Arch Linux"),
-        ("Infraestructura y redes", "Cisco (VLAN, VLSM, enrutamiento), Packet Tracer, VMware, VirtualBox, Docker, AWS"),
-        ("Herramientas", "Git, GitHub, VS Code, Visual Studio, Postman, Power BI, Excel, Microsoft Office"),
-        ("Metodologías", "Scrum, Kanban, ITIL v4"),
-        ("Hardware", "Diagnóstico, reemplazo de componentes, impresoras láser y térmicas, cableado estructurado"),
+        ("Producido por", "Matthew Garay"),
+        ("Backend y bases de datos", "Node.js, Express, PHP, Python, Java, C, C#, VB.NET, MySQL, SQL Server"),
+        ("Frontend y UI", "React, TypeScript, JavaScript, Tailwind CSS, Vite, HTML/CSS, Bootstrap, Flutter"),
+        ("Infraestructura, redes y soporte TI", "Windows, Windows Server, Linux, PowerShell, Batch, Git, Docker, "
+         "AWS, Cisco Packet Tracer, redes LAN y VLAN, ZKTeco (control de asistencia)"),
+        ("Herramientas", "Git, GitHub, VS Code, Visual Studio, Postman, Power BI, Excel"),
     ]
     col_w = (W - 64 - 32) / 2
     p = [txt(32, 50, "Créditos", R_FG, 24, 800, extra='letter-spacing="-.5"')]
@@ -576,7 +578,7 @@ def main():
     repos = d["repos"]
     (SALIDA / "artista.svg").write_text(svg_artista(d), encoding="utf-8")
     (SALIDA / "acerca.svg").write_text(svg_acerca(d, len(repos)), encoding="utf-8")
-    (SALIDA / "discografia.svg").write_text(svg_seccion("Discografía", "4 álbumes, uno por área de trabajo"), encoding="utf-8")
+    (SALIDA / "discografia.svg").write_text(svg_seccion("Discografía", "Lanzamientos populares • Álbumes • Sencillos y EP"), encoding="utf-8")
     for i, (titulo, icono, colores, pistas) in enumerate(ALBUMES, 1):
         (SALIDA / f"album-{i}.svg").write_text(svg_album(titulo, icono, colores, pistas, i), encoding="utf-8")
     (SALIDA / "creditos.svg").write_text(svg_creditos(), encoding="utf-8")
