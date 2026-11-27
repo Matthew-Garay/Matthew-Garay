@@ -501,7 +501,7 @@ def svg_artista(d):
         p.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#mono)"/>')
         p.append(txt(cx, cy + 22, "MG", "#FFFFFF", 64, 800, extra='text-anchor="middle" letter-spacing="-2"'))
     x = 262
-    p.append(txt(x, 92, "Desarrollador de software y especialista en sistemas TI", C["sub"], 14, 600))
+    p.append(txt(x, 92, "Desarrollador de software y soporte técnico", C["sub"], 14, 600))
     p.append(txt(x - 4, 176, "Matthew Garay", C["fg"], 70, 800, extra='letter-spacing="-2.5"'))
     bx = x - 4 + 13 * 70 * 0.52 + 40  # insignia de verificado junto al nombre
     p.append(f'<circle cx="{bx:.0f}" cy="150" r="13" fill="{C["verde"]}"/>'
@@ -769,20 +769,21 @@ def svg_icono_proyecto(icono, colores, etiqueta):
 
 
 def svg_franja(tipo):
-    """Franja oscura de 293x96 con un botón de la cabecera: Reproducir, Seguir o Compartir."""
+    """Botón de la cabecera (Reproducir, Seguir o Compartir) sobre fondo transparente:
+    se ve igual en modo claro y oscuro."""
     W, H = 293, 96
     cx, cy = W / 2, H / 2
-    p = [f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/>']
+    p = []
     if tipo == "reproducir":
         p.append(f'<circle cx="{cx}" cy="{cy}" r="28" fill="#1ED760"/>'
                  f'<path d="M{cx - 8} {cy - 13}v26l21-13z" fill="#000000"/>')
+    elif tipo == "seguir":
+        p.append(f'<rect x="{cx - 62}" y="{cy - 18}" width="124" height="36" rx="18" fill="#1ED760"/>')
+        p.append(txt(cx, cy + 5, "Seguir", "#000000", 14, 700, extra='text-anchor="middle"'))
     else:
-        relleno = "#1ED760" if tipo == "seguir" else "none"
-        color = "#000000" if tipo == "seguir" else "#FFFFFF"
-        texto = "Seguir" if tipo == "seguir" else "Compartir"
-        p.append(f'<rect x="{cx - 62}" y="{cy - 18}" width="124" height="36" rx="18" fill="{relleno}" '
-                 f'stroke="#FFFFFF" stroke-opacity=".6"/>')
-        p.append(txt(cx, cy + 5, texto, color, 14, 700, extra='text-anchor="middle"'))
+        p.append(f'<rect x="{cx - 62}" y="{cy - 18}" width="124" height="36" rx="18" fill="#242424" '
+                 f'stroke="#555555"/>')
+        p.append(txt(cx, cy + 5, "Compartir", "#FFFFFF", 14, 700, extra='text-anchor="middle"'))
     return svg(W, H, "".join(p), tipo)
 
 
