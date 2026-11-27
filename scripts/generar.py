@@ -55,12 +55,12 @@ AREAS = {
 PISTAS = [
     ("Precision-Truck-Parts---Help-Desk", "Precision HelpDesk", "Mesa de ayuda e inventario de TI",
      "Bases de datos", "React, Node.js, MySQL", "piloto", "ticket", ("#1D4ED8", "#0B1E4A")),
-    ("IP-Scanner", "IP Inspector", "Escáner de red y puertos con interfaz gráfica",
-     "Redes", "Python, CustomTkinter", "release", "radar", ("#0F766E", "#062925")),
-    ("Cerberus", "Cerberus", "HR & Biometric System: nómina y asistencia",
-     "Bases de datos", "VB.NET, MySQL, SQL Server", "activo", "monitor", ("#7C3AED", "#24104A")),
+    ("qr-studio", "QR Studio", "Generador QR web personalizable: logo, patrones, colores y degradados",
+     "Programación", "JavaScript, HTML", "activo", "qr", ("#0EA5E9", "#0C2A3F")),
     ("Microsoft-Office-Installer", "Office Installer", "Instala Office LTSC con un solo comando",
      "Soporte técnico", "PowerShell, HTML", "release", "descarga", ("#B91C1C", "#3A0A0A")),
+    ("MG-Toolkit", "MG Toolkit", "Limpieza, optimización y reparación de Windows 10/11",
+     "Mantenimiento", "Batch", "activo", "llave", ("#EA580C", "#431407")),
     ("Adobe-Genuine-Service-AGS-Alert", "Adobe AGS Alert", "Desactiva Adobe Genuine Service de forma reversible",
      "Mantenimiento", "PowerShell", "activo", "llave-cifrado", ("#B45309", "#3B1D05")),
 ]
@@ -768,6 +768,24 @@ def svg_icono_proyecto(icono, colores, etiqueta):
     return svg(72, 72, portada(0, 0, 72, icono, colores, "x", 14), etiqueta)
 
 
+def svg_franja(tipo):
+    """Franja oscura de 293x96 con un botón de la cabecera: Reproducir, Seguir o Compartir."""
+    W, H = 293, 96
+    cx, cy = W / 2, H / 2
+    p = [f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/>']
+    if tipo == "reproducir":
+        p.append(f'<circle cx="{cx}" cy="{cy}" r="28" fill="#1ED760"/>'
+                 f'<path d="M{cx - 8} {cy - 13}v26l21-13z" fill="#000000"/>')
+    else:
+        relleno = "#1ED760" if tipo == "seguir" else "none"
+        color = "#000000" if tipo == "seguir" else "#FFFFFF"
+        texto = "Seguir" if tipo == "seguir" else "Compartir"
+        p.append(f'<rect x="{cx - 62}" y="{cy - 18}" width="124" height="36" rx="18" fill="{relleno}" '
+                 f'stroke="#FFFFFF" stroke-opacity=".6"/>')
+        p.append(txt(cx, cy + 5, texto, color, 14, 700, extra='text-anchor="middle"'))
+    return svg(W, H, "".join(p), tipo)
+
+
 # ================================================================ main
 def main():
     SALIDA.mkdir(exist_ok=True)
@@ -781,7 +799,6 @@ def main():
     pistas = [svg_pista(i, pista, repos.get(pista[0], {})) for i, pista in enumerate(PISTAS, 1)]
     albumes = [svg_album(t, ic, co, pi, i) for i, (t, ic, co, pi) in enumerate(ALBUMES, 1)]
     filas = [
-        ([svg_artista(d)], 12),
         ([svg_acerca(d, len(repos), len(ALBUMES))], 12),
         ([svg_playlist(total, len(PISTAS))], 0),
     ]
@@ -790,11 +807,12 @@ def main():
     filas += [([svg_seccion("Discografía", "Lanzamientos populares • Álbumes • Sencillos y EP")], 0)]
     filas += [(albumes[k:k + 2], 12) for k in range(0, len(albumes), 2)]
     filas += [([svg_creditos()], 12), ([svg_actividad(d)], 12), ([svg_resumen(d)], 12)]
+
+    (SALIDA / "perfil-cabecera.svg").write_text(svg_artista(d), encoding="utf-8")
+    for tipo in ("reproducir", "seguir", "compartir"):
+        (SALIDA / f"franja-{tipo}.svg").write_text(svg_franja(tipo), encoding="utf-8")
     (SALIDA / "perfil.svg").write_text(svg_perfil(filas), encoding="utf-8")
     (SALIDA / "contacto-titulo.svg").write_text(svg_seccion("Contacto", "Escríbeme o sígueme"), encoding="utf-8")
-
-    for i, pista in enumerate(PISTAS, 1):
-        (SALIDA / f"proyecto-{i:02d}.svg").write_text(svg_icono_proyecto(pista[6], pista[7], pista[1]), encoding="utf-8")
     for clave, nombre in [("gmail", "correo"), ("linkedin", "linkedin"), ("github", "github")]:
         (SALIDA / f"contacto-{nombre}.svg").write_text(svg_contacto(clave, nombre.capitalize()), encoding="utf-8")
     print("listo:", d["commits_anio"], "commits,", d["contribuciones"], "contribuciones,", len(repos), "repos")
