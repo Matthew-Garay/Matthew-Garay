@@ -257,7 +257,7 @@ def svg_playlist(total_commits, n_proyectos):
     for i, pista in enumerate(PISTAS[:4]):
         x, y = 32 + (i % 2) * 80, 28 + (i // 2) * 80
         p.append(portada(x, y, 80, pista[6], pista[7], f"m{i}", 0))
-    p.append(txt(214, 52, "Playlist pública", C["fg"], 13, 600))
+    p.append(txt(214, 52, "Populares", C["fg"], 13, 600))
     p.append(txt(210, 108, "Proyectos", C["fg"], 54, 800, extra='letter-spacing="-1.5"'))
     p.append(txt(214, 144, "Soporte, mantenimiento, redes, programación y bases de datos.", C["sub"], 14.5))
     p.append(txt(214, 172, f"Creada por Matthew Garay  •  {n_proyectos} proyectos  •  {total_commits} commits  •  "
@@ -773,7 +773,7 @@ def svg_franja(tipo):
     se ve igual en modo claro y oscuro."""
     W, H = 293, 96
     cx, cy = W / 2, H / 2
-    p = []
+    p = [f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/>']
     if tipo == "reproducir":
         p.append(f'<circle cx="{cx}" cy="{cy}" r="28" fill="#1ED760"/>'
                  f'<path d="M{cx - 8} {cy - 13}v26l21-13z" fill="#000000"/>')
