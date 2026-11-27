@@ -14,6 +14,7 @@ Secciones (estilo app de música):
   resumen.svg        "Un año en GitHub": contribuciones, racha y lenguajes
   barra.svg          barra de reproducción
 """
+import base64
 import json
 import os
 import time
@@ -439,7 +440,6 @@ BIO = [
     "simplificar la tecnología para que sea una herramienta de valor.",
     "Especialidad principal: Desarrollo web y soporte técnico de TI.",
     "Enfoque: encontrar la causa raíz y dejar la solución documentada.",
-    "Sede: Tecámac, Estado de México, México.",
 ]
 
 
@@ -509,6 +509,51 @@ def svg_seccion(titulo, subtitulo=""):
     return svg(W, H, "".join(p), titulo)
 
 
+TECNOLOGIAS = [
+    ("java", "Java"), ("nodejs", "Node.js"), ("python", "Python"), ("c", "C"), ("cs", "C#"),
+    ("powershell", "PowerShell"), ("react", "React"), ("ts", "TypeScript"), ("html", "HTML/CSS"),
+    ("css", "CSS"), ("mysql", "MySQL"), ("mssql", "SQL Server"), ("linux", "Linux"),
+    ("windows", "Windows Server"), ("git", "Git"), ("docker", "Docker"),
+    (None, "VB.NET"), (None, "ZKTeco"),
+]
+_ICONOS_CACHE = {}
+
+
+def icono_datauri(nombre):
+    """Descarga el icono de skillicons y lo devuelve como data URI (para incrustarlo en el SVG)."""
+    if nombre not in _ICONOS_CACHE:
+        try:
+            req = urllib.request.Request(f"https://skillicons.dev/icons?i={nombre}",
+                                         headers={"User-Agent": "perfil-generador"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                datos = r.read()
+            _ICONOS_CACHE[nombre] = "data:image/svg+xml;base64," + base64.b64encode(datos).decode("ascii")
+        except (urllib.error.URLError, TimeoutError):
+            _ICONOS_CACHE[nombre] = None
+    return _ICONOS_CACHE[nombre]
+
+
+def cuadros_tecnologias(items, y0, cols=9, tam=80, sep=14):
+    """Cuadros cuadrados del mismo tamaño, con el logo centrado y el nombre debajo."""
+    W = 880
+    ancho = cols * tam + (cols - 1) * sep
+    x0 = (W - ancho) / 2
+    p = []
+    for idx, (clave, etiqueta) in enumerate(items):
+        x = x0 + (idx % cols) * (tam + sep)
+        y = y0 + (idx // cols) * (tam + sep)
+        p.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{tam}" height="{tam}" rx="14" fill="#1E1E1E" '
+                 f'stroke="#2A2A2A"/>')
+        uri = icono_datauri(clave) if clave else None
+        if uri:
+            p.append(f'<image href="{uri}" x="{x + 20:.1f}" y="{y + 12:.1f}" width="40" height="40"/>')
+            p.append(txt(x + tam / 2, y + 68, etiqueta, R_SUB, 10.5, extra='text-anchor="middle"'))
+        else:
+            p.append(txt(x + tam / 2, y + 46, etiqueta, R_FG, 13, 700, extra='text-anchor="middle"'))
+    filas = (len(items) + cols - 1) // cols
+    return "".join(p), filas * tam + (filas - 1) * sep
+
+
 def svg_creditos():
     W = 880
     grupos = [
@@ -531,8 +576,12 @@ def svg_creditos():
         for j, l in enumerate(lineas):
             p.append(txt(x, y + 22 + j * 19, l, R_SUB, 13.5))
         alturas[c] += 22 + len(lineas) * 19 + 22
-    H = int(92 + max(alturas) + 6)
-    return svg(W, H, f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>' + "".join(p), "Créditos: stack técnico")
+    y_logos = 92 + max(alturas) + 18
+    p.append(txt(32, y_logos, "Tecnologías", R_FG, 15, 700))
+    bloque, alto = cuadros_tecnologias(TECNOLOGIAS, y_logos + 16)
+    p.append(bloque)
+    H = int(y_logos + 16 + alto + 20)
+    return svg(W, H, f'<rect width="{W}" height="{H}" rx="12" fill="{R_BG}"/>' + "".join(p), "Créditos: stack técnico y tecnologías")
 
 
 def svg_barra(n_proyectos, total_commits):

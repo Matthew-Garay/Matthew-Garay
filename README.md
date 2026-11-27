@@ -27,17 +27,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/creditos.svg" width="100%" alt="Créditos: producido por Matthew Garay; backend y bases de datos; frontend y UI; infraestructura, redes y soporte TI."/>
-</p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,nodejs,python,c,cs,powershell,react,ts,html,css,mysql,mssql,linux,windows,git,docker" alt="Java, Node.js, Python, C, C#, PowerShell, React, TypeScript, HTML/CSS, MySQL, SQL Server, Linux, Windows, Git, Docker"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/VB.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="VB.NET"/>
-  <img src="https://img.shields.io/badge/ZKTeco-333333?style=flat-square" alt="ZKTeco"/>
-  <img src="https://img.shields.io/badge/Redes-333333?style=flat-square" alt="Redes"/>
+  <img src="assets/creditos.svg" width="100%" alt="Créditos: producido por Matthew Garay; backend y bases de datos; frontend y UI; infraestructura, redes y soporte TI; y cuadros con las tecnologías."/>
 </p>
 
 <p align="center">
@@ -45,29 +35,31 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=transparent&hide_border=true" alt="Métricas de commits y contribuciones"/>
+  <a href="mailto:1911.garay.perez@gmail.com" title="Correo"><img src="https://skillicons.dev/icons?i=gmail" width="64" height="64" alt="Correo"/></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/matthewgarayperez" title="LinkedIn"><img src="https://skillicons.dev/icons?i=linkedin" width="64" height="64" alt="LinkedIn"/></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Matthew-Garay" title="GitHub"><img src="https://skillicons.dev/icons?i=github" width="64" height="64" alt="GitHub"/></a>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&langs_count=6&theme=transparent&hide_border=true" alt="Lenguajes más usados"/>
+  1911.garay.perez@gmail.com &nbsp;•&nbsp; linkedin.com/in/matthewgarayperez &nbsp;•&nbsp; github.com/Matthew-Garay
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=transparent&hide_border=true" alt="Racha de contribuciones"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Matthew-Garay&show_icons=true&theme=dark&hide_border=true" alt="Métricas de commits y contribuciones"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Matthew-Garay&theme=github-compact&bg_color=00000000&hide_border=true" alt="Gráfica de actividad"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matthew-Garay&layout=compact&langs_count=6&theme=dark&hide_border=true" alt="Lenguajes más usados"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/En_gira-Redes_del_artista-1DB954?style=flat-square&labelColor=333333" alt="En gira. Redes del artista."/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Matthew-Garay&theme=dark&hide_border=true" alt="Racha de contribuciones"/>
 </p>
 
 <p align="center">
-  <a href="mailto:1911.garay.perez@gmail.com"><img src="https://img.shields.io/badge/Correo-1911.garay.perez%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo"/></a>
-  <a href="https://linkedin.com/in/matthewgarayperez"><img src="https://img.shields.io/badge/LinkedIn-matthewgarayperez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://github.com/Matthew-Garay"><img src="https://img.shields.io/badge/GitHub-Matthew--Garay-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Matthew-Garay&theme=github-compact&bg_color=121212&hide_border=true" alt="Gráfica de actividad"/>
 </p>
 
 <p align="center">
