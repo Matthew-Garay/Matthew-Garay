@@ -3,23 +3,18 @@
 Uso:   GITHUB_TOKEN=... python scripts/generar.py
 Salida: carpeta assets/
 
-Cada gráfico se genera en dos temas:
-  nombre.svg        tema oscuro
-  nombre-claro.svg  tema claro (el README elige uno u otro con <picture>)
-
-Secciones (estilo app de música):
-  artista.svg        encabezado del perfil
-  acerca.svg         tarjeta "Acerca de" con descripción y cifras
-  playlist.svg       encabezado de la playlist de proyectos
-  pista-*.svg        una fila por proyecto
-  discografia.svg    título de la sección de áreas
-  album-*.svg        un álbum por área de trabajo
-  creditos.svg       stack técnico
-  actividad.svg      mapa de calor de contribuciones del último año
-  resumen.svg        "Un año en GitHub": cifras, racha y lenguajes
-  barra.svg          barra de reproducción
-  contacto-*.svg     iconos de contacto
-  boton-*.svg        botones Seguir y Compartir
+El README apila estas piezas (todas de fondo oscuro) con align="left" para que queden
+pegadas y cada una pueda llevar su enlace:
+  cabecera, franja-*          encabezado de artista y botones
+  populares, pista-N          canciones populares (proyectos)
+  lanzamiento                 último release publicado en cualquier repo
+  discografia, album-N        un álbum por área de trabajo
+  playlists, playlist-N       playlists temáticas
+  letra                       fragmento real de código, estilo letra de canción
+  fans                        "A los fans también les gusta": tecnologías
+  acerca, creditos, resumen   descripción, stack y año en GitHub
+  contacto, contacto-*        enlaces de contacto
+  barra                       barra de reproducción (la única sin align, cierra el bloque)
 """
 import base64
 import json
@@ -68,7 +63,7 @@ PISTAS = [
 # Tecnologías que se muestran en la sección de créditos (sin C#, Docker, VB.NET ni ZKTeco)
 TECNOLOGIAS = [
     ("java", "Java"), ("nodejs", "Node.js"), ("python", "Python"), ("c", "C"),
-    ("powershell", "PowerShell"), ("react", "React"), ("ts", "TypeScript"), ("html", "HTML/CSS"),
+    ("powershell", "PowerShell"), ("react", "React"), ("ts", "TypeScript"), ("html", "HTML"),
     ("css", "CSS"), ("mysql", "MySQL"), ("mssql", "SQL Server"), ("linux", "Linux"),
     ("windows", "Windows Server"), ("git", "Git"),
 ]
@@ -151,12 +146,13 @@ def cargar_datos():
     for nombre in nombres:
         d = graphql("""query($o:String!,$n:String!){repository(owner:$o,name:$n){
             defaultBranchRef{target{... on Commit{history{totalCount}}}}
-            releases(first:1,orderBy:{field:CREATED_AT,direction:DESC}){nodes{tagName}}}}""",
+            releases(first:1,orderBy:{field:CREATED_AT,direction:DESC}){nodes{tagName publishedAt url releaseAssets{totalCount}}}}}""",
                     o=USUARIO, n=nombre)["repository"]
         ref = d["defaultBranchRef"]
         nombres[nombre]["_commits"] = ref["target"]["history"]["totalCount"] if ref else 0
         rel = d["releases"]["nodes"]
         nombres[nombre]["_version"] = rel[0]["tagName"] if rel else None
+        nombres[nombre]["_release"] = rel[0] if rel else None
 
     # lenguajes por bytes
     bytes_lenguaje = Counter()
@@ -295,8 +291,7 @@ def svg_pista(i, pista, repo):
         estado = repo.get("_version") or "release"
     color = {"en desarrollo": "#F59B23", "académico": C["sub"]}.get(estado, C["verde"])
     p.append(txt(COLS["fin"], 31, estado, color, 13, 600, extra='text-anchor="end"'))
-    estrellas = repo.get("stargazers_count", 0)
-    p.append(txt(COLS["fin"], 50, f"♥ {estrellas}  •  {repo.get('_commits', 0)} commits", C["sub"], 12,
+    p.append(txt(COLS["fin"], 50, f"{repo.get('_commits', 0)} commits", C["sub"], 12,
                  extra='text-anchor="end"'))
     estilo = ("" if not sonando else
               ".eq{transform-box:fill-box;transform-origin:center bottom;animation:eq 1.1s ease-in-out infinite}"
@@ -503,12 +498,8 @@ def svg_artista(d):
     x = 262
     p.append(txt(x, 92, "Desarrollador de software y soporte técnico", C["sub"], 14, 600))
     p.append(txt(x - 4, 176, "Matthew Garay", C["fg"], 70, 800, extra='letter-spacing="-2.5"'))
-    bx = x - 4 + 13 * 70 * 0.52 + 40  # insignia de verificado junto al nombre
-    p.append(f'<circle cx="{bx:.0f}" cy="150" r="13" fill="{C["verde"]}"/>'
-             f'<path d="M{bx - 6:.0f} 150l4 4 8-8" fill="none" stroke="#000000" stroke-width="3" '
-             f'stroke-linecap="round" stroke-linejoin="round"/>')
-    p.append(txt(x, 212, f"{d['seguidores']} seguidores  •  {len(PISTAS)} proyectos  •  {d['commits_anio']} commits",
-                 C["fg"], 15, 600))
+    p.append(txt(x, 212, f"{d['commits_anio']} commits en el último año  •  "
+                         f"{len(d['repos'])} repositorios públicos", C["fg"], 15, 600))
     ax = x
     for nombre, color in AREAS_ARTISTA:
         ancho = len(nombre) * 13 * 0.56 + 34
@@ -528,15 +519,13 @@ def svg_artista(d):
 
 
 BIO = [
-    "Perfil híbrido en TI que combina el desarrollo de software, con una sólida base en soluciones web, "
-    "y el soporte técnico. Tengo dominio en la gestión de bases de datos para análisis, así como en el "
-    "mantenimiento integral de hardware y software.",
-    "Me distingo por un enfoque resolutivo y paciente para encontrar la raíz de cada problema, y me apasiona "
-    "simplificar la tecnología para que sea una herramienta de valor.",
-    "Especialidad principal: Desarrollo web y soporte técnico de TI.",
-    "Enfoque: encontrar la causa raíz y dejar la solución documentada.",
+    "Matthew Garay se dedica al soporte técnico y al desarrollo de software. Desde 2021 diagnostica, "
+    "repara y da mantenimiento a computadoras, atiende a usuarios, configura impresoras y revisa redes locales.",
+    "Escribe las herramientas que usa en ese trabajo: MG Toolkit para el mantenimiento de Windows, "
+    "Office Installer para instalar Office con un comando e IP Inspector para revisar los equipos de una red.",
+    "También desarrolla aplicaciones web con React, Node.js y MySQL. La más completa es Precision HelpDesk, "
+    "un sistema de tickets e inventario de TI que está en prueba piloto.",
 ]
-
 
 def svg_acerca(d, n_proyectos, n_areas):
     W = 880
@@ -575,12 +564,13 @@ def svg_acerca(d, n_proyectos, n_areas):
     return svg(W, H, "".join(p), "Acerca de Matthew Garay. " + " ".join(BIO), defs=defs)
 
 
-def svg_album(titulo, icono, colores, pistas, uid, anio=2026):
-    W, H = 430, 382
+def svg_album(titulo, icono, colores, pistas, uid, H=None):
+    W = 430
+    H = H or alto_album(len(pistas))
     p = [f'<rect width="{W}" height="{H}" rx="12" fill="{C["panel"]}"/>',
          f'<rect width="{W}" height="140" rx="12" fill="url(#ab{uid})" opacity=".55"/>']
     p.append(portada(22, 22, 100, icono, colores, f"al{uid}", 6))
-    p.append(txt(140, 48, f"Álbum  •  {anio}", C["fg"], 12.5, 600))
+    p.append(txt(140, 48, "Álbum", C["fg"], 12.5, 600))
     lineas = envolver(titulo, 20)
     for i, linea in enumerate(lineas):
         p.append(txt(138, 80 + i * 26, linea, C["fg"], 24, 800, extra='letter-spacing="-.6"'))
@@ -672,13 +662,9 @@ def svg_creditos():
         for j, l in enumerate(lineas):
             p.append(txt(x, y + 22 + j * 19, l, C["sub"], 13.5))
         alturas[c] += 22 + len(lineas) * 19 + 22
-    y_logos = 92 + max(alturas) + 18
-    p.append(txt(32, y_logos, "Tecnologías", C["fg"], 15, 700))
-    bloque, alto = cuadros_tecnologias(TECNOLOGIAS, y_logos + 16)
-    p.append(bloque)
-    H = int(y_logos + 16 + alto + 20)
+    H = int(92 + max(alturas) + 2)
     return svg(W, H, f'<rect width="{W}" height="{H}" rx="12" fill="{C["bg"]}"/>' + "".join(p),
-               "Créditos: stack técnico y tecnologías")
+               "Créditos: stack técnico")
 
 
 def svg_contacto(clave, etiqueta):
@@ -787,6 +773,190 @@ def svg_franja(tipo):
     return svg(W, H, "".join(p), tipo)
 
 
+# ================================================================ piezas del README
+# El README apila piezas de 880 px de ancho con align="left": así quedan pegadas,
+# sin rayas blancas entre ellas, y cada una puede llevar su propio enlace.
+def etiqueta_de(s):
+    m = re.search(r'aria-label="([^"]*)"', s)
+    return m.group(1) if m else ""
+
+
+def pieza(s, arriba=0, abajo=0, ancho=880, x=0):
+    """Coloca una sección dentro de una pieza con fondo continuo y márgenes verticales."""
+    H = altura(s) + arriba + abajo
+    fondo = f'<rect width="{ancho}" height="{H}" fill="{C["bg"]}"/>'
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{ancho}" height="{H}" viewBox="0 0 {ancho} {H}" '
+            f'role="img" aria-label="{etiqueta_de(s)}">{fondo}{anidar(s, x, arriba)}</svg>')
+
+
+def alto_album(n_pistas):
+    return 166 + (n_pistas - 1) * 34 + 30
+
+
+# ================================================================ lanzamiento más reciente
+def ultimo_lanzamiento(repos):
+    candidatos = [(r["_release"]["publishedAt"], nombre, r["_release"])
+                  for nombre, r in repos.items() if r.get("_release") and r["_release"].get("publishedAt")]
+    return max(candidatos) if candidatos else None
+
+
+PORTADAS_EXTRA = {"IP-Scanner": ("IP Inspector", "radar", ("#0F766E", "#062925"))}
+
+
+def datos_portada(repo):
+    for pista in PISTAS:
+        if pista[0] == repo:
+            return pista[1], pista[6], pista[7]
+    return PORTADAS_EXTRA.get(repo, (repo.replace("-", " "), "codigo", ("#16A34A", "#052E16")))
+
+
+def svg_lanzamiento(repo, rel):
+    W, H = 880, 236
+    titulo, icono, colores = datos_portada(repo)
+    publicado = date.fromisoformat(rel["publishedAt"][:10])
+    n = rel["releaseAssets"]["totalCount"]
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{C["bg"]}"/>',
+         txt(32, 44, "Lanzamiento más reciente", C["fg"], 24, 800, extra='letter-spacing="-.5"'),
+         portada(32, 72, 148, icono, colores, "lz", 6)]
+    x = 204
+    p.append(txt(x, 106, fecha_corta(publicado), C["sub"], 13.5, 600))
+    p.append(txt(x, 146, f"{titulo} {rel['tagName']}", C["fg"], 32, 800, extra='letter-spacing="-1"'))
+    archivos = f"{n} archivo para descargar" if n == 1 else f"{n} archivos para descargar"
+    p.append(txt(x, 174, f"Sencillo  •  {archivos}", C["sub"], 14))
+    p.append(f'<rect x="{x}" y="190" width="124" height="34" rx="17" fill="{C["verde"]}"/>')
+    p.append(txt(x + 62, 212, "Descargar", "#000000", 14, 700, extra='text-anchor="middle"'))
+    return svg(W, H, "".join(p), f"Lanzamiento más reciente: {titulo} {rel['tagName']}, {fecha_corta(publicado)}")
+
+
+# ================================================================ letra (código real)
+LETRA_ORIGEN = ("Precision HelpDesk", "server/controllers/inventario-controller.js",
+                "https://github.com/Matthew-Garay/Precision-Truck-Parts---Help-Desk/blob/master/"
+                "server/controllers/inventario-controller.js#L61-L72")
+LETRA = [
+    "await conn.beginTransaction();",
+    "const [[ins]] = await conn.query(",
+    '  "SELECT id_insumo, nombre, stock, control_serie',
+    '   FROM insumo WHERE id_insumo = ? FOR UPDATE", [id_insumo]',
+    ");",
+    "if (!ins) { await conn.rollback(); return res.status(404); }",
+    "const stock_anterior = ins.stock ?? 0;",
+    "const stock_nuevo    = stock_anterior + cantidad;",
+]
+MONO = "'Cascadia Mono',Consolas,'SF Mono',Menlo,'DejaVu Sans Mono',monospace"
+
+
+def svg_letra():
+    W = 880
+    lh, y0 = 36, 142
+    H = y0 + (len(LETRA) - 1) * lh + 44
+    fondo, apagado = "#4F7BE8", "#0B1020"
+    p = [f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/>',
+         f'<rect x="32" y="8" width="{W - 64}" height="{H - 16}" rx="10" fill="{fondo}"/>',
+         txt(60, 58, "Letra", "#FFFFFF", 24, 800, extra='letter-spacing="-.5"'),
+         txt(60, 84, f"{LETRA_ORIGEN[0]}  •  {LETRA_ORIGEN[1].split('/')[-1]}", "#FFFFFF", 13.5, 600,
+             extra='opacity=".85"')]
+    for i, linea in enumerate(LETRA):
+        p.append(f'<text class="v" style="animation-delay:{i * 1.4:.1f}s" x="60" y="{y0 + i * lh}" fill="{apagado}" '
+                 f'font-size="19" font-weight="700" font-family="{MONO}" xml:space="preserve">{escape(linea)}</text>')
+    ciclo = len(LETRA) * 1.4
+    tramo = 100 / len(LETRA)
+    estilo = (f".v{{animation:canta {ciclo:.1f}s steps(1) infinite}}"
+              f"@keyframes canta{{0%{{fill:#FFFFFF}}{tramo:.2f}%{{fill:{apagado}}}100%{{fill:{apagado}}}}}"
+              "@media (prefers-reduced-motion:reduce){.v{animation:none;fill:#FFFFFF}}")
+    return svg(W, H, "".join(p), "Letra: fragmento real de Precision HelpDesk que bloquea el registro del inventario "
+               "con SELECT FOR UPDATE antes de cambiar el stock", estilo)
+
+
+# ================================================================ a los fans también les gusta
+TIPO_TECNOLOGIA = {
+    "java": "Lenguaje", "python": "Lenguaje", "c": "Lenguaje", "powershell": "Lenguaje", "ts": "Lenguaje",
+    "html": "Lenguaje", "css": "Lenguaje", "nodejs": "Entorno", "react": "Biblioteca",
+    "mysql": "Base de datos", "mssql": "Base de datos", "linux": "Sistema", "windows": "Sistema",
+    "git": "Herramienta",
+}
+
+
+def svg_fans():
+    W = 880
+    cols = 7
+    col_w = (W - 64) / cols
+    filas = (len(TECNOLOGIAS) + cols - 1) // cols
+    alto_fila = 168
+    H = 70 + filas * alto_fila
+    p = [f'<rect width="{W}" height="{H}" rx="12" fill="{C["bg"]}"/>',
+         txt(32, 44, "A los fans también les gusta", C["fg"], 24, 800, extra='letter-spacing="-.5"')]
+    for i, (clave, nombre) in enumerate(TECNOLOGIAS):
+        cx = 32 + (i % cols) * col_w + col_w / 2
+        cy = 70 + (i // cols) * alto_fila + 50
+        p.append(f'<circle cx="{cx:.1f}" cy="{cy}" r="48" fill="{MARCA_FONDO.get(clave, C["panel"])}"/>')
+        if clave == "mssql":
+            p.append(f'<g transform="translate({cx - 20:.1f} {cy - 20}) scale(.4)" fill="none" stroke="#fff" '
+                     f'stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{ICONOS["base"]}</g>')
+        else:
+            uri = icono_datauri(clave)
+            if uri:
+                p.append(f'<image href="{uri}" x="{cx - 26:.1f}" y="{cy - 26}" width="52" height="52"/>')
+        p.append(txt(cx, cy + 76, nombre, C["fg"], 14, 600, extra='text-anchor="middle"'))
+        p.append(txt(cx, cy + 96, TIPO_TECNOLOGIA.get(clave, "Tecnología"), C["sub"], 12.5, extra='text-anchor="middle"'))
+    return svg(W, H, "".join(p), "A los fans también les gusta: " + ", ".join(n for _, n in TECNOLOGIAS))
+
+
+# ================================================================ playlists temáticas
+PLAYLISTS = [
+    ("Herramientas para Windows", "Mantenimiento y soporte desde la consola: MG Toolkit, Office Installer y Adobe AGS Alert.",
+     ("#EA580C", "#7C2D12"), ["llave", "descarga", "llave-cifrado"],
+     "https://github.com/search?q=user%3AMatthew-Garay+topic%3Awindows&type=repositories"),
+    ("Web y bases de datos", "Aplicaciones con React, Node.js, PHP y MySQL: Precision HelpDesk y Directo a Obra.",
+     ("#1D4ED8", "#1E1B4B"), ["ticket", "carrito", "base"],
+     "https://github.com/search?q=user%3AMatthew-Garay+topic%3Amysql&type=repositories"),
+    ("Redes", "Escaneo y diseño de redes locales: IP Inspector y RedTech.",
+     ("#0F766E", "#042F2E"), ["radar", "red"],
+     "https://github.com/search?q=user%3AMatthew-Garay+topic%3Anetworking&type=repositories"),
+]
+
+
+def svg_playlist_tematica(i, titulo, desc, colores, iconos):
+    """Una de tres tarjetas; cada pieza mide un tercio del ancho y la tarjeta se coloca en su lugar global."""
+    W = 293
+    cw = (880 - 64 - 40) / 3
+    x = 32 + i * (cw + 20) - i * 880 / 3
+    y = 8
+    lineas_desc = envolver(desc, 34)[:3]
+    H = int(y + cw + 34 + 3 * 19 + 26)  # misma altura en las tres tarjetas
+    c1, c2 = colores
+    p = [f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/>',
+         f'<defs><linearGradient id="pt{i}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c1}"/>'
+         f'<stop offset="1" stop-color="{c2}"/></linearGradient></defs>',
+         f'<rect x="{x:.1f}" y="{y}" width="{cw:.1f}" height="{cw:.1f}" rx="8" fill="url(#pt{i})"/>']
+    for k, icono in enumerate(iconos):
+        p.append(f'<g transform="translate({x + 18 + k * 46:.1f} {y + 18}) scale(.38)" fill="none" stroke="#fff" '
+                 f'stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".9">{ICONOS[icono]}</g>')
+    partes = envolver(titulo, 13)
+    for k, linea in enumerate(partes):
+        yy = y + cw - 22 - (len(partes) - 1 - k) * 30
+        p.append(txt(x + 18, yy, linea, "#FFFFFF", 28, 800, extra='letter-spacing="-1"'))
+    ty = y + cw + 28
+    p.append(txt(x, ty, titulo, C["fg"], 15, 700))
+    for k, linea in enumerate(lineas_desc):
+        p.append(txt(x, ty + 22 + k * 19, linea, C["sub"], 13))
+    return svg(W, H, "".join(p), f"Playlist {titulo}: {desc}")
+
+
+# ================================================================ contacto
+def svg_contacto_pieza(clave, etiqueta):
+    W, H = 293, 150
+    tam = 80
+    cx = W / 2
+    p = [f'<rect width="{W}" height="{H}" fill="{C["bg"]}"/>']
+    if clave in MARCA_FONDO:
+        p.append(f'<rect x="{cx - tam / 2:.1f}" y="10" width="{tam}" height="{tam}" rx="18" fill="{MARCA_FONDO[clave]}"/>')
+    uri = icono_datauri(clave)
+    if uri:
+        p.append(f'<image href="{uri}" x="{cx - tam / 2 + 8:.1f}" y="18" width="{tam - 16}" height="{tam - 16}"/>')
+    p.append(txt(cx, 118, etiqueta, C["sub"], 13.5, 600, extra='text-anchor="middle"'))
+    return svg(W, H, "".join(p), etiqueta)
+
+
 # ================================================================ main
 def main():
     SALIDA.mkdir(exist_ok=True)
@@ -797,27 +967,54 @@ def main():
     repos = d["repos"]
     total = sum(repos.get(pista[0], {}).get("_commits", 0) for pista in PISTAS)
 
-    pistas = [svg_pista(i, pista, repos.get(pista[0], {})) for i, pista in enumerate(PISTAS, 1)]
-    albumes = [svg_album(t, ic, co, pi, i) for i, (t, ic, co, pi) in enumerate(ALBUMES, 1)]
-    filas = [
-        ([svg_acerca(d, len(repos), len(ALBUMES))], 12),
-        ([svg_playlist(total, len(PISTAS))], 0),
-    ]
-    filas += [([x], 0) for x in pistas]
-    filas += [([svg_barra(len(PISTAS), total)], 16)]
-    filas += [([svg_seccion("Discografía", "Lanzamientos populares • Álbumes • Sencillos y EP")], 0)]
-    filas += [(albumes[k:k + 2], 12) for k in range(0, len(albumes), 2)]
-    filas += [([svg_creditos()], 12), ([svg_actividad(d)], 12), ([svg_resumen(d)], 12)]
+    def guardar(nombre, contenido):
+        (SALIDA / nombre).write_text(contenido, encoding="utf-8")
 
-    (SALIDA / "perfil-cabecera.svg").write_text(svg_artista(d), encoding="utf-8")
+    guardar("cabecera.svg", pieza(svg_artista(d)))
     for tipo in ("reproducir", "seguir", "compartir"):
-        (SALIDA / f"franja-{tipo}.svg").write_text(svg_franja(tipo), encoding="utf-8")
-    (SALIDA / "perfil.svg").write_text(svg_perfil(filas), encoding="utf-8")
-    (SALIDA / "contacto-titulo.svg").write_text(svg_seccion("Contacto", "Escríbeme o sígueme"), encoding="utf-8")
-    for clave, nombre in [("gmail", "correo"), ("linkedin", "linkedin"), ("github", "github")]:
-        (SALIDA / f"contacto-{nombre}.svg").write_text(svg_contacto(clave, nombre.capitalize()), encoding="utf-8")
-    print("listo:", d["commits_anio"], "commits,", d["contribuciones"], "contribuciones,", len(repos), "repos")
+        guardar(f"franja-{tipo}.svg", svg_franja(tipo))
 
+    guardar("populares.svg", pieza(svg_seccion("Populares")))
+    for i, pista in enumerate(PISTAS, 1):
+        abajo = 16 if i == len(PISTAS) else 0
+        guardar(f"pista-{i}.svg", pieza(svg_pista(i, pista, repos.get(pista[0], {})), abajo=abajo))
+
+    lanz = ultimo_lanzamiento(repos)
+    if lanz:
+        guardar("lanzamiento.svg", pieza(svg_lanzamiento(lanz[1], lanz[2]), abajo=16))
+        # El enlace de la tarjeta apunta siempre al release más reciente
+        readme = SALIDA.parent / "README.md"
+        if readme.exists():
+            texto = readme.read_text(encoding="utf-8")
+            nuevo = re.sub(r'<a href="[^"]*" title="Lanzamiento más reciente"',
+                           f'<a href="{lanz[2]["url"]}" title="Lanzamiento más reciente"', texto)
+            if nuevo != texto:
+                readme.write_text(nuevo, encoding="utf-8")
+
+    guardar("discografia.svg", pieza(svg_seccion("Discografía", f"{len(ALBUMES)} álbumes, uno por área")))
+    for k in range(0, len(ALBUMES), 2):
+        par = ALBUMES[k:k + 2]
+        alto = max(alto_album(len(a[3])) for a in par)
+        for j, (t, ic, co, pi) in enumerate(par):
+            n = k + j + 1
+            guardar(f"album-{n}.svg", pieza(svg_album(t, ic, co, pi, n, alto), abajo=16, ancho=440, x=10 * j))
+
+    guardar("playlists.svg", pieza(svg_seccion("Playlists de Matthew Garay")))
+    for i, (t, desc, co, ic, _) in enumerate(PLAYLISTS):
+        guardar(f"playlist-{i + 1}.svg", svg_playlist_tematica(i, t, desc, co, ic))
+
+    guardar("letra.svg", svg_letra())
+    guardar("fans.svg", pieza(svg_fans(), arriba=8))
+    guardar("acerca.svg", pieza(svg_acerca(d, len(repos), len(ALBUMES)), abajo=8))
+    guardar("creditos.svg", pieza(svg_creditos(), abajo=8))
+    guardar("resumen.svg", pieza(svg_resumen(d), abajo=8))
+    guardar("contacto.svg", pieza(svg_seccion("Contacto", "LinkedIn, GitHub y correo")))
+    for clave, nombre, etiqueta in [("linkedin", "linkedin", "LinkedIn"), ("github", "github", "GitHub"),
+                                    ("gmail", "correo", "Correo")]:
+        guardar(f"contacto-{nombre}.svg", svg_contacto_pieza(clave, etiqueta))
+    guardar("barra.svg", pieza(svg_barra(len(PISTAS), total), arriba=4, abajo=16))
+    print("listo:", d["commits_anio"], "commits,", d["contribuciones"], "contribuciones,", len(repos), "repos;",
+          "lanzamiento:", lanz[1] if lanz else "ninguno")
 
 if __name__ == "__main__":
     main()
